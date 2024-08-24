@@ -1,4 +1,7 @@
-// Reusable Elements
+// The Library of Custom Reusable Web Elements
+// This file is the library containing my collection of custom, reusable web elements
+// that can be used across different parts of the project. These elements go beyond what browsers provide,
+// allowing for expanded capabilities and functionality in the project.
 
 // Navigation Bar
 navigationBarContainer = document.querySelector("#navigationBarContainer");
@@ -9,7 +12,7 @@ function navigationBarContainerF(navigationBarContainer) {
     navigationBarContainer.innerHTML += `
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a href="index.html" name="start" class="navbar-brand"><img alt="Move It Logo" title="Move It Logo" id="logo" name="move-it-logo" src="assets/box-seam-black.svg" />Move It</a>
+          <a href="index.html" name="start" aria-label="Move It Home Page" class="navbar-brand"><img alt="Logo" title="Move It Logo" id="logo" name="move-it-logo" src="assets/box-seam-black.svg" />Move It</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -56,6 +59,29 @@ function navigationBarContainerF(navigationBarContainer) {
   }
 }
 navigationBarContainerF(navigationBarContainer);
+
+// Scroll to Top Button
+class ToTop extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML += `
+    <a href="#" aria-label="Scroll to top" title="Scroll to top">
+      <svg width="45px" height="45px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 15L12 9L18 15" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+    `
+  }
+}
+customElements.define("to-top", ToTop);
+
+const toTop = document.querySelector("body").appendChild(document.createElement("to-top"));
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    toTop.classList.add("active");
+  } else {
+    toTop.classList.remove("active");
+  }
+})
 
 // Check Circle
 class CheckCircle extends HTMLElement {
