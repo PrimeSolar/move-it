@@ -98,12 +98,12 @@ to-top.active {
   width: calc(100% - 2px);
   min-width: 21vw;
   display: flex;
-  background: linear-gradient(#007FFF 25%, #318CE7 100%);
-  background: -moz-linear-gradient(#007FFF 25%, #318CE7 100%);
-  background: -ms-linear-gradient(#007FFF 25%, #318CE7 100%);
-  background: -o-linear-gradient(#007FFF 25%, #318CE7 100%);
-  background: -webkit-linear-gradient(#007FFF 25%, #318CE7 100%);
-  /* background: linear-gradient(90deg, #fff 5%, #007FFF 30%, #007FFF 70%, #fff 95%); */
+  background: -moz-linear-gradient(#007fff 25%, #318ce7 100%);
+  background: -ms-linear-gradient(#007fff 25%, #318ce7 100%);
+  background: -o-linear-gradient(#007fff 25%, #318ce7 100%);
+  background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%);
+  background: linear-gradient(#007fff 25%, #318ce7 100%);
+  /* background: linear-gradient(90deg, #fff 5%, #007fff 30%, #007fff 70%, #fff 95%); */
 }
 
 .card-content {
@@ -161,10 +161,10 @@ to-top.active {
   border-radius: inherit;
   content: "";
   height: 100%;
-  left: 0px;
+  left: 0;
   opacity: 0;
   position: absolute;
-  top: 0px;
+  top: 0;
   transition: opacity 500ms;
   width: 100%;
 }
@@ -195,12 +195,12 @@ to-top.active {
   font-weight: bold;
   font-size: 2.5vh;
   color: #ffffff;
-  background: linear-gradient(#007FFF 25%, #318CE7 100%);
-  background: -moz-linear-gradient(#007FFF 25%, #318CE7 100%);
-  background: -ms-linear-gradient(#007FFF 25%, #318CE7 100%);
-  background: -o-linear-gradient(#007FFF 25%, #318CE7 100%);
-  background: -webkit-linear-gradient(#007FFF 25%, #318CE7 100%);
-  /* background: linear-gradient(90deg, #fff 5%, #007FFF 30%, #007FFF 70%, #fff 95%); */
+  background: linear-gradient(#007fff 25%, #318ce7 100%);
+  background: -moz-linear-gradient(#007fff 25%, #318ce7 100%);
+  background: -ms-linear-gradient(#007fff 25%, #318ce7 100%);
+  background: -o-linear-gradient(#007fff 25%, #318ce7 100%);
+  background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%);
+  /* background: linear-gradient(90deg, #fff 5%, #007fff 30%, #007fff 70%, #fff 95%); */
 }
 
 .plan-price {
