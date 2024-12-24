@@ -130,28 +130,28 @@ to-top.active {
 
 .card-dark-theme::before {
   background: radial-gradient(500px circle at var(--mouse-x) var(--mouse-y),
-      rgba(255, 255, 255, 0.1),
+      #ffffff1a,
       transparent 90%);
   z-index: 3;
 }
 
 .card-dark-theme::after {
   background: radial-gradient(500px circle at var(--mouse-x) var(--mouse-y),
-      rgba(255, 255, 255, 0.4),
+      #ffffff55,
       transparent 50%);
   z-index: 1;
 }
 
 .card-light-theme::before {
   background: radial-gradient(500px circle at var(--mouse-x) var(--mouse-y),
-      rgba(255, 255, 255, 0.1),
+      #ffffff1a,
       transparent 90%);
   z-index: 3;
 }
 
 .card-light-theme::after {
   background: radial-gradient(500px circle at var(--mouse-x) var(--mouse-y),
-      rgba(255, 255, 255, 0.4),
+      #ffffff55,
       transparent 50%);
   z-index: 1;
 }
@@ -181,7 +181,7 @@ to-top.active {
   border-radius: 10px;
   padding: 0;
   background-color: #fff;
-  color: #008CFF;
+  color: #008cff;
   font-family: "Sono", sans-serif;
   font-size: 14px;
   text-align: center;
@@ -195,11 +195,11 @@ to-top.active {
   font-weight: bold;
   font-size: 2.5vh;
   color: #ffffff;
-  background: linear-gradient(#007fff 25%, #318ce7 100%);
   background: -moz-linear-gradient(#007fff 25%, #318ce7 100%);
   background: -ms-linear-gradient(#007fff 25%, #318ce7 100%);
   background: -o-linear-gradient(#007fff 25%, #318ce7 100%);
   background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%);
+  background: linear-gradient(#007fff 25%, #318ce7 100%);
   /* background: linear-gradient(90deg, #fff 5%, #007fff 30%, #007fff 70%, #fff 95%); */
 }
 
@@ -252,11 +252,11 @@ tab0d5 {
 }
 
 thead {
-  background: linear-gradient(#007fff 25%, #318ce7 100%);
   background: -moz-linear-gradient(#007fff 25%, #318ce7 100%);
   background: -ms-linear-gradient(#007fff 25%, #318ce7 100%);
   background: -o-linear-gradient(#007fff 25%, #318ce7 100%);
   background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%);
+  background: linear-gradient(#007fff 25%, #318ce7 100%);
   position: sticky;
   top: 0;
   z-index: 2;
