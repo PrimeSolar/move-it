@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -31,6 +40,9 @@ to-top {
   right: 25px;
   width: 45px;
   height: 45px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
   border-radius: 50%;
   z-index: 2;
   opacity: 0;
@@ -52,6 +64,9 @@ to-top.active {
 .feature-icon {
   width: 4rem;
   height: 4rem;
+  -webkit-border-radius: .75rem;
+  -moz-border-radius: .75rem;
+  -o-border-radius: .75rem;
   border-radius: .75rem;
 }
 
@@ -93,6 +108,9 @@ to-top.active {
 }
 
 .card {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
   border-radius: 10px;
   position: relative;
   width: calc(100% - 2px);
@@ -113,6 +131,9 @@ to-top.active {
   justify-content: space-between;
   flex-grow: 1;
   flex-shrink: 0;
+  -webkit-border-radius: inherit;
+  -moz-border-radius: inherit;
+  -o-border-radius: inherit;
   border-radius: inherit;
   margin: 1px;
   z-index: 2;
@@ -158,6 +179,9 @@ to-top.active {
 
 .card::before,
 .card::after {
+  -webkit-border-radius: inherit;
+  -moz-border-radius: inherit;
+  -o-border-radius: inherit;
   border-radius: inherit;
   content: "";
   height: 100%;
@@ -178,6 +202,9 @@ to-top.active {
   height: 5vh;
   position: absolute;
   top: -20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
   border-radius: 10px;
   padding: 0;
   background-color: #fff;
@@ -237,6 +264,9 @@ to-top.active {
   color: #007fff;
   padding: 0.75vh;
   border: solid 1px #007fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
   border-radius: 5px;
   font-size: 2.5vh;
   font-weight: bold;
