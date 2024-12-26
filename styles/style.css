@@ -14,8 +14,8 @@ body {
 }
 
 #logo {
-  height: 30px;
-  margin-right: 5px;
+  height: 30px; /* Set the height of the logo to 30 pixels */
+  margin-right: 5px; /* Set a right margin of 5 pixels to create space between the logo and the next element */
 }
 
 @font-face {
@@ -30,33 +30,35 @@ body {
 }
 
 #index-first-img {
-  max-height: 30vh;
+  max-height: 30vh; /* Set the maximum height of the element to 30% of the viewport height */
 }
 
 to-top {
-  background: #0088ff;
-  position: fixed;
-  bottom: 56px;
-  right: 25px;
-  width: 45px;
-  height: 45px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  z-index: 2;
-  opacity: 0;
+  background: #0088ff; /* Set the background color to a shade of blue */
+  position: fixed; /* Position the element fixed to the viewport */
+  bottom: 56px; /* Place the element 56 pixels from the bottom of the viewport */
+  right: 25px; /* Place the element 25 pixels from the right side of the viewport */
+  width: 45px; /* Set the width of the element to 45 pixels */
+  height: 45px; /* Set the height of the element to 45 pixels */
+  opacity: 0;  /* Set the initial opacity to 0 (invisible) */
+  z-index: 2; /* Set the stacking order of the element */
+  font-size: 16px; /* Set the font size of the text */
+  text-decoration: none; /* Remove underline from text links */
+  pointer-events: none; /* Deactivate pointer events */
+  transition: 0.25s; /* Set an effect of a transition */
+  /* Use flexbox to center content inside the element */
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  text-decoration: none;
-  pointer-events: none;
-  transition: 0.25s;
+  justify-content: center; /* Center items horizontally*/
+  align-items: center; /* Center items vertically */
+  /* Apply a border radius to make the element circular */
+  -webkit-border-radius: 50%; /* For older versions of Safari */
+  -moz-border-radius: 50%; /* For older versions of Firefox */
+  -o-border-radius: 50%; /* For older versions of Opera */
+  border-radius: 50%; /* Standard property for border radius */
 }
 
 to-top.active {
-  bottom: 56px;
+  bottom: 56px; /* Place the element 56 pixels from the bottom of the viewport */
   pointer-events: auto;
   opacity: 1;
 }
@@ -77,8 +79,9 @@ to-top.active {
 
 #carouselContainer {
   margin: 0 auto;
+  /* Use flexbox to center content inside the element */
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Center items horizontally*/
 }
 
 #carouselIndicators {
@@ -94,11 +97,12 @@ to-top.active {
 #cards {
   text-align: center;
   font-family: "Sono", sans-serif;
-  font-size: 1.7vh;
+  font-size: 1.7vh; /* Set the font size of the text */
+  /* Use flexbox to center content inside the element */
   display: flex;
   gap: 2.5vw;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Center items horizontally*/
+  align-items: center; /* Center items vertically */
   height: 80vh;
   width: 100%;
 }
@@ -115,6 +119,7 @@ to-top.active {
   position: relative;
   width: calc(100% - 2px);
   min-width: 21vw;
+  /* Use flexbox to center content inside the element */
   display: flex;
   background: -moz-linear-gradient(#007fff 25%, #318ce7 100%);
   background: -ms-linear-gradient(#007fff 25%, #318ce7 100%);
@@ -126,6 +131,7 @@ to-top.active {
 
 .card-content {
   height: 55vh;
+  /* Use flexbox to center content inside the element */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -189,7 +195,7 @@ to-top.active {
   opacity: 0;
   position: absolute;
   top: 0;
-  transition: opacity 500ms;
+  transition: opacity 500ms; /* Set an effect of a transition */
   width: 100%;
 }
 
@@ -210,7 +216,7 @@ to-top.active {
   background-color: #fff;
   color: #008cff;
   font-family: "Sono", sans-serif;
-  font-size: 14px;
+  font-size: 14px; /* Set the font size of the text */
   text-align: center;
   z-index: -1;
 }
@@ -220,7 +226,7 @@ to-top.active {
   border-top-right-radius: 7px;
   padding: 1vh 0;
   font-weight: bold;
-  font-size: 2.5vh;
+  font-size: 2.5vh; /* Set the font size of the text */
   color: #ffffff;
   background: -moz-linear-gradient(#007fff 25%, #318ce7 100%);
   background: -ms-linear-gradient(#007fff 25%, #318ce7 100%);
@@ -232,16 +238,16 @@ to-top.active {
 
 .plan-price {
   font-weight: bold;
-  font-size: 4.5vh;
+  font-size: 4.5vh; /* Set the font size of the text */
   padding: 0;
 }
 
 .currency {
-  font-size: 2vh;
+  font-size: 2vh; /* Set the font size of the text */
 }
 
 .plan-conditions {
-  font-size: 2vh;
+  font-size: 2vh; /* Set the font size of the text */
   margin-bottom: 1vh;
 }
 
@@ -252,7 +258,7 @@ to-top.active {
 }
 
 .plan-features>li {
-  font-size: 3vh;
+  font-size: 3vh; /* Set the font size of the text */
 }
 
 #check-circle {
@@ -268,7 +274,7 @@ to-top.active {
   -moz-border-radius: 5px;
   -o-border-radius: 5px;
   border-radius: 5px;
-  font-size: 2.5vh;
+  font-size: 2.5vh; /* Set the font size of the text */
   font-weight: bold;
   display: none;
 }
@@ -325,10 +331,11 @@ td p {
 #enable-javascript {
   width: 100vw;
   height: 100%;
+  /* Use flexbox to center content inside the element */
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Center items horizontally*/
+  align-items: center; /* Center items vertically */
   padding: 0 25vw;
 }
 
