@@ -110,7 +110,7 @@ function footerContainerF(footerContainer) {
           <li class="nav-item"><a class="nav-link px-2 text-body-secondary" href="glossary.html">Glossary</a></li>
           <li class="nav-item"><a class="nav-link px-2" href="contact.html">Contact</a></li>
         </ul>
-        <p class="text-center">Copyright © <a href="https://firstsolar.github.io/web-developer/">Vladislav Kazantsev</a> 2024</p>
+        <p class="text-center">Copyright © <a href="https://primesolar.github.io/web-developer/">Vladislav Kazantsev</a> 2024</p>
       </footer>
     </div>
       `
