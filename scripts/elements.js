@@ -17,9 +17,9 @@ function navigationBarContainerF(navigationBarContainer) {
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="nav navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
@@ -44,7 +44,7 @@ function navigationBarContainerF(navigationBarContainer) {
                 <a class="nav-link" href="glossary.html">Glossary</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link link-primary" href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
@@ -103,14 +103,14 @@ function footerContainerF(footerContainer) {
     <div class="container pt-1 mt-1">
       <footer class="pt-1 mt-5 mb-3">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-          <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">About</a></li>
-          <li class="nav-item"><a href="pricing.html" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-          <li class="nav-item"><a href="faqs.html" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-          <li class="nav-item"><a href="glossary.html" class="nav-link px-2 text-body-secondary">Glossary</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-body-secondary">Contact</a></li>
+          <li class="nav-item"><a class="nav-link px-2 text-body-secondary" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link px-2 text-body-secondary" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link px-2 text-body-secondary" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link px-2 text-body-secondary" href="faqs.html">FAQs</a></li>
+          <li class="nav-item"><a class="nav-link px-2 text-body-secondary" href="glossary.html">Glossary</a></li>
+          <li class="nav-item"><a class="nav-link px-2" href="contact.html">Contact</a></li>
         </ul>
-        <p class="text-center text-body-secondary">Copyright © <a href="https://firstsolar.github.io/web-developer/">Vladislav Kazantsev</a> 2024</p>
+        <p class="text-center">Copyright © <a href="https://firstsolar.github.io/web-developer/">Vladislav Kazantsev</a> 2024</p>
       </footer>
     </div>
       `
