@@ -95,7 +95,7 @@ customElements.define("check-circle", CheckCircle);
 
 // Footer
 footerContainer = document.querySelector("#footerContainer");
-
+const year = new Date().getFullYear();
 function footerContainerF(footerContainer) {
   if (footerContainer != null) {
     // Define footer content:
@@ -108,9 +108,9 @@ function footerContainerF(footerContainer) {
           <li class="nav-item"><a class="nav-link px-2 text-body-secondary" href="pricing.html">Pricing</a></li>
           <li class="nav-item"><a class="nav-link px-2 text-body-secondary" href="faqs.html">FAQs</a></li>
           <li class="nav-item"><a class="nav-link px-2 text-body-secondary" href="glossary.html">Glossary</a></li>
-          <li class="nav-item"><a class="nav-link px-2" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link px-2 link-primary" href="contact.html">Contact</a></li>
         </ul>
-        <p class="text-center">Copyright © <a href="https://primesolar.github.io/web-developer/">Vladislav Kazantsev</a> 2024</p>
+        <p class="text-center">Copyright © <a href="https://primesolar.github.io/web-developer/" class="link-primary">Vladislav Kazantsev</a> ${year}</p>
       </footer>
     </div>
       `
