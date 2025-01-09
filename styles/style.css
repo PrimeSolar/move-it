@@ -13,9 +13,36 @@ body {
   overflow-x: hidden;
 }
 
+.link-primary {
+  color: #0088ff;
+}
+
 #logo {
   height: 30px; /* Set the height of the logo to 30 pixels */
   margin-right: 5px; /* Set a right margin of 5 pixels to create space between the logo and the next element */
+}
+
+h1 {
+  width: fit-content;
+  line-height: 1.5 !important;
+  background: linear-gradient(to right, #1177ff, #1ab1ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: brighten 1s;
+}
+
+@keyframes brighten {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h1.center {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @font-face {
@@ -103,7 +130,7 @@ to-top.active {
   gap: 2.5vw;
   justify-content: center; /* Center items horizontally*/
   align-items: center; /* Center items vertically */
-  height: 80vh;
+  height: 70vh;
   width: 100%;
 }
 
@@ -131,6 +158,9 @@ to-top.active {
 
 .card-content {
   height: 55vh;
+  margin: 1px;
+  z-index: 2; /* Set the stacking order of the element */
+  background-color: #f2f2f2;
   /* Use flexbox to center content inside the element */
   display: flex;
   flex-direction: column;
@@ -141,9 +171,6 @@ to-top.active {
   -moz-border-radius: inherit; /* For older versions of Firefox */
   -o-border-radius: inherit; /* For older versions of Opera */
   border-radius: inherit; /* Standard property for border radius */
-  margin: 1px;
-  z-index: 2; /* Set the stacking order of the element */
-  background-color: #f2f2f2;
 }
 
 .card-content ul {
@@ -206,7 +233,7 @@ to-top.active {
 .card-label {
   width: 100%; /* Set the width of the card label to 100% of its parent container */
   height: 5vh; /* Set the height of the card label to 5% of the viewport height */
-  position: absolute;/* Position the card label absolutely within its positioned ancestor */
+  position: absolute; /* Position the card label absolutely within its positioned ancestor */
   top: -20px; /* Place the card label 20 pixels above */
   padding: 0; /* Remove any default padding */
   background-color: #fff; /* Set the background color to white */
