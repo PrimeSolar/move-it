@@ -25,9 +25,6 @@ body {
 h1 {
   width: fit-content;
   line-height: 1.5 !important;
-  background: linear-gradient(to right, #1177ff, #1ab1ff);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
   animation: brighten 1s;
 }
 
@@ -46,13 +43,13 @@ h1.center {
 }
 
 @font-face {
-  font-family: 'Thirsty Script';
+  font-family: "Thirsty Script";
   src: url("ThirstyScriptExtraBold.otf") format("opentype");
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Vag Rounded';
+  font-family: "Vag Rounded";
   src: url("VAG-Rounded-Regular.ttf") format("opentype");
 }
 
@@ -67,7 +64,7 @@ to-top {
   right: 25px; /* Place the element 25 pixels from the right side of the viewport */
   width: 45px; /* Set the width of the element to 45 pixels */
   height: 45px; /* Set the height of the element to 45 pixels */
-  opacity: 0;  /* Set the initial opacity to 0 (invisible) */
+  opacity: 0; /* Set the initial opacity to 0 (invisible) */
   z-index: 2; /* Set the stacking order of the element */
   font-size: 16px; /* Set the font size of the text */
   text-decoration: none; /* Remove underline from text links */
@@ -75,7 +72,9 @@ to-top {
   transition: 0.25s; /* Set an effect of a transition */
   /* Use flexbox to center content inside the element */
   display: flex;
+
   justify-content: center; /* Center items horizontally*/
+
   align-items: center; /* Center items vertically */
   /* Apply a border radius to make the element circular */
   -webkit-border-radius: 50%; /* For older versions of Safari */
@@ -93,10 +92,10 @@ to-top.active {
 .feature-icon {
   width: 4rem;
   height: 4rem;
-  -webkit-border-radius: .75rem; /* For older versions of Safari */
-  -moz-border-radius: .75rem; /* For older versions of Firefox */
-  -o-border-radius: .75rem; /* For older versions of Opera */
-  border-radius: .75rem; /* Standard property for border radius */
+  -webkit-border-radius: 0.75rem; /* For older versions of Safari */
+  -moz-border-radius: 0.75rem; /* For older versions of Firefox */
+  -o-border-radius: 0.75rem; /* For older versions of Opera */
+  border-radius: 0.75rem; /* Standard property for border radius */
 }
 
 .feature-icon-small {
@@ -109,6 +108,7 @@ to-top.active {
   /* Use flexbox to center content inside the element */
   display: flex;
   justify-content: center; /* Center items horizontally*/
+  align-items: center; /* Center items vertically*/
 }
 
 #carouselIndicators {
@@ -119,6 +119,9 @@ to-top.active {
 .carousel-inner {
   height: 85vh;
   width: 50vw;
+  /* Use flexbox to center content inside the element */
+  display: flex;
+  align-items: center; /* Center items vertically*/
 }
 
 #cards {
@@ -134,7 +137,7 @@ to-top.active {
   width: 100%;
 }
 
-#cards:hover>.card::after {
+#cards:hover > .card::after {
   opacity: 0.01;
 }
 
@@ -183,30 +186,38 @@ to-top.active {
 }
 
 .card-dark-theme::before {
-  background: radial-gradient(500px circle at var(--mouse-x) var(--mouse-y),
-      #ffffff1a,
-      transparent 90%);
+  background: radial-gradient(
+    500px circle at var(--mouse-x) var(--mouse-y),
+    #ffffff1a,
+    transparent 90%
+  );
   z-index: 3; /* Set the stacking order of the element */
 }
 
 .card-dark-theme::after {
-  background: radial-gradient(500px circle at var(--mouse-x) var(--mouse-y),
-      #ffffff55,
-      transparent 50%);
+  background: radial-gradient(
+    500px circle at var(--mouse-x) var(--mouse-y),
+    #ffffff55,
+    transparent 50%
+  );
   z-index: 1; /* Set the stacking order of the element */
 }
 
 .card-light-theme::before {
-  background: radial-gradient(500px circle at var(--mouse-x) var(--mouse-y),
-      #ffffff1a,
-      transparent 90%);
+  background: radial-gradient(
+    500px circle at var(--mouse-x) var(--mouse-y),
+    #ffffff1a,
+    transparent 90%
+  );
   z-index: 3; /* Set the stacking order of the element */
 }
 
 .card-light-theme::after {
-  background: radial-gradient(500px circle at var(--mouse-x) var(--mouse-y),
-      #ffffff55,
-      transparent 50%);
+  background: radial-gradient(
+    500px circle at var(--mouse-x) var(--mouse-y),
+    #ffffff55,
+    transparent 50%
+  );
   z-index: 1; /* Set the stacking order of the element */
 }
 
@@ -285,11 +296,11 @@ to-top.active {
   flex-basis: 50%;
 }
 
-.plan-features>li {
+.plan-features > li {
   font-size: 3vh; /* Set the font size of the text */
 }
 
-#check-circle {
+.check-circle {
   height: 20px;
 }
 
@@ -315,15 +326,23 @@ tab0d5 {
   padding-left: 22px;
 }
 
+table {
+  word-wrap: break-word;
+}
+
 thead {
+  position: sticky;
+  top: 0;
+  z-index: 2; /* Set the stacking order of the element */
   background: -moz-linear-gradient(#007fff 25%, #318ce7 100%);
   background: -ms-linear-gradient(#007fff 25%, #318ce7 100%);
   background: -o-linear-gradient(#007fff 25%, #318ce7 100%);
   background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%);
   background: linear-gradient(#007fff 25%, #318ce7 100%);
-  position: sticky;
-  top: 0;
-  z-index: 2; /* Set the stacking order of the element */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f7f7f7;
 }
 
 th {
@@ -332,9 +351,16 @@ th {
   color: #f2f2f2;
 }
 
-th, td {
+th,
+td {
+  min-width: -webkit-fill-available;
   padding: 8px;
   border-bottom: 2px solid #ddd;
+}
+
+th:nth-of-type(1),
+td:nth-of-type(1) {
+  width: 15vw;
 }
 
 td p {
@@ -348,7 +374,7 @@ td p {
   margin-right: 0;
 }
 
-.row>.aos-item {
+.row > .aos-item {
   padding-left: 0;
   padding-right: 0;
   margin-left: 0;
@@ -367,7 +393,7 @@ td p {
   padding: 0 25vw;
 }
 
-#enable-javascript>details {
+#enable-javascript > details {
   margin-top: 1.7vh;
 }
 
