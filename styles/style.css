@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 0; /* Remove any default margin */
   border: 0;
   padding: 0; /* Remove any default padding */
   -webkit-box-sizing: border-box;
@@ -8,18 +8,18 @@
 }
 
 body {
-  margin: 0;
+  margin: 0; /* Remove any default margin */
   padding: 0; /* Remove any default padding */
   overflow-x: hidden;
 }
 
 .link-primary {
-  color: #0088ff;
+  color: #0088ff; /* Set the color of a primary link to a shade of blue */
 }
 
 #logo {
   height: 30px; /* Set the height of the logo to 30 pixels */
-  margin-right: 5px; /* Set a right margin of 5 pixels to create space between the logo and the next element */
+  margin-right: 5px; /* Set a right margin to 5 pixels to create space between the logo and the next element */
 }
 
 h1 {
@@ -112,13 +112,13 @@ to-top.active {
 }
 
 #carouselIndicators {
-  height: 85vh;
-  width: 50vw;
+  height: 85vh; /* Set the height of the element to 85% of the viewport height */
+  width: 50vw; /* Set the width of the element to 50% of the viewport width */
 }
 
 .carousel-inner {
-  height: 85vh;
-  width: 50vw;
+  height: 85vh; /* Set the height of the element to 85% of the viewport height */
+  width: 50vw; /* Set the width of the element to 50% of the viewport width */
   /* Use flexbox to center content inside the element */
   display: flex;
   align-items: center; /* Center items vertically*/
@@ -127,14 +127,14 @@ to-top.active {
 #cards {
   text-align: center;
   font-family: "Sono", sans-serif; /* Set the font family to "Sono" and sans-serif */
-  font-size: 1.7vh; /* Set the font size of the text */
+  font-size: 1.7vh; /* Set the font size of the text to 1.7% of the viewport height */
   /* Use flexbox to center content inside the element */
   display: flex;
   gap: 2.5vw;
   justify-content: center; /* Center items horizontally*/
   align-items: center; /* Center items vertically */
-  height: 70vh;
-  width: 100%;
+  height: 70vh; /* Set the height of the element to 70% of the viewport height */
+  width: 100%; /* Set the width of the element to 100% of its parent container */
 }
 
 #cards:hover > .card::after {
