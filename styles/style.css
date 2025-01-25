@@ -14,16 +14,16 @@ body {
 }
 
 .link-primary {
-  color: #0088ff; /* Set the color of a primary link to a shade of blue */
+  color: #0088ff; /* Set the color of the text */
 }
 
 #logo {
-  height: 30px; /* Set the height of the logo to 30 pixels */
-  margin-right: 5px; /* Set a right margin to 5 pixels to create space between the logo and the next element */
+  height: 30px; /* Set the height */
+  margin-right: 5px; /* Set the size of the right margin */
 }
 
 h1 {
-  width: fit-content;
+  width: fit-content; /* Set the width */
   line-height: 1.5 !important;
   animation: brighten 1s;
 }
@@ -38,8 +38,8 @@ h1 {
 }
 
 h1.center {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto; /* Set the size of the left margin */
+  margin-right: auto; /* Set the size of the right margin */
 }
 
 @font-face {
@@ -54,20 +54,20 @@ h1.center {
 }
 
 #index-first-img {
-  max-height: 30vh; /* Set the maximum height of the element to 30% of the viewport height */
+  max-height: 30vh; /* Set the maximum height */
 }
 
 to-top {
-  background: #0088ff; /* Set the background color to a shade of blue */
+  background-color: #0088ff; /* Set the color of the background */
   position: fixed; /* Position the element fixed to the viewport */
   bottom: 56px; /* Place the element 56 pixels from the bottom of the viewport */
   right: 25px; /* Place the element 25 pixels from the right side of the viewport */
-  width: 45px; /* Set the width of the element to 45 pixels */
-  height: 45px; /* Set the height of the element to 45 pixels */
-  opacity: 0; /* Set the initial opacity to 0 (invisible) */
-  z-index: 2; /* Set the stacking order of the element */
-  font-size: 16px; /* Set the font size of the text */
-  text-decoration: none; /* Remove underline from text links */
+  width: 45px; /* Set the width */
+  height: 45px; /* Set the height */
+  opacity: 0; /* Set the opacity */
+  z-index: 2; /* Set the stacking order */
+  font-size: 16px; /* Set the size of the text */
+  text-decoration: none; /* Remove underline from the text */
   pointer-events: none; /* Deactivate pointer events */
   transition: 0.25s; /* Set an effect of a transition */
   /* Use flexbox to center content inside the element */
@@ -90,8 +90,8 @@ to-top.active {
 }
 
 .feature-icon {
-  width: 4rem;
-  height: 4rem;
+  width: 4rem; /* Set the width */
+  height: 4rem; /* Set the height */
   -webkit-border-radius: 0.75rem; /* For older versions of Safari */
   -moz-border-radius: 0.75rem; /* For older versions of Firefox */
   -o-border-radius: 0.75rem; /* For older versions of Opera */
@@ -99,12 +99,12 @@ to-top.active {
 }
 
 .feature-icon-small {
-  width: 3rem;
-  height: 3rem;
+  width: 3rem; /* Set the width */
+  height: 3rem; /* Set the height */
 }
 
 #carouselContainer {
-  margin: 0 auto;
+  margin: 0 auto; /* Set the size of the margin */
   /* Use flexbox to center content inside the element */
   display: flex;
   justify-content: center; /* Center items horizontally*/
@@ -112,13 +112,13 @@ to-top.active {
 }
 
 #carouselIndicators {
-  height: 85vh; /* Set the height of the element to 85% of the viewport height */
-  width: 50vw; /* Set the width of the element to 50% of the viewport width */
+  height: 85vh; /* Set the height */
+  width: 50vw; /* Set the width */
 }
 
 .carousel-inner {
-  height: 85vh; /* Set the height of the element to 85% of the viewport height */
-  width: 50vw; /* Set the width of the element to 50% of the viewport width */
+  height: 85vh; /* Set the height */
+  width: 50vw; /* Set the width */
   /* Use flexbox to center content inside the element */
   display: flex;
   align-items: center; /* Center items vertically*/
@@ -353,8 +353,8 @@ th {
 
 th,
 td {
-  min-width: -webkit-fill-available;
-  padding: 8px;
+  min-width: -webkit-fill-available; /* Set the minimum width */
+  padding: 8px; /* Set the size of the padding */
   border-bottom: 2px solid #ddd;
 }
 
@@ -368,43 +368,43 @@ td p {
 }
 
 .row {
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: 0;
-  margin-right: 0;
+  padding-left: 0; /* Set the size of the left padding */
+  padding-right: 0; /* Set the size of the right padding */
+  margin-left: 0; /* Set the size of the left margin */
+  margin-right: 0; /* Set the size of the right margin */
 }
 
 .row > .aos-item {
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: 0;
-  margin-right: 0;
+  padding-left: 0; /* Set the size of the left padding */
+  padding-right: 0; /* Set the size of the right padding */
+  margin-left: 0; /* Set the size of the left margin */
+  margin-right: 0; /* Set the size of the right margin */
 }
 
 /*noscript*/
 #enable-javascript {
-  width: 100vw;
-  height: 100%;
+  width: 100vw; /* Set the width */
+  height: 100%; /* Set the height */
   /* Use flexbox to center content inside the element */
   display: flex;
   flex-direction: column;
   justify-content: center; /* Center items horizontally*/
   align-items: center; /* Center items vertically */
-  padding: 0 25vw;
+  padding: 0 25vw; /* Set the size of the left padding */
 }
 
 #enable-javascript > details {
-  margin-top: 1.7vh;
+  margin-top: 1.7vh; /* Set the size of the top margin */
 }
 
 noscript h2 {
-  padding: 5vh 0;
+  padding: 5vh 0; /* Set the size of the left padding */
 }
 
 noscript p {
-  min-width: 50vw;
+  min-width: 50vw; /* Set the minimum width */
 }
 
 noscript details {
-  min-width: 50vw;
+  min-width: 50vw; /* Set the minimum width */
 }
