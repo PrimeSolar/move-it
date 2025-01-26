@@ -1,15 +1,15 @@
 * {
-  margin: 0; /* Remove any default margin */
+  margin: 0; /* Set the size of the margin */
   border: 0;
-  padding: 0; /* Remove any default padding */
-  -webkit-box-sizing: border-box;
+  padding: 0; /* Set the size of the padding */
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 body {
-  margin: 0; /* Remove any default margin */
-  padding: 0; /* Remove any default padding */
+  margin: 0; /* Set the size of the margin */
+  padding: 0; /* Set the size of the padding */
   overflow-x: hidden;
 }
 
@@ -18,12 +18,12 @@ body {
 }
 
 #logo {
-  height: 30px; /* Set the height */
+  height: 30px; /* Set the height of the element */
   margin-right: 5px; /* Set the size of the right margin */
 }
 
 h1 {
-  width: fit-content; /* Set the width */
+  width: fit-content; /* Set the width of the element */
   line-height: 1.5 !important;
   animation: brighten 1s;
 }
@@ -54,87 +54,116 @@ h1.center {
 }
 
 #index-first-img {
-  max-height: 30vh; /* Set the maximum height */
+  max-height: 30vh; /* Set the maximum height of the element */
 }
 
 to-top {
   background-color: #0088ff; /* Set the color of the background */
   position: fixed; /* Position the element fixed to the viewport */
-  bottom: 56px; /* Place the element 56 pixels from the bottom of the viewport */
-  right: 25px; /* Place the element 25 pixels from the right side of the viewport */
-  width: 45px; /* Set the width */
-  height: 45px; /* Set the height */
+  bottom: 56px; /* Position the element 56 pixels from the bottom of the viewport */
+  right: 25px; /* Position the element 25 pixels from the right side of the viewport */
+  width: 45px; /* Set the width of the element */
+  height: 45px; /* Set the height of the element */
   opacity: 0; /* Set the opacity */
-  z-index: 2; /* Set the stacking order */
-  font-size: 16px; /* Set the size of the text */
+  z-index: 2; /* Set the stacking order of the element */
+  font-size: 16px; /* Set the font size for the text */
   text-decoration: none; /* Remove underline from the text */
   pointer-events: none; /* Deactivate pointer events */
   transition: 0.25s; /* Set an effect of a transition */
   /* Use flexbox to center content inside the element */
-  display: flex;
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model */
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  display: flex; /* Standard syntax for modern browsers (widely supported) */
 
-  justify-content: center; /* Center items horizontally*/
+  justify-content: center; /* Align flex items horizontally */
 
-  align-items: center; /* Center items vertically */
-  /* Apply a border radius to make the element circular */
-  -webkit-border-radius: 50%; /* For older versions of Safari */
+  /* Align vertically */
+  -ms-flex-align: center; /* For Internet Explorer 10 */
+  -webkit-box-align: center; /* For older versions of Chrome and Safari */
+  align-items: center; /* Standard syntax for modern browsers (widely supported) */
+  /* Apply the border radius to round the corners of the element */
   -moz-border-radius: 50%; /* For older versions of Firefox */
   -o-border-radius: 50%; /* For older versions of Opera */
-  border-radius: 50%; /* Standard property for border radius */
+  -webkit-border-radius: 50%; /* For older versions of Chrome and Safari */
+  border-radius: 50%; /* Standard syntax for modern browsers (widely supported) */
 }
 
 to-top.active {
-  bottom: 56px; /* Place the element 56 pixels from the bottom of the viewport */
+  bottom: 56px; /* Position the element 56 pixels from the bottom of the viewport */
   pointer-events: auto;
   opacity: 1;
 }
 
 .feature-icon {
-  width: 4rem; /* Set the width */
-  height: 4rem; /* Set the height */
-  -webkit-border-radius: 0.75rem; /* For older versions of Safari */
+  width: 4rem; /* Set the width of the element */
+  height: 4rem; /* Set the height of the element */
+  /* Apply the border radius to round the corners of the element */
   -moz-border-radius: 0.75rem; /* For older versions of Firefox */
   -o-border-radius: 0.75rem; /* For older versions of Opera */
-  border-radius: 0.75rem; /* Standard property for border radius */
+  -webkit-border-radius: 0.75rem; /* For older versions of Chrome and Safari */
+  border-radius: 0.75rem; /* Standard syntax for modern browsers (widely supported) */
 }
 
 .feature-icon-small {
-  width: 3rem; /* Set the width */
-  height: 3rem; /* Set the height */
+  width: 3rem; /* Set the width of the element*/
+  height: 3rem; /* Set the height of the element*/
 }
 
 #carouselContainer {
   margin: 0 auto; /* Set the size of the margin */
   /* Use flexbox to center content inside the element */
-  display: flex;
-  justify-content: center; /* Center items horizontally*/
-  align-items: center; /* Center items vertically*/
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  display: -webkit-box; /* For older versions of Chrome and Safari (pre-flexbox) */
+  display: flex; /* Standard syntax for modern browsers (widely supported) */
+
+  justify-content: center; /* Align flex items horizontally */
+
+  /* Align vertically */
+  -ms-flex-align: center; /* For Internet Explorer 10 */
+  -webkit-box-align: center; /* For older versions of Chrome and Safari */
+  align-items: center; /* Standard syntax for modern browsers (widely supported) */
 }
 
 #carouselIndicators {
-  height: 85vh; /* Set the height */
-  width: 50vw; /* Set the width */
+  height: 85vh; /* Set the height of the element */
+  width: 50vw; /* Set the width of the element */
 }
 
 .carousel-inner {
-  height: 85vh; /* Set the height */
-  width: 50vw; /* Set the width */
+  height: 85vh; /* Set the height of the element */
+  width: 50vw; /* Set the width of the element */
   /* Use flexbox to center content inside the element */
-  display: flex;
-  align-items: center; /* Center items vertically*/
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  display: -webkit-box; /* For older versions of Chrome and Safari (pre-flexbox) */
+  display: flex; /* Standard syntax for modern browsers (widely supported) */
+
+  /* Align vertically */
+  -ms-flex-items: center; /* For Internet Explorer 10 */
+  -webkit-box-items: center; /* For older versions of Chrome and Safari */
+  align-items: center; /* Standard syntax for modern browsers (widely supported) */
 }
 
 #cards {
-  text-align: center;
+  width: 100%; /* Set the width of the element */
+  height: 70vh; /* Set the height of the element */
+  padding: 0; /* Set the size of the padding */
+  margin: 0; /* Set the size of the margin */
+  font-size: 1.7vh; /* Set the font size for the text */
+  text-align: center; /* Align the text of the element */
   font-family: "Sono", sans-serif; /* Set the font family to "Sono" and sans-serif */
-  font-size: 1.7vh; /* Set the font size of the text to 1.7% of the viewport height */
   /* Use flexbox to center content inside the element */
-  display: flex;
-  gap: 2.5vw;
-  justify-content: center; /* Center items horizontally*/
-  align-items: center; /* Center items vertically */
-  height: 70vh; /* Set the height of the element to 70% of the viewport height */
-  width: 100%; /* Set the width of the element to 100% of its parent container */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  display: flex; /* Standard syntax for modern browsers (widely supported) */
+
+  gap: 2.5vw; /* Set the space between flex items */
+
+  justify-content: center; /* Align flex items horizontally */
+
+  /* Align vertically */
+  -ms-flex-items: center; /* For Internet Explorer 10 */
+  -webkit-box-items: center; /* For older versions of Chrome and Safari */
+  align-items: center; /* Standard syntax for modern browsers (widely supported) */
 }
 
 #cards:hover > .card::after {
@@ -142,47 +171,76 @@ to-top.active {
 }
 
 .card {
-  -webkit-border-radius: 10px; /* For older versions of Safari */
+  position: relative;
+  width: calc(100% - 2px); /* Set the width of the element */
+  min-width: 21vw; /* Set the minimum width of the element */
+  /* Use flexbox to center content inside the element */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  display: flex; /* Standard syntax for modern browsers (widely supported) */
+  /* Apply the border radius to round the corners of the element */
   -moz-border-radius: 10px; /* For older versions of Firefox */
   -o-border-radius: 10px; /* For older versions of Opera */
-  border-radius: 10px; /* Standard property for border radius */
-  position: relative;
-  width: calc(100% - 2px);
-  min-width: 21vw;
-  /* Use flexbox to center content inside the element */
-  display: flex;
-  background: -moz-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -ms-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -o-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: linear-gradient(#007fff 25%, #318ce7 100%);
+  -webkit-border-radius: 10px; /* For older versions of Chrome and Safari */
+  border-radius: 10px; /* Standard syntax for modern browsers (widely supported) */
+  /* Set the color of the background */
+  background: -moz-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Firefox */
+  background: -ms-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For Internet Explorer 10 */
+  background: -o-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Opera */
+  background: -webkit-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Chrome and Safari */
+  background: linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* Standard syntax for modern browsers (widely supported) */
   /* background: linear-gradient(90deg, #fff 5%, #007fff 30%, #007fff 70%, #fff 95%); */
 }
 
 .card-content {
-  height: 55vh;
-  margin: 1px;
+  height: 55vh; /* Set the height of the element */
+  margin: 1px; /* Set the size of the margin */
   z-index: 2; /* Set the stacking order of the element */
-  background-color: #f2f2f2;
+  background-color: #f2f2f2; /* Set the color of the background */
   /* Use flexbox to center content inside the element */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  display: flex; /* Standard syntax for modern browsers (widely supported) */
+
+  /* Arrange flex items */
+  -ms-flex-direction: column; /* For Internet Explorer 10 */
+  -webkit-box-orient: vertical; /* For older versions of Chrome and Safari */
+  -webkit-box-direction: normal; /* For older versions of Chrome and Safari */
+  flex-direction: column; /* Standard syntax for modern browsers (widely supported) */
+
+  justify-content: space-between; /* Align flex items horizontally */
+
   flex-grow: 1;
   flex-shrink: 0;
-  -webkit-border-radius: inherit; /* For older versions of Safari */
+  /* Apply the border radius to round the corners of the element */
   -moz-border-radius: inherit; /* For older versions of Firefox */
   -o-border-radius: inherit; /* For older versions of Opera */
-  border-radius: inherit; /* Standard property for border radius */
+  -webkit-border-radius: inherit; /* For older versions of Chrome and Safari */
+  border-radius: inherit; /* Standard syntax for modern browsers (widely supported) */
 }
 
 .card-content ul {
-  list-style-type: none;
+  list-style-type: none; /* Set the style of the list */
   align-self: center;
 }
 
 .card-custom ul {
-  text-align: center;
+  text-align: center; /* Align the text of the element */
 }
 
 .card-dark-theme::before {
@@ -223,99 +281,117 @@ to-top.active {
 
 .card::before,
 .card::after {
-  -webkit-border-radius: inherit; /* For older versions of Safari */
-  -moz-border-radius: inherit; /* For older versions of Firefox */
-  -o-border-radius: inherit; /* For older versions of Opera */
-  border-radius: inherit; /* Standard property for border radius */
   content: "";
-  height: 100%;
+  height: 100%; /* Set the height of the element */
   left: 0;
-  opacity: 0; /* Set the initial opacity to 0 (invisible) */
-  position: absolute;
+  opacity: 0; /* Set the opacity */
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
   top: 0;
   transition: opacity 500ms; /* Set an effect of a transition */
-  width: 100%;
+  width: 100%; /* Set the width of the element */
+  /* Apply the border radius to round the corners of the element */
+  -moz-border-radius: inherit; /* For older versions of Firefox */
+  -o-border-radius: inherit; /* For older versions of Opera */
+  -webkit-border-radius: inherit; /* For older versions of Chrome and Safari */
+  border-radius: inherit; /* Standard syntax for modern browsers (widely supported) */
 }
 
 .card:hover::before {
-  opacity: 1;
+  opacity: 1; /* Set the opacity */
 }
 
 .card-label {
-  width: 100%; /* Set the width of the card label to 100% of its parent container */
-  height: 5vh; /* Set the height of the card label to 5% of the viewport height */
-  position: absolute; /* Position the card label absolutely within its positioned ancestor */
-  top: -20px; /* Place the card label 20 pixels above */
-  padding: 0; /* Remove any default padding */
-  background-color: #fff; /* Set the background color to white */
-  color: #008cff; /* Set the text color to a shade of blue */
+  width: 100%; /* Set the width of the element */
+  height: 5vh; /* Set the height of the element */
+  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
+  top: -20px; /* Position the card label 20 pixels above */
+  padding: 0; /* Set the padding of the element */
+  background-color: #fff; /* Set the color of the background */
+  color: #008cff; /* Set the color of the text */
   font-family: "Sono", sans-serif; /* Set the font family to "Sono" and sans-serif */
-  font-size: 14px; /* Set the font size of the text */
-  text-align: center; /* Center the text within the card label */
+  font-size: 14px; /* Set the font size for the text */
+  text-align: center; /* Align the text of the element */
   z-index: -1; /* Set the stacking order of the element */
-  /* Apply a border radius to round the corners of the card label */
-  -webkit-border-radius: 10px; /* For older versions of Safari */
+  /* Apply the border radius to round the corners of the element */
   -moz-border-radius: 10px; /* For older versions of Firefox */
   -o-border-radius: 10px; /* For older versions of Opera */
-  border-radius: 10px; /* Standard property for border radius */
+  -webkit-border-radius: 10px; /* For older versions of Chrome and Safari */
+  border-radius: 10px; /* Standard syntax for modern browsers (widely supported) */
 }
 
 .card-title {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
-  padding: 1vh 0;
+  padding: 1vh 0; /* Set the size of the padding */
   font-weight: bold;
-  font-size: 2.5vh; /* Set the font size of the text */
-  color: #ffffff;
-  background: -moz-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -ms-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -o-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: linear-gradient(#007fff 25%, #318ce7 100%);
+  font-size: 2.5vh; /* Set the font size for the text */
+  color: #ffffff; /* Set the color of the text */
+  /* Set the color of the background */
+  background: -moz-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Firefox */
+  background: -ms-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For Internet Explorer 10 */
+  background: -o-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Opera */
+  background: -webkit-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Chrome and Safari */
+  background: linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* Standard syntax for modern browsers (widely supported) */
   /* background: linear-gradient(90deg, #fff 5%, #007fff 30%, #007fff 70%, #fff 95%); */
 }
 
 .plan-price {
   font-weight: bold;
-  font-size: 4.5vh; /* Set the font size of the text */
-  padding: 0; /* Remove any default padding */
+  font-size: 4.5vh; /* Set the font size for the text */
+  padding: 0; /* Set the size of the padding */
 }
 
 .currency {
-  font-size: 2vh; /* Set the font size of the text */
+  font-size: 2vh; /* Set the font size for the text */
 }
 
 .plan-conditions {
-  font-size: 2vh; /* Set the font size of the text */
-  margin-bottom: 1vh;
+  font-size: 2vh; /* Set the font size for the text */
+  margin-bottom: 1vh; /* Set the size of the bottom mnargin */
 }
 
 .plan-features {
-  text-align: center;
-  padding: 0; /* Remove any default padding */
+  text-align: center; /* Align the text of the element */
+  padding: 0; /* Set the size of the padding */
   flex-basis: 50%;
 }
 
 .plan-features > li {
-  font-size: 3vh; /* Set the font size of the text */
+  font-size: 3vh; /* Set the font size for the text */
 }
 
 .check-circle {
-  height: 20px;
+  height: 20px; /* Set the height of the element */
 }
 
 .plan-button {
-  background-color: #fff; /* Set the background color to white */
-  color: #007fff;
-  padding: 0.75vh;
+  background-color: #fff; /* Set the color of the background */
+  color: #007fff; /* Set the color of the text */
+  padding: 0.75vh; /* Set the size of the padding */
   border: solid 1px #007fff;
-  -webkit-border-radius: 5px; /* For older versions of Safari */
-  -moz-border-radius: 5px; /* For older versions of Firefox */
-  -o-border-radius: 5px; /* For older versions of Opera */
-  border-radius: 5px; /* Standard property for border radius */
-  font-size: 2.5vh; /* Set the font size of the text */
+  font-size: 2.5vh; /* Set the font size for the text */
   font-weight: bold;
   display: none;
+  /* Apply the border radius to round the corners of the element */
+  -moz-border-radius: 5px; /* For older versions of Firefox */
+  -o-border-radius: 5px; /* For older versions of Opera */
+  -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
+  border-radius: 5px; /* Standard syntax for modern browsers (widely supported) */
 }
 
 .plan-button:hover {
@@ -323,48 +399,64 @@ to-top.active {
 }
 
 tab0d5 {
-  padding-left: 22px;
+  padding-left: 22px; /* Set the size of the left padding */
 }
 
 table {
-  word-wrap: break-word;
+  word-wrap: break-word; /* Allow words to wrap onto multiple lines */
 }
 
 thead {
   position: sticky;
   top: 0;
   z-index: 2; /* Set the stacking order of the element */
-  background: -moz-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -ms-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -o-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: -webkit-linear-gradient(#007fff 25%, #318ce7 100%);
-  background: linear-gradient(#007fff 25%, #318ce7 100%);
+  /* Set the color of the background */
+  background: -moz-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Firefox */
+  background: -ms-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For Internet Explorer 10 */
+  background: -o-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Opera */
+  background: -webkit-linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* For older versions of Chrome and Safari */
+  background: linear-gradient(
+    #007fff 25%,
+    #318ce7 100%
+  ); /* Standard syntax for modern browsers (widely supported) */
 }
 
 tbody tr:nth-child(even) {
-  background-color: #f7f7f7;
+  background-color: #f7f7f7; /* Set the color of the background */
 }
 
 th {
   border-bottom: 1px solid #ddd;
   border-left: 1px solid #fff;
-  color: #f2f2f2;
+  color: #f2f2f2; /* Set the color of the text */
 }
 
 th,
 td {
-  min-width: -webkit-fill-available; /* Set the minimum width */
+  min-width: -webkit-fill-available; /* Set the minimum width of the element */
   padding: 8px; /* Set the size of the padding */
   border-bottom: 2px solid #ddd;
 }
 
 th:nth-of-type(1),
 td:nth-of-type(1) {
-  width: 15vw;
+  width: 15vw; /* Set the width of the element */
 }
 
 td p {
-  margin: 0;
+  margin: 0; /* Set the size of the margin */
 }
 
 .row {
@@ -383,14 +475,26 @@ td p {
 
 /*noscript*/
 #enable-javascript {
-  width: 100vw; /* Set the width */
-  height: 100%; /* Set the height */
+  width: 100vw; /* Set the width of the element */
+  height: 100%; /* Set the height of the element */
+  padding: 0 25vw; /* Set the size of the padding */
   /* Use flexbox to center content inside the element */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Center items horizontally*/
-  align-items: center; /* Center items vertically */
-  padding: 0 25vw; /* Set the size of the left padding */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flebox model) */
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  display: flex; /* Standard syntax for modern browsers (widely supported) */
+
+  /* Arrange flex items */
+  -ms-flex-direction: column; /* For Internet Explorer 10 */
+  -webkit-box-orient: vertical; /* For older versions of Chrome and Safari */
+  -webkit-box-direction: normal; /* For older versions of Chrome and Safari */
+  flex-direction: column; /* Standard syntax for modern browsers (widely supported) */
+
+  justify-content: center; /* Align flex items horizontally */
+
+  /* Alig vertically */
+  -ms-flex-align: center; /* For Internet Explorer 10 */
+  -webkit-box-align: center; /* For older versions of Chrome and Safari */
+  align-items: center; /* Standard syntax for modern browsers (widely supported) */
 }
 
 #enable-javascript > details {
@@ -402,9 +506,9 @@ noscript h2 {
 }
 
 noscript p {
-  min-width: 50vw; /* Set the minimum width */
+  min-width: 50vw; /* Set the minimum width of the element */
 }
 
 noscript details {
-  min-width: 50vw; /* Set the minimum width */
+  min-width: 50vw; /* Set the minimum width of the element */
 }
