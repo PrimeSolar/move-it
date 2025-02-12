@@ -12,7 +12,7 @@ function navigationBarContainerF(navigationBarContainer) {
     navigationBarContainer.innerHTML += `
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a href="index.html" name="start" aria-label="Move It Home Page" class="navbar-brand"><img alt="Logo" title="Move It Logo" id="logo" name="move-it-logo" src="assets/box-seam-black.svg" />Move It</a>
+          <a href="index.html" name="start" aria-label="Move It Home Page" class="navbar-brand"><img alt="Logo" title="Move It Logo" id="logo" name="move-it-logo" src="assets/box-seam-blue.svg" />Move It</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -55,7 +55,7 @@ function navigationBarContainerF(navigationBarContainer) {
           </form>-->
         </div>
       </nav>
-      `
+      `;
   }
 }
 navigationBarContainerF(navigationBarContainer);
@@ -69,26 +69,28 @@ class ToTop extends HTMLElement {
         <path d="M6 15L12 9L18 15" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     </a>
-    `
+    `;
   }
 }
 customElements.define("to-top", ToTop);
 
-const toTop = document.querySelector("body").appendChild(document.createElement("to-top"));
+const toTop = document
+  .querySelector("body")
+  .appendChild(document.createElement("to-top"));
 window.addEventListener("scroll", () => {
   if (window.pageYOffset > 100) {
     toTop.classList.add("active");
   } else {
     toTop.classList.remove("active");
   }
-})
+});
 
 // Check Circle
 class CheckCircle extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    <img alt="Check circle" title="Included" id="check-circle" name="check-circle" src="assets/check-circle.svg" />
-    `
+    <img alt="Check circle" title="Included" class="check-circle" name="check-circle" src="assets/check-circle.svg" />
+    `;
   }
 }
 customElements.define("check-circle", CheckCircle);
@@ -113,9 +115,17 @@ function footerContainerF(footerContainer) {
         <p class="text-center">Copyright © <a href="https://primesolar.github.io/web-developer/" class="link-primary">Vladislav Kazantsev</a> ${year}</p>
       </footer>
     </div>
-      `
+      `;
   }
 }
 footerContainerF(footerContainer);
+
+// Contact Us Link Titles
+const contactUsLinks = document.querySelectorAll("a");
+for (let x of contactUsLinks) {
+  if (x.getAttribute("href") === "contact.html") {
+    x.title = "Navigate to Our Contact Page";
+  }
+}
 
 console.log("elements.js is completed");
