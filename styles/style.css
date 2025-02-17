@@ -89,7 +89,7 @@ to-top {
 }
 
 to-top.active {
-  bottom: 56px; /* Position the element 56 pixels from the bottom of the viewport */
+  bottom: 3.5rem; /* Position the element 56 pixels from the bottom of the viewport */
   pointer-events: auto;
   opacity: 1;
 }
@@ -183,7 +183,6 @@ to-top.active {
   -o-border-radius: 10px; /* For older versions of Opera */
   -webkit-border-radius: 10px; /* For older versions of Chrome and Safari */
   border-radius: 10px; /* Standard syntax for modern browsers (widely supported) */
-  /* Set the color of the background */
   background: -moz-linear-gradient(
     #007fff 25%,
     #318ce7 100%
@@ -326,7 +325,6 @@ to-top.active {
   font-weight: bold;
   font-size: 2.5vh; /* Set the font size for the text */
   color: #ffffff; /* Set the color of the text */
-  /* Set the color of the background */
   background: -moz-linear-gradient(
     #007fff 25%,
     #318ce7 100%
