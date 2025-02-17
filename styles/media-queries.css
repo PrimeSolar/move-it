@@ -81,7 +81,7 @@
   }
 
   to-top.active {
-    bottom: 115px;
+    bottom: 7rem;
   }
 }
 
@@ -95,5 +95,11 @@
 @media (max-height: 430px) {
   iframe {
     height: 80vh;
+  }
+}
+
+@media screen and (max-width: 404px) {
+  to-top.active {
+    bottom: 9.5rem;
   }
 }
