@@ -12,7 +12,7 @@ function navigationBarContainerF(navigationBarContainer) {
     navigationBarContainer.innerHTML += `
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a href="index.html" name="start" aria-label="Move It Home Page" class="navbar-brand"><img alt="Logo" title="Move It Logo" id="logo" name="move-it-logo" src="assets/box-seam-blue.svg" />Move It</a>
+          <a href="index.html" name="start" aria-label="The Move It Home Page" class="navbar-brand"><img alt="Logo" title="The Move It Logo" id="logo" name="move-it-logo" src="assets/box-seam-blue.svg" />Move It</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -89,7 +89,7 @@ window.addEventListener("scroll", () => {
 class CheckCircle extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    <img alt="Check circle" title="Included" class="check-circle" name="check-circle" src="assets/check-circle.svg" />
+    <img alt="A Check Circle" title="Included" class="check-circle" name="check-circle" src="assets/check-circle.svg" />
     `;
   }
 }
