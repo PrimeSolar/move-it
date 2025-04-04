@@ -6,13 +6,13 @@
 // Navigation Bar
 navigationBarContainer = document.querySelector("#navigationBarContainer");
 
-function navigationBarContainerF(navigationBarContainer) {
-  if (navigationBarContainer != null) {
+function createNavigationBar(navigationBarContainer) {
+  if (navigationBarContainer) {
     // Define navigation bar content:
     navigationBarContainer.innerHTML += `
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a href="index.html" name="start" aria-label="The Move It Home Page" class="navbar-brand"><img alt="Logo" title="The Move It Logo" id="logo" name="move-it-logo" src="assets/box-seam-blue.svg" />Move It</a>
+          <a href="index.html" name="start" aria-label="The Move It Home Page" class="navbar-brand"><img alt="The Move It Logo" title="The Move It Logo" id="logo" name="move-it-logo" src="assets/box-seam-blue.svg" />Move It</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -58,7 +58,7 @@ function navigationBarContainerF(navigationBarContainer) {
       `;
   }
 }
-navigationBarContainerF(navigationBarContainer);
+createNavigationBar(navigationBarContainer);
 
 // Scroll to Top Button
 class ToTop extends HTMLElement {
@@ -89,7 +89,7 @@ window.addEventListener("scroll", () => {
 class CheckCircle extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
-    <img alt="A Check Circle" title="Included" class="check-circle" name="check-circle" src="assets/check-circle.svg" />
+    <img alt="Check Circle" title="Included" class="check-circle" name="check-circle" src="assets/check-circle.svg" />
     `;
   }
 }
@@ -98,12 +98,12 @@ customElements.define("check-circle", CheckCircle);
 // Footer
 footerContainer = document.querySelector("#footerContainer");
 const year = new Date().getFullYear();
-function footerContainerF(footerContainer) {
-  if (footerContainer != null) {
+function createFooter(footerContainer) {
+  if (footerContainer) {
     // Define footer content:
     footerContainer.innerHTML += `
     <div class="container pt-1 mt-1">
-      <footer class="pt-1 mt-5 mb-3">
+      <div class="pt-1 mt-5 mb-3">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item"><a class="nav-link px-2 text-body-secondary" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link px-2 text-body-secondary" href="about.html">About</a></li>
@@ -113,12 +113,12 @@ function footerContainerF(footerContainer) {
           <li class="nav-item"><a class="nav-link px-2 link-primary" href="contact.html">Contact</a></li>
         </ul>
         <p class="text-center">Copyright © <a href="https://primesolar.github.io/web-developer/" class="link-primary">Vladislav Kazantsev</a> ${year}</p>
-      </footer>
+      </div>
     </div>
       `;
   }
 }
-footerContainerF(footerContainer);
+createFooter(footerContainer);
 
 // Contact Us Link Titles
 const contactUsLinks = document.querySelectorAll("a");
