@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
 body {
   margin: 0; /* Set the size of the margin */
   padding: 0; /* Set the size of the padding */
@@ -509,4 +513,21 @@ noscript p {
 
 noscript details {
   min-width: 50vw; /* Set the minimum width of the element */
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #318ce7;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #007fff;
 }
