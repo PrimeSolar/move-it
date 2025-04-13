@@ -103,3 +103,50 @@
     bottom: 9.5rem;
   }
 }
+
+@media print {
+  body {
+    font-size: 12pt; /* Optimal font size */
+    color: #000000; /* Remove colored text to save ink */
+    background: none !important; /* Remove background */
+    width: 100%;
+    max-width: 800px; /* Reduce the width */
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    page-break-after: avoid; /* Don't break a page after headings */
+  }
+
+  p {
+    page-break-inside: avoid; /* Don't break a page in the middle of a paragraph */
+  }
+
+  button,
+  .w-100.aos-item__inner {
+    display: none;
+  }
+
+  button.btn {
+    color: #808080;
+  }
+
+  a {
+    color: #000000 !important; /* Remove colored links */
+    text-decoration: underline !important; /* Set the underline decoration */
+  }
+
+  a::after {
+    /* content: " (" attr(href) ")"; */
+    font-size: 10pt;
+    color: #808080;
+  }
+
+  a.navbar-brand {
+    text-decoration: none !important;
+  }
+}
