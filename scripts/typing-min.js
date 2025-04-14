@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(()=>{const t=document.querySelectorAll(".typing");t.length>0&&t.forEach((t=>{const e=t.textContent;t.textContent="",((t,e,n,o)=>{let c=0;const d=()=>{c<e.length?(t.textContent+=e.charAt(c),c++,setTimeout(d,n)):(t.classList.add("typing-finished"),o&&o())};d()})(t,e,100,(()=>{}))}))}));
