@@ -531,3 +531,30 @@ noscript details {
 ::-webkit-scrollbar-thumb:hover {
   background: #007fff;
 }
+
+.typing {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid #007fff;
+  animation: typing 1.5s steps(17, end), blink 0.75s step-end infinite,
+    brighten start 1s;
+}
+
+.typing-finished {
+  border-right: none;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
