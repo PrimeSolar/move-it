@@ -1,4 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const style = document.createElement("style");
+  style.textContent = `
+/* Slide Animation */
+
+.slide-animation {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.57s ease-out, transform 0.57s ease-out;
+}
+
+.slide-animation.visible {
+  opacity: 1;
+  transform: translateY(0);
+}`;
+  document.head.appendChild(style);
+
   const animatedElements = document.querySelectorAll(
     "img:not(.d-block.w-100.rounded-5), p"
   );
