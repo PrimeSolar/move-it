@@ -1,1 +1,1 @@
-const p=document.getElementsByTagName("p");for(let e of p)null==e.closest(".text-center")&&(e.innerHTML="&nbsp;&nbsp;"+e.innerHTML);
+document.addEventListener("DOMContentLoaded",(()=>{const e=document.getElementsByTagName("p");for(let n of e)null==n.closest(".text-center")&&(n.innerHTML="&nbsp;&nbsp;"+n.innerHTML)}));
