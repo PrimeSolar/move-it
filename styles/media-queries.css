@@ -1,8 +1,11 @@
 @media screen {
   h1 {
     background: linear-gradient(to right, #1177ff, #1ab1ff);
-    background-clip: text;
+    -webkit-background-clip: text; /* For earlier versions of Chrome and Safari */
+    background-clip: text; /* Standard syntax for modern browsers (widely supported) */
     -webkit-text-fill-color: transparent;
+    /* background-size: 200% 100%;
+    animation: gradientAnimation 5s ease infinite; */
   }
 
   img:not(#logo, .check-circle),
@@ -72,7 +75,29 @@
   }
 }
 
+@media (min-width: 992px) {
+  .row-cols-lg-3 > * {
+    flex: 0 0 auto;
+    width: calc(33.33333333% - 10px);
+  }
+
+  .col-lg-4 {
+    flex: 0 0 auto;
+    width: calc(33.33333333% - 10px);
+  }
+
+  #theme {
+    position: absolute;
+    right: 12px;
+    left: auto;
+  }
+}
+
 @media (max-width: 768px) {
+  #footerContainer {
+    padding-bottom: 3rem;
+  }
+
   .row > .aos-item {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -81,7 +106,13 @@
   }
 
   to-top.active {
-    bottom: 7rem;
+    bottom: 10.75rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .row-cols-sm-2 > * {
+    width: calc(50% - 10px);
   }
 }
 
@@ -90,9 +121,7 @@
   td:nth-of-type(1) {
     max-width: 27vw;
   }
-}
 
-@media (max-height: 430px) {
   iframe {
     height: 80vh;
   }
@@ -100,7 +129,7 @@
 
 @media screen and (max-width: 404px) {
   to-top.active {
-    bottom: 9.5rem;
+    bottom: 14rem;
   }
 }
 
