@@ -1,6 +1,6 @@
 # <img src="assets/logo.svg" width="29" height="auto" alt="The Move It Logo"> Move It
 
-Welcome to Move It! Here, we are dedicated to providing exceptional moving services that make your relocation experience enjoyable. We understand that moving can be a difficult task, and our mission is to eliminate the stress and complications often associated with it.
+&nbsp;&nbsp;Welcome to Move It! Here, we are dedicated to providing exceptional moving services that make your relocation experience enjoyable. We understand that moving can be a difficult task, and our mission is to eliminate the stress and complications often associated with it.
 
 - [ Move It](#-move-it)
   - [Interface](#interface)
@@ -13,9 +13,11 @@ Welcome to Move It! Here, we are dedicated to providing exceptional moving servi
 
 ## Interface
 
-![Move It](assets/interface.jpg)
+&nbsp;&nbsp;The interface is designed to be user-friendly and visually appealing.
 
-_The Move It Interface_
+<!--prettier-ignore-->
+<img alt="Move It" src="assets/interface.jpg"/>
+<p align="center"><em>The Move It Interface</em></p>
 
 <a name="our-services"></a>
 
@@ -36,17 +38,17 @@ _The Move It Interface_
 
 ## Support My Work ☕
 
-If you enjoy my project and would like to support my work, consider buying me a coffee! Your contributions help me stay energized and motivated to create even more amazing content.
+&nbsp;&nbsp;If you enjoy my project and would like to support my work, consider buying me a coffee! Your contributions help me stay energized and motivated to create even more amazing content.
 
-Every cup of coffee you buy not only fuels my passion but also allows me to dedicate more time to developing innovative projects and sharing knowledge. Whether it's a small gesture or a generous contribution, every bit is greatly appreciated!
+&nbsp;&nbsp;Every cup of coffee you buy not only fuels my passion but also allows me to dedicate more time to developing innovative projects and sharing knowledge. Whether it's a small gesture or a generous contribution, every bit is greatly appreciated!
 
 **Click the image to support my work:**
 
 <a href="https://coff.ee/cocacola">
-    <img src="assets/coffee.jpg" width="370" height="auto" alt="Buy Me a Coffee"/>
+  <img src="assets/coffee.jpg" width="370" height="auto" alt="Buy Me a Coffee"/>
 </a>
 
-Thank you for your support! Together, we can create something wonderful! 💖
+&nbsp;&nbsp;Thank you for your support! Together, we can create something wonderful! 💖
 
 <a name="contact-me"></a>
 
