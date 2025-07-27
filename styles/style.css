@@ -142,7 +142,7 @@ to-top {
 }
 
 to-top.active {
-  bottom: 9.6rem; /* Position the element 56 pixels from the bottom of the viewport */
+  bottom: 9.6rem;
   pointer-events: auto;
   opacity: 1;
 }
@@ -177,6 +177,10 @@ to-top.active {
   align-items: center; /* Standard syntax for modern browsers (widely supported) */
 }
 
+.carousel-indicators {
+  bottom: 5vh;
+}
+
 #carouselIndicators {
   height: 85vh; /* Set the height of the element */
   width: 50vw; /* Set the width of the element */
@@ -184,7 +188,6 @@ to-top.active {
 
 .carousel-inner {
   height: 85vh; /* Set the height of the element */
-  width: 50vw; /* Set the width of the element */
   /* Use flexbox to center content inside the element */
   display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
   display: -webkit-box; /* For older versions of Chrome and Safari (pre-flexbox) */
@@ -580,6 +583,26 @@ noscript p {
 
 noscript details {
   min-width: 50vw; /* Set the minimum width of the element */
+}
+
+.bmc-button {
+  display: block; /* Make the element a block-level element */
+  width: fit-content; /* Set the width for the element */
+  height: 3rem; /* Set the height for the element */
+  margin: 0.75rem auto 0; /* Set the size of the margin for the element */
+  background-color: #ff843f !important; /* Set the color of the background for the element */
+  color: #ffffff; /* Set the color of the text for the element */
+  font-family: "Cookie", cursive; /* Set the family of the font for the element */
+  font-weight: bold; /* Set the weight of the font for the element */
+  text-decoration: none; /* Set the decoration of the text for the element */
+  text-shadow: 1px 1px 2px #00000080; /* Set the shadow of the text for the element */
+  border: none; /* Set the border for the element */
+  border-radius: 5px; /* Set the radius of the border for the element */
+  padding: 10px 20px; /* Set the padding for the element */
+  cursor: pointer; /* Set the cursor for the element */
+  outline: none; /* Set the outline for the element */
+  transition: background-color 0.3s; /* Set the transition for the element */
+  box-shadow: 0 4px 8px #00000037; /* Set the shadow for the element */
 }
 
 ::-webkit-scrollbar {
