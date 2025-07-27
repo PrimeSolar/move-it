@@ -62,7 +62,8 @@
 }
 
 #chat-header {
-  padding: 10px;
+  height: 3rem;
+  padding: 8px;
   font-size: 1.2em;
   text-align: center;
   background: linear-gradient(to right, #1177ff, #1ab1ff);
@@ -145,12 +146,8 @@
     bottom: 10px;
   }
 
-  #chat-header {
-    padding: 12px;
-  }
-
   #chat-body {
-    max-height: 75vh;
+    max-height: 50vh;
     padding: 8px;
   }
 
@@ -201,6 +198,52 @@
           : "unwrapped";
         await saveChatWindowState(newState);
       });
+
+      function applyToTopStyles() {
+        const chatBody = document.querySelector("#chat-body");
+        if (window.matchMedia("(max-height: 500px)").matches) {
+          if (chatBody.classList.contains("hide")) {
+            toTop.style.bottom = "5.5rem";
+            toTop.style.right = "25px";
+          } else {
+            toTop.style.bottom = "0.75rem";
+            toTop.style.right = "321px";
+          }
+        } else if (window.matchMedia("(max-width: 500px)").matches) {
+          if (chatBody.classList.contains("hide")) {
+            toTop.style.bottom = "5.5rem";
+            toTop.style.right = "25px";
+          } else {
+            toTop.style.bottom = "37rem";
+            toTop.style.right = "25px";
+          }
+        } else if (
+          window.matchMedia("(max-width: 1400px)").matches &&
+          window.matchMedia("(max-height: 700px)").matches
+        ) {
+          if (chatBody.classList.contains("hide")) {
+            toTop.style.bottom = "5.5rem";
+            toTop.style.right = "25px";
+          } else {
+            toTop.style.bottom = "34rem";
+            toTop.style.right = "25px";
+          }
+        } else {
+          if (chatBody.classList.contains("hide")) {
+            toTop.style.bottom = "12.4rem";
+            toTop.style.right = "25px";
+          } else {
+            toTop.style.bottom = "50rem";
+            toTop.style.right = "25px";
+          }
+        }
+        console.log(innerWidth);
+      }
+      applyToTopStyles();
+      window.addEventListener("resize", applyToTopStyles);
+      document
+        .querySelector("#chat-header")
+        .addEventListener("click", applyToTopStyles);
 
       // Load saved chat messages from the database
       loadChatMessages();
