@@ -3,16 +3,18 @@
 // that can be used across different parts of the project. These elements go beyond what browsers provide,
 // allowing for expanded capabilities and functionality in the project.
 
-// Navigation Bar
+// The Navigation Bar
 navigationBarContainer = document.querySelector("#navigationBarContainer");
 
 function createNavigationBar(navigationBarContainer) {
   if (navigationBarContainer) {
-    // Define navigation bar content:
+    // Define the navigation bar content:
     navigationBarContainer.innerHTML += `
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" role="navigation" aria-label="Main Navigation">
         <div class="container-fluid">
-          <a href="index.html" name="start" aria-label="The Move It Home Page" class="navbar-brand"><img alt="The Move It Logo" title="The Move It Logo" id="logo" name="move-it-logo" src="assets/box-seam-blue.svg" />Move It</a>
+          <a href="index.html" name="start" aria-label="The Move It Home Page" class="navbar-brand">
+            <img alt="The Move It Logo" title="The Move It Logo" id="logo" name="move-it-logo" src="assets/box-seam-blue.svg" />Move It
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -46,13 +48,16 @@ function createNavigationBar(navigationBarContainer) {
               <li class="nav-item">
                 <a class="nav-link link-primary" href="contact.html">Contact</a>
               </li>
+              <button id="theme" type="button" onclick="toggleTheme()" aria-label="Toggle Theme">
+                Toggle Theme
+              </button>
             </ul>
+            <!--
+            <form class="d-flex ms-auto" role="search">
+              <input class="form-control me-2" type="search" placeholder="Postcode" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Check</button>
+            </form>-->
           </div>
-          <!--
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Postcode" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Check</button>
-          </form>-->
         </div>
       </nav>
       `;
@@ -60,7 +65,7 @@ function createNavigationBar(navigationBarContainer) {
 }
 createNavigationBar(navigationBarContainer);
 
-// Scroll to Top Button
+// The Scroll to Top Button
 class ToTop extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
@@ -95,16 +100,18 @@ class CheckCircle extends HTMLElement {
 }
 customElements.define("check-circle", CheckCircle);
 
-// Footer
-footerContainer = document.querySelector("#footerContainer");
+// The Footer
+footer = document.querySelector("footer");
+footer.style.display = "flex";
+footer.style.flexDirection = "column";
 const year = new Date().getFullYear();
-function createFooter(footerContainer) {
-  if (footerContainer) {
-    // Define footer content:
+function createFooter(footer) {
+  if (footer) {
+    // Define the footer content:
     footerContainer.innerHTML += `
-    <div class="container pt-1 mt-1">
-      <div class="pt-1 mt-5 mb-3">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+    <div class="container pt-1 pb-1">
+      <div class="pt-1 pb-1 mt-1 mb-1">
+        <ul class="nav justify-content-center border-bottom pb-3 pt-3 mb-3">
           <li class="nav-item"><a class="nav-link px-2 text-body-secondary" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link px-2 text-body-secondary" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link px-2 text-body-secondary" href="pricing.html">Pricing</a></li>
@@ -112,15 +119,25 @@ function createFooter(footerContainer) {
           <li class="nav-item"><a class="nav-link px-2 text-body-secondary" href="glossary.html">Glossary</a></li>
           <li class="nav-item"><a class="nav-link px-2 link-primary" href="contact.html">Contact</a></li>
         </ul>
-        <p class="text-center">Copyright © <a href="https://primesolar.github.io/web-developer/" class="link-primary">Vladislav Kazantsev</a> ${year}</p>
+        <p class="text-center" style="margin: 0">Copyright © <a href="https://primesolar.github.io/web-developer/" class="link-primary">Vladislav Kazantsev</a> ${year}</p>
+        <a type="button" href="https://www.buymeacoffee.com/CocaCola" class="bmc-button" target="_blank">☕ Buy me a coffee</a>
       </div>
     </div>
       `;
+    function applyFooterStyles() {
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        footer.style.paddingBottom = "4rem";
+      } else {
+        footer.style.paddingBottom = "";
+      }
+    }
+    applyFooterStyles();
+    window.addEventListener("resize", applyFooterStyles);
   }
 }
-createFooter(footerContainer);
+createFooter(footer);
 
-// Contact Us Link Titles
+// The Contact Us Link Titles
 const contactUsLinks = document.querySelectorAll("a");
 for (let x of contactUsLinks) {
   if (x.getAttribute("href") === "contact.html") {
