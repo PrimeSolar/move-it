@@ -7,7 +7,7 @@
 gAccess = document.querySelector("#gAccess");
 
 function gAccessF(gAccess) {
-  if (gAccess != null && gAccess.innerHTML == "") {
+  if (gAccess != null && gAccess.innerHTML === "") {
     gAccess.innerHTML += `
 <td class="text-center fw-bold"><a name="gAccess"></a>
 Access
@@ -24,7 +24,7 @@ gAccessF(gAccess);
 gActualCharges = document.querySelector("#gActualCharges");
 
 function gActualChargesF(gActualCharges) {
-  if (gActualCharges != null && gActualCharges.innerHTML == "") {
+  if (gActualCharges != null && gActualCharges.innerHTML === "") {
     gActualCharges.innerHTML += `
 <td class="text-center fw-bold"><a name="gActualCharges"></a>
 Actual Charges
@@ -41,7 +41,7 @@ gActualChargesF(gActualCharges);
 gAdditionalCharges = document.querySelector("#gAdditionalCharges");
 
 function gAdditionalChargesF(gAdditionalCharges) {
-  if (gAdditionalCharges != null && gAdditionalCharges.innerHTML == "") {
+  if (gAdditionalCharges != null && gAdditionalCharges.innerHTML === "") {
     gAdditionalCharges.innerHTML += `
 <td class="text-center fw-bold"><a name="gAdditionalCharges"></a>
 Additional Charges
@@ -58,7 +58,7 @@ gAdditionalChargesF(gAdditionalCharges);
 gAgent = document.querySelector("#gAgent");
 
 function gAgentF(gAgent) {
-  if (gAgent != null && gAgent.innerHTML == "") {
+  if (gAgent != null && gAgent.innerHTML === "") {
     gAgent.innerHTML += `
 <td class="text-center fw-bold"><a name="gAgent"></a>
 Agent
@@ -75,7 +75,7 @@ gAgentF(gAgent);
 gAgreedDeliveryDate = document.querySelector("#gAgreedDeliveryDate");
 
 function gAgreedDeliveryDateF(gAgreedDeliveryDate) {
-  if (gAgreedDeliveryDate != null && gAgreedDeliveryDate.innerHTML == "") {
+  if (gAgreedDeliveryDate != null && gAgreedDeliveryDate.innerHTML === "") {
     gAgreedDeliveryDate.innerHTML += `
 <td class="text-center fw-bold"><a name="gAgreedDeliveryDate"></a>
 Agreed Delivery Date
@@ -92,9 +92,9 @@ gAgreedDeliveryDateF(gAgreedDeliveryDate);
 gApplianceService = document.querySelector("#gApplianceService");
 
 function gApplianceServiceF(gApplianceService) {
-  if (gApplianceService != null && gApplianceService.innerHTML == "") {
+  if (gApplianceService != null && gApplianceService.innerHTML === "") {
     gApplianceService.innerHTML += `
-<td class="text-center fw-bold"><a name="gApplianceService"></a>
+<td class="text-center fw-bold" aria-labelledby="gApplianceService"><a name="gApplianceService"></a>
 Appliance Service
 </td>
 <td><p>
@@ -109,7 +109,7 @@ gApplianceServiceF(gApplianceService);
 gApplianceDolly = document.querySelector("#gApplianceDolly");
 
 function gApplianceDollyF(gApplianceDolly) {
-  if (gApplianceDolly != null && gApplianceDolly.innerHTML == "") {
+  if (gApplianceDolly != null && gApplianceDolly.innerHTML === "") {
     gApplianceDolly.innerHTML += `
 <td class="text-center fw-bold"><a name="gApplianceDolly"></a>
 Appliance Dolly
@@ -126,7 +126,7 @@ gApplianceDollyF(gApplianceDolly);
 gAssessedValue = document.querySelector("#gAssessedValue");
 
 function gAssessedValueF(gAssessedValue) {
-  if (gAssessedValue != null && gAssessedValue.innerHTML == "") {
+  if (gAssessedValue != null && gAssessedValue.innerHTML === "") {
     gAssessedValue.innerHTML += `
 <td class="text-center fw-bold"><a name="gAssessedValue"></a>
 Assessed Value
@@ -143,7 +143,7 @@ gAssessedValueF(gAssessedValue);
 gBillOfLading = document.querySelector("#gBillOfLading");
 
 function gBillOfLadingF(gBillOfLading) {
-  if (gBillOfLading != null && gBillOfLading.innerHTML == "") {
+  if (gBillOfLading != null && gBillOfLading.innerHTML === "") {
     gBillOfLading.innerHTML += `
 <td class="text-center fw-bold"><a name="gBillOfLading"></a>
 Bill of Lading
@@ -160,7 +160,7 @@ gBillOfLadingF(gBillOfLading);
 gBinding = document.querySelector("#gBinding");
 
 function gBindingF(gBinding) {
-  if (gBinding != null && gBinding.innerHTML == "") {
+  if (gBinding != null && gBinding.innerHTML === "") {
     gBinding.innerHTML += `
 <td class="text-center fw-bold"><a name="gBinding"></a>
 Binding
@@ -177,7 +177,7 @@ gBindingF(gBinding);
 gBulkyArticleCharge = document.querySelector("#gBulkyArticleCharge");
 
 function gBulkyArticleChargeF(gBulkyArticleCharge) {
-  if (gBulkyArticleCharge != null && gBulkyArticleCharge.innerHTML == "") {
+  if (gBulkyArticleCharge != null && gBulkyArticleCharge.innerHTML === "") {
     gBulkyArticleCharge.innerHTML += `
 <td class="text-center fw-bold"><a name="gBulkyArticleCharge"></a>
 Bulky Article Charge
@@ -194,7 +194,7 @@ gBulkyArticleChargeF(gBulkyArticleCharge);
 gCargo = document.querySelector("#gCargo");
 
 function gCargoF(gCargo) {
-  if (gCargo != null && gCargo.innerHTML == "") {
+  if (gCargo != null && gCargo.innerHTML === "") {
     gCargo.innerHTML += `
 <td class="text-center fw-bold"><a name="gCargo"></a>
 Cargo
@@ -211,7 +211,7 @@ gCargoF(gCargo);
 gCarrier = document.querySelector("#gCarrier");
 
 function gCarrierF(gCarrier) {
-  if (gCarrier != null && gCarrier.innerHTML == "") {
+  if (gCarrier != null && gCarrier.innerHTML === "") {
     gCarrier.innerHTML += `
 <td class="text-center fw-bold"><a name="gCarrier"></a>
 Carrier
@@ -228,7 +228,7 @@ gCarrierF(gCarrier);
 gCartage = document.querySelector("#gCartage");
 
 function gCartageF(gCartage) {
-  if (gCartage != null && gCartage.innerHTML == "") {
+  if (gCartage != null && gCartage.innerHTML === "") {
     gCartage.innerHTML += `
 <td class="text-center fw-bold"><a name="gCartage"></a>
 Cartage
@@ -245,7 +245,7 @@ gCartageF(gCartage);
 gCarton = document.querySelector("#gCarton");
 
 function gCartonF(gCarton) {
-  if (gCarton != null && gCarton.innerHTML == "") {
+  if (gCarton != null && gCarton.innerHTML === "") {
     gCarton.innerHTML += `
 <td class="text-center fw-bold"><a name="gCarton"></a>
 Carton
@@ -262,7 +262,7 @@ gCartonF(gCarton);
 gCashonDeliveryCOD = document.querySelector("#gCashonDeliveryCOD");
 
 function gCashonDeliveryCODF(gCashonDeliveryCOD) {
-  if (gCashonDeliveryCOD != null && gCashonDeliveryCOD.innerHTML == "") {
+  if (gCashonDeliveryCOD != null && gCashonDeliveryCOD.innerHTML === "") {
     gCashonDeliveryCOD.innerHTML += `
 <td class="text-center fw-bold"><a name="gCashonDeliveryCOD"></a>
 Cash on Delivery (C.O.D)
@@ -279,7 +279,7 @@ gCashonDeliveryCODF(gCashonDeliveryCOD);
 gChangeOrder = document.querySelector("#gChangeOrder");
 
 function gChangeOrderF(gChangeOrder) {
-  if (gChangeOrder != null && gChangeOrder.innerHTML == "") {
+  if (gChangeOrder != null && gChangeOrder.innerHTML === "") {
     gChangeOrder.innerHTML += `
 <td class="text-center fw-bold"><a name="gChangeOrder"></a>
 Change Order
@@ -296,7 +296,7 @@ gChangeOrderF(gChangeOrder);
 gCrating = document.querySelector("#gCrating");
 
 function gCratingF(gCrating) {
-  if (gCrating != null && gCrating.innerHTML == "") {
+  if (gCrating != null && gCrating.innerHTML === "") {
     gCrating.innerHTML += `
 <td class="text-center fw-bold"><a name="gCrating"></a>
 Crating
@@ -313,7 +313,7 @@ gCratingF(gCrating);
 gCrossRegionalMove = document.querySelector("#gCrossRegionalMove");
 
 function gCrossRegionalMoveF(gCrossRegionalMove) {
-  if (gCrossRegionalMove != null && gCrossRegionalMove.innerHTML == "") {
+  if (gCrossRegionalMove != null && gCrossRegionalMove.innerHTML === "") {
     gCrossRegionalMove.innerHTML += `
 <td class="text-center fw-bold"><a name="gCrossRegionalMove"></a>
 Cross-Regional Move
@@ -330,7 +330,7 @@ gCrossRegionalMoveF(gCrossRegionalMove);
 gCube = document.querySelector("#gCube");
 
 function gCubeF(gCube) {
-  if (gCube != null && gCube.innerHTML == "") {
+  if (gCube != null && gCube.innerHTML === "") {
     gCube.innerHTML += `
 <td class="text-center fw-bold"><a name="gCube"></a>
 Cube
@@ -347,7 +347,7 @@ gCubeF(gCube);
 gCubeSheet = document.querySelector("#gCubeSheet");
 
 function gCubeSheetF(gCubeSheet) {
-  if (gCubeSheet != null && gCubeSheet.innerHTML == "") {
+  if (gCubeSheet != null && gCubeSheet.innerHTML === "") {
     gCubeSheet.innerHTML += `
 <td class="text-center fw-bold"><a name="gCubeSheet"></a>
 Cube Sheet
@@ -364,7 +364,7 @@ gCubeSheetF(gCubeSheet);
 gDeliveryReport = document.querySelector("#gDeliveryReport");
 
 function gDeliveryReportF(gDeliveryReport) {
-  if (gDeliveryReport != null && gDeliveryReport.innerHTML == "") {
+  if (gDeliveryReport != null && gDeliveryReport.innerHTML === "") {
     gDeliveryReport.innerHTML += `
 <td class="text-center fw-bold"><a name="gDeliveryReport"></a>
 Delivery Report
@@ -381,7 +381,7 @@ gDeliveryReportF(gDeliveryReport);
 gDeliveryWindow = document.querySelector("#gDeliveryWindow");
 
 function gDeliveryWindowF(gDeliveryWindow) {
-  if (gDeliveryWindow != null && gDeliveryWindow.innerHTML == "") {
+  if (gDeliveryWindow != null && gDeliveryWindow.innerHTML === "") {
     gDeliveryWindow.innerHTML += `
 <td class="text-center fw-bold"><a name="gDeliveryWindow"></a>
 Delivery Window
@@ -398,7 +398,7 @@ gDeliveryWindowF(gDeliveryWindow);
 gDestinationAgent = document.querySelector("#gDestinationAgent");
 
 function gDestinationAgentF(gDestinationAgent) {
-  if (gDestinationAgent != null && gDestinationAgent.innerHTML == "") {
+  if (gDestinationAgent != null && gDestinationAgent.innerHTML === "") {
     gDestinationAgent.innerHTML += `
 <td class="text-center fw-bold"><a name="gDestinationAgent"></a>
 Destination Agent
@@ -415,7 +415,7 @@ gDestinationAgentF(gDestinationAgent);
 gDiversion = document.querySelector("#gDiversion");
 
 function gDiversionF(gDiversion) {
-  if (gDiversion != null && gDiversion.innerHTML == "") {
+  if (gDiversion != null && gDiversion.innerHTML === "") {
     gDiversion.innerHTML += `
 <td class="text-center fw-bold"><a name="gDiversion"></a>
 Diversion
@@ -432,7 +432,7 @@ gDiversionF(gDiversion);
 gDivider = document.querySelector("#gDivider");
 
 function gDividerF(gDivider) {
-  if (gDivider != null && gDivider.innerHTML == "") {
+  if (gDivider != null && gDivider.innerHTML === "") {
     gDivider.innerHTML += `
 <td class="text-center fw-bold"><a name="gDivider"></a>
 Divider
@@ -449,7 +449,7 @@ gDividerF(gDivider);
 gDispatcher = document.querySelector("#gDispatcher");
 
 function gDispatcherF(gDispatcher) {
-  if (gDispatcher != null && gDispatcher.innerHTML == "") {
+  if (gDispatcher != null && gDispatcher.innerHTML === "") {
     gDispatcher.innerHTML += `
 <td class="text-center fw-bold"><a name="gDispatcher"></a>
 Dispatcher
@@ -466,7 +466,7 @@ gDispatcherF(gDispatcher);
 gDoorToDoorService = document.querySelector("#gDoorToDoorService");
 
 function gDoorToDoorServiceF(gDoorToDoorService) {
-  if (gDoorToDoorService != null && gDoorToDoorService.innerHTML == "") {
+  if (gDoorToDoorService != null && gDoorToDoorService.innerHTML === "") {
     gDoorToDoorService.innerHTML += `
 <td class="text-center fw-bold"><a name="gDoorToDoorService"></a>
 Door to Door Service
@@ -483,7 +483,7 @@ gDoorToDoorServiceF(gDoorToDoorService);
 gElevatorCharge = document.querySelector("#gElevatorCharge");
 
 function gElevatorChargeF(gElevatorCharge) {
-  if (gElevatorCharge != null && gElevatorCharge.innerHTML == "") {
+  if (gElevatorCharge != null && gElevatorCharge.innerHTML === "") {
     gElevatorCharge.innerHTML += `
 <td class="text-center fw-bold"><a name="gElevatorCharge"></a>
 Elevator Charge
@@ -500,7 +500,7 @@ gElevatorChargeF(gElevatorCharge);
 gEnRoute = document.querySelector("#gEnRoute");
 
 function gEnRouteF(gEnRoute) {
-  if (gEnRoute != null && gEnRoute.innerHTML == "") {
+  if (gEnRoute != null && gEnRoute.innerHTML === "") {
     gEnRoute.innerHTML += `
 <td class="text-center fw-bold"><a name="gEnRoute"></a>
 En Route
@@ -517,7 +517,7 @@ gEnRouteF(gEnRoute);
 gEssentialsBox = document.querySelector("#gEssentialsBox");
 
 function gEssentialsBoxF(gEssentialsBox) {
-  if (gEssentialsBox != null && gEssentialsBox.innerHTML == "") {
+  if (gEssentialsBox != null && gEssentialsBox.innerHTML === "") {
     gEssentialsBox.innerHTML += `
 <td class="text-center fw-bold"><a name="gEssentialsBox"></a>
 Essentials Box
@@ -534,7 +534,7 @@ gEssentialsBoxF(gEssentialsBox);
 gExtendedLiability = document.querySelector("#gExtendedLiability");
 
 function gExtendedLiabilityF(gExtendedLiability) {
-  if (gExtendedLiability != null && gExtendedLiability.innerHTML == "") {
+  if (gExtendedLiability != null && gExtendedLiability.innerHTML === "") {
     gExtendedLiability.innerHTML += `
 <td class="text-center fw-bold"><a name="gExtendedLiability"></a>
 Extended Liability
@@ -551,7 +551,7 @@ gExtendedLiabilityF(gExtendedLiability);
 gFlightCharge = document.querySelector("#gFlightCharge");
 
 function gFlightChargeF(gFlightCharge) {
-  if (gFlightCharge != null && gFlightCharge.innerHTML == "") {
+  if (gFlightCharge != null && gFlightCharge.innerHTML === "") {
     gFlightCharge.innerHTML += `
 <td class="text-center fw-bold"><a name="gFlightCharge"></a>
 Flight Charge
@@ -568,7 +568,7 @@ gFlightChargeF(gFlightCharge);
 gFullServiceMove = document.querySelector("#gFullServiceMove");
 
 function gFullServiceMoveF(gFullServiceMove) {
-  if (gFullServiceMove != null && gFullServiceMove.innerHTML == "") {
+  if (gFullServiceMove != null && gFullServiceMove.innerHTML === "") {
     gFullServiceMove.innerHTML += `
 <td class="text-center fw-bold"><a name="gFullServiceMove"></a>
 Full Service Move
@@ -585,7 +585,7 @@ gFullServiceMoveF(gFullServiceMove);
 gFurnitureBlankets = document.querySelector("#gFurnitureBlankets");
 
 function gFurnitureBlanketsF(gFurnitureBlankets) {
-  if (gFurnitureBlankets != null && gFurnitureBlankets.innerHTML == "") {
+  if (gFurnitureBlankets != null && gFurnitureBlankets.innerHTML === "") {
     gFurnitureBlankets.innerHTML += `
 <td class="text-center fw-bold"><a name="gFurnitureBlankets"></a>
 Furniture Blankets
@@ -602,7 +602,7 @@ gFurnitureBlanketsF(gFurnitureBlankets);
 gFurniturePads = document.querySelector("#gFurniturePads");
 
 function gFurniturePadsF(gFurniturePads) {
-  if (gFurniturePads != null && gFurniturePads.innerHTML == "") {
+  if (gFurniturePads != null && gFurniturePads.innerHTML === "") {
     gFurniturePads.innerHTML += `
 <td class="text-center fw-bold"><a name="gFurniturePads"></a>
 Furniture Pads
@@ -619,7 +619,7 @@ gFurniturePadsF(gFurniturePads);
 gGrossWeight = document.querySelector("#gGrossWeight");
 
 function gGrossWeightF(gGrossWeight) {
-  if (gGrossWeight != null && gGrossWeight.innerHTML == "") {
+  if (gGrossWeight != null && gGrossWeight.innerHTML === "") {
     gGrossWeight.innerHTML += `
 <td class="text-center fw-bold"><a name="gGrossWeight"></a>
 Gross Weight
@@ -636,7 +636,7 @@ gGrossWeightF(gGrossWeight);
 gHighValueArticle = document.querySelector("#gHighValueArticle");
 
 function gHighValueArticleF(gHighValueArticle) {
-  if (gHighValueArticle != null && gHighValueArticle.innerHTML == "") {
+  if (gHighValueArticle != null && gHighValueArticle.innerHTML === "") {
     gHighValueArticle.innerHTML += `
 <td class="text-center fw-bold"><a name="gHighValueArticle"></a>
 High Value Article
@@ -653,7 +653,7 @@ gHighValueArticleF(gHighValueArticle);
 gInTransit = document.querySelector("#gInTransit");
 
 function gInTransitF(gInTransit) {
-  if (gInTransit != null && gInTransit.innerHTML == "") {
+  if (gInTransit != null && gInTransit.innerHTML === "") {
     gInTransit.innerHTML += `
 <td class="text-center fw-bold"><a name="gInTransit"></a>
 In-Transit
@@ -670,7 +670,7 @@ gInTransitF(gInTransit);
 gInventory = document.querySelector("#gInventory");
 
 function gInventoryF(gInventory) {
-  if (gInventory != null && gInventory.innerHTML == "") {
+  if (gInventory != null && gInventory.innerHTML === "") {
     gInventory.innerHTML += `
 <td class="text-center fw-bold"><a name="gInventory"></a>
 Inventory
@@ -687,7 +687,7 @@ gInventoryF(gInventory);
 gInvoice = document.querySelector("#gInvoice");
 
 function gInvoiceF(gInvoice) {
-  if (gInvoice != null && gInvoice.innerHTML == "") {
+  if (gInvoice != null && gInvoice.innerHTML === "") {
     gInvoice.innerHTML += `
 <td class="text-center fw-bold"><a name="gInvoice"></a>
 Invoice
@@ -704,7 +704,7 @@ gInvoiceF(gInvoice);
 gJointRate = document.querySelector("#gJointRate");
 
 function gJointRateF(gJointRate) {
-  if (gJointRate != null && gJointRate.innerHTML == "") {
+  if (gJointRate != null && gJointRate.innerHTML === "") {
     gJointRate.innerHTML += `
 <td class="text-center fw-bold"><a name="gJointRate"></a>
 Joint Rate
@@ -721,7 +721,7 @@ gJointRateF(gJointRate);
 gLineHaul = document.querySelector("#gLineHaul");
 
 function gLineHaulF(gLineHaul) {
-  if (gLineHaul != null && gLineHaul.innerHTML == "") {
+  if (gLineHaul != null && gLineHaul.innerHTML === "") {
     gLineHaul.innerHTML += `
 <td class="text-center fw-bold"><a name="gLineHaul"></a>
 Line Haul
@@ -738,7 +738,7 @@ gLineHaulF(gLineHaul);
 gLineHaulCharges = document.querySelector("#gLineHaulCharges");
 
 function gLineHaulChargesF(gLineHaulCharges) {
-  if (gLineHaulCharges != null && gLineHaulCharges.innerHTML == "") {
+  if (gLineHaulCharges != null && gLineHaulCharges.innerHTML === "") {
     gLineHaulCharges.innerHTML += `
 <td class="text-center fw-bold"><a name="gLineHaulCharges"></a>
 Line Haul Charges
@@ -755,7 +755,7 @@ gLineHaulChargesF(gLineHaulCharges);
 gLoadDate = document.querySelector("#gLoadDate");
 
 function gLoadDateF(gLoadDate) {
-  if (gLoadDate != null && gLoadDate.innerHTML == "") {
+  if (gLoadDate != null && gLoadDate.innerHTML === "") {
     gLoadDate.innerHTML += `
 <td class="text-center fw-bold"><a name="gLoadDate"></a>
 Load Date
@@ -772,7 +772,7 @@ gLoadDateF(gLoadDate);
 gLocalMove = document.querySelector("#gLocalMove");
 
 function gLocalMoveF(gLocalMove) {
-  if (gLocalMove != null && gLocalMove.innerHTML == "") {
+  if (gLocalMove != null && gLocalMove.innerHTML === "") {
     gLocalMove.innerHTML += `
 <td class="text-center fw-bold"><a name="gLocalMove"></a>
 Local Move
@@ -789,7 +789,7 @@ gLocalMoveF(gLocalMove);
 gLongCarryFee = document.querySelector("#gLongCarryFee");
 
 function gLongCarryFeeF(gLongCarryFee) {
-  if (gLongCarryFee != null && gLongCarryFee.innerHTML == "") {
+  if (gLongCarryFee != null && gLongCarryFee.innerHTML === "") {
     gLongCarryFee.innerHTML += `
 <td class="text-center fw-bold"><a name="gLongCarryFee"></a>
 Long Carry Fee
@@ -806,7 +806,7 @@ gLongCarryFeeF(gLongCarryFee);
 gLongTermStorage = document.querySelector("#gLongTermStorage");
 
 function gLongTermStorageF(gLongTermStorage) {
-  if (gLongTermStorage != null && gLongTermStorage.innerHTML == "") {
+  if (gLongTermStorage != null && gLongTermStorage.innerHTML === "") {
     gLongTermStorage.innerHTML += `
 <td class="text-center fw-bold"><a name="gLongTermStorage"></a>
 Long Term Storage
@@ -823,7 +823,7 @@ gLongTermStorageF(gLongTermStorage);
 gMovingCompany = document.querySelector("#gMovingCompany");
 
 function gMovingCompanyF(gMovingCompany) {
-  if (gMovingCompany != null && gMovingCompany.innerHTML == "") {
+  if (gMovingCompany != null && gMovingCompany.innerHTML === "") {
     gMovingCompany.innerHTML += `
 <td class="text-center fw-bold"><a name="gMovingCompany"></a>
 Moving Company
@@ -840,7 +840,7 @@ gMovingCompanyF(gMovingCompany);
 gMovingCost = document.querySelector("#gMovingCost");
 
 function gMovingCostF(gMovingCost) {
-  if (gMovingCost != null && gMovingCost.innerHTML == "") {
+  if (gMovingCost != null && gMovingCost.innerHTML === "") {
     gMovingCost.innerHTML += `
 <td class="text-center fw-bold"><a name="gMovingCost"></a>
 Moving Cost
@@ -857,7 +857,7 @@ gMovingCostF(gMovingCost);
 gNetWeight = document.querySelector("#gNetWeight");
 
 function gNetWeightF(gNetWeight) {
-  if (gNetWeight != null && gNetWeight.innerHTML == "") {
+  if (gNetWeight != null && gNetWeight.innerHTML === "") {
     gNetWeight.innerHTML += `
 <td class="text-center fw-bold"><a name="gNetWeight"></a>
 Net Weight
@@ -874,7 +874,7 @@ gNetWeightF(gNetWeight);
 gNonBindingEstimate = document.querySelector("#gNonBindingEstimate");
 
 function gNonBindingEstimateF(gNonBindingEstimate) {
-  if (gNonBindingEstimate != null && gNonBindingEstimate.innerHTML == "") {
+  if (gNonBindingEstimate != null && gNonBindingEstimate.innerHTML === "") {
     gNonBindingEstimate.innerHTML += `
 <td class="text-center fw-bold"><a name="gNonBindingEstimate"></a>
 Non-Binding Estimate
@@ -891,7 +891,7 @@ gNonBindingEstimateF(gNonBindingEstimate);
 gOriginAgent = document.querySelector("#gOriginAgent");
 
 function gOriginAgentF(gOriginAgent) {
-  if (gOriginAgent != null && gOriginAgent.innerHTML == "") {
+  if (gOriginAgent != null && gOriginAgent.innerHTML === "") {
     gOriginAgent.innerHTML += `
 <td class="text-center fw-bold"><a name="gOriginAgent"></a>
 Origin Agent
@@ -908,7 +908,7 @@ gOriginAgentF(gOriginAgent);
 gPallet = document.querySelector("#gPallet");
 
 function gPalletF(gPallet) {
-  if (gPallet != null && gPallet.innerHTML == "") {
+  if (gPallet != null && gPallet.innerHTML === "") {
     gPallet.innerHTML += `
 <td class="text-center fw-bold"><a name="gPallet"></a>
 Pallet
@@ -929,7 +929,7 @@ gPeakSeasonPeakSeasonRate = document.querySelector(
 function gPeakSeasonPeakSeasonRateF(gPeakSeasonPeakSeasonRate) {
   if (
     gPeakSeasonPeakSeasonRate != null &&
-    gPeakSeasonPeakSeasonRate.innerHTML == ""
+    gPeakSeasonPeakSeasonRate.innerHTML === ""
   ) {
     gPeakSeasonPeakSeasonRate.innerHTML += `
 <td class="text-center fw-bold"><a name="gPeakSeasonPeakSeasonRate"></a>
@@ -947,7 +947,7 @@ gPeakSeasonPeakSeasonRateF(gPeakSeasonPeakSeasonRate);
 gPermanentStorage = document.querySelector("#gPermanentStorage");
 
 function gPermanentStorageF(gPermanentStorage) {
-  if (gPermanentStorage != null && gPermanentStorage.innerHTML == "") {
+  if (gPermanentStorage != null && gPermanentStorage.innerHTML === "") {
     gPermanentStorage.innerHTML += `
 <td class="text-center fw-bold"><a name="gPermanentStorage"></a>
 Permanent Storage
@@ -966,7 +966,7 @@ gPreferredArrivalDatePAD = document.querySelector("#gPreferredArrivalDatePAD");
 function gPreferredArrivalDatePADF(gPreferredArrivalDatePAD) {
   if (
     gPreferredArrivalDatePAD != null &&
-    gPreferredArrivalDatePAD.innerHTML == ""
+    gPreferredArrivalDatePAD.innerHTML === ""
   ) {
     gPreferredArrivalDatePAD.innerHTML += `
 <td class="text-center fw-bold"><a name="gPreferredArrivalDatePAD"></a>
@@ -984,7 +984,7 @@ gPreferredArrivalDatePADF(gPreferredArrivalDatePAD);
 gQuote = document.querySelector("#gQuote");
 
 function gQuoteF(gQuote) {
-  if (gQuote != null && gQuote.innerHTML == "") {
+  if (gQuote != null && gQuote.innerHTML === "") {
     gQuote.innerHTML += `
 <td class="text-center fw-bold"><a name="gQuote"></a>
 Quote
@@ -1001,7 +1001,7 @@ gQuoteF(gQuote);
 gRelocationAssistance = document.querySelector("#gRelocationAssistance");
 
 function gRelocationAssistanceF(gRelocationAssistance) {
-  if (gRelocationAssistance != null && gRelocationAssistance.innerHTML == "") {
+  if (gRelocationAssistance != null && gRelocationAssistance.innerHTML === "") {
     gRelocationAssistance.innerHTML += `
 <td class="text-center fw-bold"><a name="gRelocationAssistance"></a>
 Relocation Assistance
@@ -1018,7 +1018,7 @@ gRelocationAssistanceF(gRelocationAssistance);
 gRouting = document.querySelector("#gRouting");
 
 function gRoutingF(gRouting) {
-  if (gRouting != null && gRouting.innerHTML == "") {
+  if (gRouting != null && gRouting.innerHTML === "") {
     gRouting.innerHTML += `
 <td class="text-center fw-bold"><a name="gRouting"></a>
 Routing
@@ -1035,7 +1035,7 @@ gRoutingF(gRouting);
 gShortHaul = document.querySelector("#gShortHaul");
 
 function gShortHaulF(gShortHaul) {
-  if (gShortHaul != null && gShortHaul.innerHTML == "") {
+  if (gShortHaul != null && gShortHaul.innerHTML === "") {
     gShortHaul.innerHTML += `
 <td class="text-center fw-bold"><a name="gShortHaul"></a>
 Short Haul
@@ -1052,7 +1052,7 @@ gShortHaulF(gShortHaul);
 gShuttleService = document.querySelector("#gShuttleService");
 
 function gShuttleServiceF(gShuttleService) {
-  if (gShuttleService != null && gShuttleService.innerHTML == "") {
+  if (gShuttleService != null && gShuttleService.innerHTML === "") {
     gShuttleService.innerHTML += `
 <td class="text-center fw-bold"><a name="gShuttleService"></a>
 Shuttle Service
@@ -1069,7 +1069,7 @@ gShuttleServiceF(gShuttleService);
 gStorageInTransitSIT = document.querySelector("#gStorageInTransitSIT");
 
 function gStorageInTransitSITF(gStorageInTransitSIT) {
-  if (gStorageInTransitSIT != null && gStorageInTransitSIT.innerHTML == "") {
+  if (gStorageInTransitSIT != null && gStorageInTransitSIT.innerHTML === "") {
     gStorageInTransitSIT.innerHTML += `
 <td class="text-center fw-bold"><a name="gStorageInTransitSIT"></a>
 Storage In Transit (S.I.T)
@@ -1086,7 +1086,7 @@ gStorageInTransitSITF(gStorageInTransitSIT);
 gStretchWrap = document.querySelector("#gStretchWrap");
 
 function gStretchWrapF(gStretchWrap) {
-  if (gStretchWrap != null && gStretchWrap.innerHTML == "") {
+  if (gStretchWrap != null && gStretchWrap.innerHTML === "") {
     gStretchWrap.innerHTML += `
 <td class="text-center fw-bold"><a name="gStretchWrap"></a>
 Stretch Wrap
@@ -1103,7 +1103,7 @@ gStretchWrapF(gStretchWrap);
 gSurvey = document.querySelector("#gSurvey");
 
 function gSurveyF(gSurvey) {
-  if (gSurvey != null && gSurvey.innerHTML == "") {
+  if (gSurvey != null && gSurvey.innerHTML === "") {
     gSurvey.innerHTML += `
 <td class="text-center fw-bold"><a name="gSurvey"></a>
 Survey
@@ -1120,7 +1120,7 @@ gSurveyF(gSurvey);
 gTag = document.querySelector("#gTag");
 
 function gTagF(gTag) {
-  if (gTag != null && gTag.innerHTML == "") {
+  if (gTag != null && gTag.innerHTML === "") {
     gTag.innerHTML += `
 <td class="text-center fw-bold"><a name="gTag"></a>
 Tag
@@ -1137,7 +1137,7 @@ gTagF(gTag);
 gTareWeight = document.querySelector("#gTareWeight");
 
 function gTareWeightF(gTareWeight) {
-  if (gTareWeight != null && gTareWeight.innerHTML == "") {
+  if (gTareWeight != null && gTareWeight.innerHTML === "") {
     gTareWeight.innerHTML += `
 <td class="text-center fw-bold"><a name="gTareWeight"></a>
 Tare Weight
@@ -1154,7 +1154,7 @@ gTareWeightF(gTareWeight);
 gUnpacking = document.querySelector("#gUnpacking");
 
 function gUnpackingF(gUnpacking) {
-  if (gUnpacking != null && gUnpacking.innerHTML == "") {
+  if (gUnpacking != null && gUnpacking.innerHTML === "") {
     gUnpacking.innerHTML += `
 <td class="text-center fw-bold"><a name="gUnpacking"></a>
 Unpacking
@@ -1171,7 +1171,7 @@ gUnpackingF(gUnpacking);
 gVanForeman = document.querySelector("#gVanForeman");
 
 function gVanForemanF(gVanForeman) {
-  if (gVanForeman != null && gVanForeman.innerHTML == "") {
+  if (gVanForeman != null && gVanForeman.innerHTML === "") {
     gVanForeman.innerHTML += `
 <td class="text-center fw-bold"><a name="gVanForeman"></a>
 Van Foreman
@@ -1188,7 +1188,7 @@ gVanForemanF(gVanForeman);
 gVanLine = document.querySelector("#gVanLine");
 
 function gVanLineF(gVanLine) {
-  if (gVanLine != null && gVanLine.innerHTML == "") {
+  if (gVanLine != null && gVanLine.innerHTML === "") {
     gVanLine.innerHTML += `
 <td class="text-center fw-bold"><a name="gVanLine"></a>
 Van Line
