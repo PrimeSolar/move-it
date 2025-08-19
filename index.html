@@ -38,7 +38,7 @@
         />
       </section>
 
-      <div class="container px-4 py-5" id="featured-3">
+      <section class="container px-4 py-5" id="featured-3">
         <h2 class="pb-2 border-bottom">Why Move With Us?</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
           <div class="feature col card-style">
@@ -144,9 +144,90 @@
             </a>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="container" id="carouselContainer">
+      <section id="testimonials" class="my-5">
+        <h2 class="text-center">What Our Clients Say</h2>
+        <div
+          class="carousel slide"
+          id="testimonialCarousel"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p class="testimonial">
+                "Move It made my relocation seamless and stress-free! The team
+                was professional and handled my belongings with care." -
+                <strong>Sarah L.</strong>
+              </p>
+            </div>
+            <div class="carousel-item">
+              <p class="testimonial">
+                "I couldn't have asked for a better moving experience! The staff
+                was friendly, efficient, and truly dedicated to making my move
+                easy." -
+                <strong>Mark T.</strong>
+              </p>
+            </div>
+            <div class="carousel-item">
+              <p class="testimonial">
+                "The Move It team was wonderful. Their attention to detail and
+                commitment to customer satisfaction is unmatched." -
+                <strong>Emily R.</strong>
+              </p>
+            </div>
+            <div class="carousel-item">
+              <p class="testimonial">
+                "The Move It team was fantastic! They took care of everything,
+                and I felt completely at ease during the entire process." -
+                <strong>David M.</strong>
+              </p>
+            </div>
+            <div class="carousel-item">
+              <p class="testimonial">
+                "Every aspect of my move was handled with professionalism and
+                care. I highly recommend Move It for anyone looking to
+                relocate!" -
+                <strong>Jessica T.</strong>
+              </p>
+            </div>
+            <div class="carousel-item">
+              <p class="testimonial">
+                "I was impressed by the level of service and the efficiency of
+                the Move It team. They made my move a breeze!" -
+                <strong>Michael B.</strong>
+              </p>
+            </div>
+            <div class="carousel-item">
+              <p class="testimonial">
+                "Move It truly cares about their clients. Their personalized
+                approach made my moving experience enjoyable and hassle-free." -
+                <strong>Laura K.</strong>
+              </p>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="container" id="carouselContainer">
         <div id="carouselIndicators" class="carousel slide">
           <div class="carousel-indicators">
             <button
@@ -253,7 +334,63 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-      </div>
+      </section>
+
+      <section
+        id="newsletter"
+        class="my-5 d-flex flex-column align-items-center text-center"
+      >
+        <h2>Stay Updated</h2>
+        <p>
+          Subscribe to our newsletter for the latest moving tips, exclusive
+          offers, and updates on our services. Join our community of satisfied
+          customers and be the first to know about our exciting promotions and
+          helpful resources!
+        </p>
+        <form id="subscribeForm" class="form-inline justify-content-center">
+          <input
+            type="email"
+            id="emailInput"
+            class="form-control mb-2 mr-sm-2 text-center"
+            placeholder="Enter your email..."
+            required
+          />
+          <button
+            type="submit"
+            class="btn btn-primary mb-2"
+            onclick="handleSubscription()"
+          >
+            Subscribe
+          </button>
+        </form>
+        <div id="responseMessage" class="mt-3"></div>
+      </section>
+
+      <section
+        id="referralProgram"
+        class="form-inline d-flex flex-column justify-content-center my-5 py5-5 text-center"
+      >
+        <h2>Join Our Referral Program</h2>
+        <p>
+          Share your unique referral link and earn rewards for every new client
+          you bring!
+        </p>
+        <form>
+          <input
+            type="text"
+            id="referralLink"
+            class="form-control mb-2"
+            readonly
+          />
+          <button
+            type="button"
+            class="btn btn-primary mb-2"
+            onclick="copyReferralLink()"
+          >
+            Copy
+          </button>
+        </form>
+      </section>
     </main>
 
     <footer id="footerContainer"></footer>
@@ -267,6 +404,8 @@
       src="scripts/p-1-line-indent-min.js"
     ></script>
     <script src="scripts/img-zoom-min.js"></script>
+    <script src="scripts/newsletter-min.js"></script>
+    <script src="scripts/referral-min.js"></script>
     <script src="scripts/meta-tags-min.js"></script>
   </body>
 </html>
