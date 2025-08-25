@@ -46,12 +46,12 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("head").appendChild(linkMediaQueries);
   }
 
-  // Insert "bootstrap.min.css"
+  // Connect "bootstrap.min.css"
   const linkBootstrap = document.createElement("link");
   linkBootstrap.rel = "stylesheet";
   linkBootstrap.type = "text/css";
   linkBootstrap.href =
-    "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css";
+    "https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css";
   linkBootstrap.crossorigin = "anonymous";
   document.querySelector("head").appendChild(linkBootstrap);
   linkBootstrap.onload = function () {
@@ -71,6 +71,22 @@ document.addEventListener("DOMContentLoaded", () => {
     linkStyle.onload = function () {
       document.body.style.display = "block"; // Show the body even if the bootstrap.min.css fails
     };
+  };
+
+  // Connect "bootstrap.bundle.min.js"
+  const scriptBootstrap = document.createElement("script");
+  scriptBootstrap.type = "text/javascript";
+  scriptBootstrap.src =
+    "https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js";
+  scriptBootstrap.crossorigin = "anonymous";
+  document.querySelector("body").appendChild(scriptBootstrap);
+  scriptBootstrap.onerror = function () {
+    console.error("Failed to load bootstrap.min.css");
+    // Show an informational message
+    document.body.insertAdjacentHTML(
+      "afterbegin",
+      "<p>Error loading scripts. Please try again later.</p>"
+    );
   };
 
   // Insert <link rel="icon" href="pics/logos/logo.svg">
