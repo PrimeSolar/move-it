@@ -82,6 +82,33 @@ h1.center {
   margin-right: auto; /* Set the size of the right margin */
 }
 
+.typing {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid #007fff;
+  animation: typing 1.5s steps(17, end), blink 0.75s step-end infinite,
+    brighten start 1s;
+}
+
+.typing-finished {
+  border-right: none;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 main {
   background: linear-gradient(to right, #f1f5ff, #f1f7ff);
   padding: 20px;
@@ -123,7 +150,7 @@ to-top {
   text-decoration: none; /* Remove underline from the text */
   pointer-events: none; /* Deactivate pointer events */
   transition: 0.25s; /* Set an effect of a transition */
-  /* Use flexbox to center content inside the element */
+  /* Use flexbox to align content inside the element */
   display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model */
   display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
   display: flex; /* Standard syntax for modern browsers (widely supported) */
@@ -162,9 +189,13 @@ to-top.active {
   height: 3rem; /* Set the height of the element*/
 }
 
+#bookingWidget div {
+  font-size: 21px;
+}
+
 #carouselContainer {
   margin: 0 auto; /* Set the size of the margin */
-  /* Use flexbox to center content inside the element */
+  /* Use flexbox to align content inside the element */
   display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
   display: -webkit-box; /* For older versions of Chrome and Safari (pre-flexbox) */
   display: flex; /* Standard syntax for modern browsers (widely supported) */
@@ -187,8 +218,7 @@ to-top.active {
 }
 
 .carousel-inner {
-  height: 85vh; /* Set the height of the element */
-  /* Use flexbox to center content inside the element */
+  /* Use flexbox to align content inside the element */
   display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
   display: -webkit-box; /* For older versions of Chrome and Safari (pre-flexbox) */
   display: flex; /* Standard syntax for modern browsers (widely supported) */
@@ -199,6 +229,101 @@ to-top.active {
   align-items: center; /* Standard syntax for modern browsers (widely supported) */
 }
 
+#testimonialCarousel {
+  margin: 4vh 0;
+  border-radius: 10px; /* Set the radius for the border of the element */
+  box-shadow: 0 4px 20px #0000001a; /* Set the shadow for the element */
+  overflow: hidden; /* Set the overflow for the element */
+  background-color: #f8f9fa; /* Set the background color for the element */
+}
+
+.carousel-inner {
+  padding: 20px; /* Set the padding for the element */
+}
+
+#testimonials {
+  position: relative;
+  width: calc(80vw - 40px);
+  left: 10vw;
+}
+
+.testimonial {
+  border: none !important;
+  padding: 0 37px !important;
+  font-size: 1.2rem !important; /* Set the size for the font of the element */
+  text-align: center !important; /* Center the text for the element */
+  transition: none !important;
+}
+
+.testimonial:hover {
+  background-color: #f8f9fa !important; /* Set the color for the background of the element */
+}
+
+#testimonialCarousel .carousel-control-prev-icon,
+#testimonialCarousel .carousel-control-next-icon {
+  background-color: #007bff; /* Set the color for the background of the element */
+  border-radius: 50%; /* Set the radius for the border of the element */
+}
+
+#testimonialCarousel .carousel-control-prev,
+#testimonialCarousel .carousel-control-next {
+  width: 5%; /* Set the width for the element */
+}
+
+#testimonialCarousel .carousel-control-prev:hover,
+#testimonialCarousel .carousel-control-next:hover {
+  background-color: #007bff1a !important; /* Set the color for the background of the element */
+}
+
+.carousel-item {
+  transition: transform 0.5s ease; /* Set the transition for the element */
+}
+
+.carousel-item.active {
+  opacity: 1; /* Set the opacity for the element */
+}
+
+#newsletter {
+  position: relative;
+  width: calc(80vw - 40px);
+  left: 10vw;
+  border-radius: 10px; /* Set the radius for the border of the element */
+  padding: 50px; /* Set the padding for the element */
+  box-shadow: 0 4px 20px #0000001a; /* Set the shadow for the element */
+}
+
+#newsletter h2 {
+  font-size: 2rem; /* Set the size for the font of the element */
+  color: #007bff; /* Set the color for the text of the element */
+}
+
+#newsletter p {
+  font-size: 1.1rem; /* Set the size for the font of the element */
+  margin-bottom: 20px; /* Set the size for the bottom margin of the element */
+}
+
+#emailInput {
+  min-width: 450px;
+}
+
+#responseMessage {
+  position: relative;
+  top: 15px;
+}
+
+#referralLink {
+  display: inline-block;
+  min-width: 450px;
+  width: auto;
+  text-align: center;
+}
+
+#referralProgram button {
+  position: relative;
+  min-width: 100px;
+  top: 1px;
+}
+
 #cards {
   width: 100%; /* Set the width of the element */
   height: 70vh; /* Set the height of the element */
@@ -207,7 +332,7 @@ to-top.active {
   font-size: 1.7vh; /* Set the font size for the text */
   text-align: center; /* Align the text of the element */
   font-family: "Sono", sans-serif; /* Set the font family to "Sono" and sans-serif */
-  /* Use flexbox to center content inside the element */
+  /* Use flexbox to align content inside the element */
   display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
   display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
   display: flex; /* Standard syntax for modern browsers (widely supported) */
@@ -230,7 +355,7 @@ to-top.active {
   position: relative;
   width: calc(100% - 2px); /* Set the width of the element */
   min-width: 21vw; /* Set the minimum width of the element */
-  /* Use flexbox to center content inside the element */
+  /* Use flexbox to align content inside the element */
   display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
   display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
   display: flex; /* Standard syntax for modern browsers (widely supported) */
@@ -268,7 +393,7 @@ to-top.active {
   margin: 1px; /* Set the size of the margin */
   z-index: 2; /* Set the stacking order of the element */
   background-color: #f2f2f2; /* Set the color of the background */
-  /* Use flexbox to center content inside the element */
+  /* Use flexbox to align content inside the element */
   display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
   display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
   display: flex; /* Standard syntax for modern browsers (widely supported) */
@@ -458,7 +583,7 @@ to-top.active {
   border: solid 1px #007fff;
   font-size: 2.5vh; /* Set the font size for the text */
   font-weight: bold;
-  display: none;
+  display: none; /* Specify the display behavior of the element */
   /* Apply the border radius to round the corners of the element */
   -moz-border-radius: 5px; /* For older versions of Firefox */
   -o-border-radius: 5px; /* For older versions of Opera */
@@ -471,7 +596,7 @@ to-top.active {
 }
 
 tab0d5 {
-  padding-left: 22px; /* Set the size of the left padding */
+  padding-left: 22px; /* Set the size for the left padding of the element */
 }
 
 table {
@@ -532,77 +657,53 @@ td p {
 }
 
 .row {
-  padding-left: 0; /* Set the size of the left padding */
+  padding-left: 0; /* Set the size for the left padding of the element */
   padding-right: 0; /* Set the size of the right padding */
   margin-left: 0; /* Set the size of the left margin */
   margin-right: 0; /* Set the size of the right margin */
 }
 
 .row > .aos-item {
-  padding-left: 0; /* Set the size of the left padding */
+  padding-left: 0; /* Set the size for the left padding of the element */
   padding-right: 0; /* Set the size of the right padding */
   margin-left: 0; /* Set the size of the left margin */
   margin-right: 0; /* Set the size of the right margin */
 }
 
-/*noscript*/
-#enable-javascript {
-  width: 100vw; /* Set the width of the element */
-  height: 100%; /* Set the height of the element */
-  padding: 0 25vw; /* Set the size of the padding */
-  /* Use flexbox to center content inside the element */
-  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flebox model) */
-  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
-  display: flex; /* Standard syntax for modern browsers (widely supported) */
-
-  /* Arrange flex items */
-  -ms-flex-direction: column; /* For Internet Explorer 10 */
-  -webkit-box-orient: vertical; /* For older versions of Chrome and Safari */
-  -webkit-box-direction: normal; /* For older versions of Chrome and Safari */
-  flex-direction: column; /* Standard syntax for modern browsers (widely supported) */
-
-  justify-content: center; /* Align flex items horizontally */
-
-  /* Alig vertically */
-  -ms-flex-align: center; /* For Internet Explorer 10 */
-  -webkit-box-align: center; /* For older versions of Chrome and Safari */
-  align-items: center; /* Standard syntax for modern browsers (widely supported) */
+#copyright {
+  margin: 0;
 }
 
-#enable-javascript > details {
-  margin-top: 1.7vh; /* Set the size of the top margin */
+#bmc-button {
+  display: block; /* Specify the display behavior of the element */
+  width: fit-content; /* Set the width of the element */
+  height: 3rem; /* Set the height of the element */
+  margin: 0.75rem auto 0; /* Set the size for the margin of the element */
+  background-color: #ff843f !important; /* Set the color for the background of the element */
+  color: #ffffff; /* Set the color for the text of the element */
+  font-family: "Cookie", cursive; /* Set the font family for the text of the element */
+  font-weight: bold; /* Set the font weight for the text of the element */
+  text-decoration: none; /* Set the decoration for the text of the element */
+  text-shadow: 1px 1px 2px #00000080; /* Set the shadow for the text of the element */
+  border: none;
+  padding: 10px 20px; /* Set the padding of the element */
+  cursor: pointer; /* Specify the type of cursor to be displayed when hovering over the element */
+  outline: none;
+  box-shadow: 0 4px 8px #00000037; /* Set the shadow of the element */
+  /* Set the border radius for the corners of the element */
+  -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
+  -moz-border-radius: 5px; /* For older versions of Firefox */
+  -o-border-radius: 5px; /* For older versions of Opera */
+  border-radius: 5px; /* Standard property for border radius */
+  /* Add a transition effect for changes in properties */
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
+  -o-transition: 0.5s; /* For older versions of Opera */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
 }
 
-noscript h2 {
-  padding: 5vh 0; /* Set the size of the left padding */
-}
-
-noscript p {
-  min-width: 50vw; /* Set the minimum width of the element */
-}
-
-noscript details {
-  min-width: 50vw; /* Set the minimum width of the element */
-}
-
-.bmc-button {
-  display: block; /* Make the element a block-level element */
-  width: fit-content; /* Set the width for the element */
-  height: 3rem; /* Set the height for the element */
-  margin: 0.75rem auto 0; /* Set the size of the margin for the element */
-  background-color: #ff843f !important; /* Set the color of the background for the element */
-  color: #ffffff; /* Set the color of the text for the element */
-  font-family: "Cookie", cursive; /* Set the family of the font for the element */
-  font-weight: bold; /* Set the weight of the font for the element */
-  text-decoration: none; /* Set the decoration of the text for the element */
-  text-shadow: 1px 1px 2px #00000080; /* Set the shadow of the text for the element */
-  border: none; /* Set the border for the element */
-  border-radius: 5px; /* Set the radius of the border for the element */
-  padding: 10px 20px; /* Set the padding for the element */
-  cursor: pointer; /* Set the cursor for the element */
-  outline: none; /* Set the outline for the element */
-  transition: background-color 0.3s; /* Set the transition for the element */
-  box-shadow: 0 4px 8px #00000037; /* Set the shadow for the element */
+#bmc-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 4px 8px #0000004d;
 }
 
 ::-webkit-scrollbar {
@@ -623,32 +724,45 @@ noscript details {
 }
 
 .hide {
-  display: none !important;
+  display: none !important; /* Specify the display behavior of the element */
 }
 
-.typing {
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 1px solid #007fff;
-  animation: typing 1.5s steps(17, end), blink 0.75s step-end infinite,
-    brighten start 1s;
+/*noscript*/
+#enable-javascript {
+  width: 100vw; /* Set the width of the element */
+  height: 100%; /* Set the height of the element */
+  padding: 0 25vw; /* Set the size of the padding */
+  /* Use flexbox to align content inside the element */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flebox model) */
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  display: flex; /* Standard syntax for modern browsers (widely supported) */
+
+  /* Arrange flex items */
+  -ms-flex-direction: column; /* For Internet Explorer 10 */
+  -webkit-box-orient: vertical; /* For older versions of Chrome and Safari */
+  -webkit-box-direction: normal; /* For older versions of Chrome and Safari */
+  flex-direction: column; /* Standard syntax for modern browsers (widely supported) */
+
+  justify-content: center; /* Align flex items horizontally */
+
+  /* Alig vertically */
+  -ms-flex-align: center; /* For Internet Explorer 10 */
+  -webkit-box-align: center; /* For older versions of Chrome and Safari */
+  align-items: center; /* Standard syntax for modern browsers (widely supported) */
 }
 
-.typing-finished {
-  border-right: none;
+#enable-javascript > details {
+  margin-top: 1.7vh; /* Set the size for the top margin of the element */
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+noscript h2 {
+  padding: 5vh 0; /* Set the size for the left padding of the element */
 }
 
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
+noscript p {
+  min-width: 50vw; /* Set the minimum width of the element */
+}
+
+noscript details {
+  min-width: 50vw; /* Set the minimum width of the element */
 }
