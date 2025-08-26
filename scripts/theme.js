@@ -46,7 +46,7 @@ style.textContent = `
 .dark-mode nav,
 .dark-mode nav *:not(.navbar-toggler, .navbar-toggler *),
 .dark-mode #footerContainer,
-.dark-mode #footerContainer * {
+.dark-mode #footerContainer *:not(button, #bmc-button) {
   background-color: #4f4f4f !important;
   color: #e0e0e0 !important;
 }
