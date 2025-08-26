@@ -26,6 +26,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // Check if there are typing elements
   if (typingElements.length > 0) {
     typingElements.forEach((element) => {
+      let clone = element.cloneNode(true);
+      clone.classList.remove("typing");
+      clone.classList.add("no-typing");
+      element.parentElement.insertBefore(clone, element.nextSibling);
       const text = element.textContent; // Get the text content
       element.textContent = ""; // Clear the text content for typing effect
 
