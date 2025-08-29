@@ -34,7 +34,7 @@
 
 - **Experienced Team**: our skilled professionals are trained to handle all aspects of your move.
 - **Customer-Centric Approach**: we prioritize your needs and work closely with you to ensure satisfaction.
-- **Transparent Pricing**: no hidden fees—just straightforward, honest pricing.
+- **Transparent Pricing**: no hidden fees — just straightforward, honest pricing.
 
 ## Support My Work ☕
 
