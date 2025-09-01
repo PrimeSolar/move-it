@@ -111,6 +111,13 @@ if (printButton) {
 `;
 }
 
+document.addEventListener("keydown", (event) => {
+  if (event.ctrlKey && event.key === "p") {
+    event.preventDefault();
+    printPage();
+  }
+});
+
 function printPage() {
   const htmlElement = document.body;
   if (htmlElement.classList.contains("dark-mode")) {
