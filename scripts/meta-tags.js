@@ -14,7 +14,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Set `title` for the <html> element based on a webpage's content
   const title = document.querySelector("h1");
-  document.title = title.textContent + " | Move It";
+  if (title) {
+    document.title = title.textContent + " | Move It";
+  } else {
+    document.title = "Move It";
+  }
 
   // Insert <meta name="author" content="Vladislav Kazantsev">
   const metaAuthor = document.createElement("meta");
