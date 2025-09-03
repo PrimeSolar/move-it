@@ -38,8 +38,8 @@ style.textContent = `
   background-color: #7a7a7a !important;
 }
 
-.dark-mode body {
-  background-color: #121212 !important;
+body.dark-mode  {
+  background-color: #1f1f1f !important;
   color: #e0e0e0 !important;
 }
 
@@ -75,11 +75,22 @@ style.textContent = `
     .feature-icon,
     .feature-icon-small,
     #chat-header,
+    #availabilityNotice,
     .message,
     .message *,
     img,
     #carouselContainer span,
+    .carousel-inner,
+    .carousel-item,
+    .testimonial,
+    .testimonial strong,
     .carousel-indicators,
+    #newsletter,
+    #newsletter h2,
+    #newsletter p,
+    #newsletter form,
+    #newsletter input,
+    #responseMessage,
     ul,
     li,
     thead,
@@ -87,7 +98,9 @@ style.textContent = `
     tbody,
     tbody *,
     .aos-item,
-    .aos-item *
+    .aos-item *,
+    .card-content,
+    .card-content *
   ) {
   background-color: #1f1f1f !important;
   color: #e0e0e0 !important;
@@ -116,16 +129,33 @@ style.textContent = `
   background-color: #272727 !important;
 }
 
-.dark-mode .feature *:not(a),
+.dark-mode .feature *:not(a, p),
 .dark-mode button,
 .dark-mode .row.light *,
 .dark-mode .col-md-6 * {
   color: #e0e0e0 !important;
 }
 
-.dark-mode .feature {
-  background-color: #272727 !important;
-  box-shadow: 0 1px 5px #ffffff4a;
+.dark-mode .feature,
+.dark-mode #testimonialCarousel .carousel-inner,
+.dark-mode .carousel-item,
+.dark-mode .testimonial,
+.dark-mode .testimonial:hover,
+.dark-mode .testimonial strong,
+.dark-mode #newsletter,
+.dark-mode #newsletter h2,
+.dark-mode #newsletter p,
+.dark-mode #newsletter form,
+.dark-mode #responseMessage,
+.dark-mode .card-content,
+.dark-mode .card-content * {
+  background-color: #373737 !important;
+}
+
+.dark-mode #newsletter input,
+.dark-mode #newsletter input::placeholder {
+  background-color: #575757;
+  color: #ffffff;
 }
 
 .dark-mode tbody tr:nth-child(odd) {
