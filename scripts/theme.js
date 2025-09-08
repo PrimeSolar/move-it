@@ -99,8 +99,11 @@ body.dark-mode  {
     tbody *,
     .aos-item,
     .aos-item *,
+    .card-label,
     .card-content,
-    .card-content *
+    .card-content *,
+    #movingChecklist,
+    #movingChecklist *
   ) {
   background-color: #1f1f1f !important;
   color: #e0e0e0 !important;
@@ -137,6 +140,10 @@ body.dark-mode  {
 }
 
 .dark-mode .feature,
+.dark-mode .feature div:has(span),
+.dark-mode .feature span,
+.dark-mode .feature span a,
+.dark-mode .feature i,
 .dark-mode #testimonialCarousel .carousel-inner,
 .dark-mode .carousel-item,
 .dark-mode .testimonial,
@@ -147,13 +154,15 @@ body.dark-mode  {
 .dark-mode #newsletter p,
 .dark-mode #newsletter form,
 .dark-mode #responseMessage,
+.dark-mode .card-label,
 .dark-mode .card-content,
 .dark-mode .card-content * {
   background-color: #373737 !important;
 }
 
 .dark-mode #newsletter input,
-.dark-mode #newsletter input::placeholder {
+.dark-mode #newsletter input::placeholder,
+.dark-mode .list-group-item {
   background-color: #575757;
   color: #ffffff;
 }
