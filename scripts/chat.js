@@ -376,7 +376,12 @@
           lowerInput.includes("hi!") ||
           lowerInput.includes("good evening") ||
           lowerInput.includes("good morning") ||
-          lowerInput.includes("greetings")
+          lowerInput.includes("greetings") ||
+          lowerInput.includes("hey") ||
+          lowerInput.includes("what's up") ||
+          lowerInput.includes("howdy") ||
+          lowerInput.includes("salutations") ||
+          lowerInput.includes("welcome")
         ) {
           return "Hello! Welcome to Move It! How can I assist you with your moving needs today?";
         }
@@ -397,14 +402,24 @@
         }
 
         // Farewell responses
-        else if (lowerInput.includes("bye") || lowerInput.includes("goodbye")) {
+        else if (
+          lowerInput.includes("bye") ||
+          lowerInput.includes("goodbye") ||
+          lowerInput.includes("see you later") ||
+          lowerInput.includes("take care") ||
+          lowerInput.includes("farewell") ||
+          lowerInput.includes("catch you later")
+        ) {
           return "Goodbye! Have a great day, and remember, moving can be joyful with the right help!";
         }
 
         // Цell-being response
         else if (
           lowerInput.includes("how are you") ||
-          lowerInput.includes("how's it going")
+          lowerInput.includes("how's it going") ||
+          lowerInput.includes("how are you doing") ||
+          lowerInput.includes("what's going on") ||
+          lowerInput.includes("how have you been")
         ) {
           return "Everything is great, thank you! How about you?";
         }
@@ -413,7 +428,9 @@
         else if (
           lowerInput.includes("what is your name") ||
           lowerInput.includes("what's your name") ||
-          lowerInput.includes("who are you")
+          lowerInput.includes("who are you") ||
+          lowerInput.includes("introduce yourself") ||
+          lowerInput.includes("tell me your name")
         ) {
           return "My name is Zane. I am a representative of Move It, your assistant for all your moving needs! How can I help you today?";
         }
@@ -421,7 +438,10 @@
         // Capabilities response
         else if (
           lowerInput.includes("what can you do") ||
-          lowerInput.includes("capabilities")
+          lowerInput.includes("capabilities") ||
+          lowerInput.includes("what services") ||
+          lowerInput.includes("services you offer") ||
+          lowerInput.includes("what services do you provide")
         ) {
           return "I can assist you with various moving queries, from local to long-distance moves, packing, and more. Just ask!";
         }
@@ -444,7 +464,9 @@
         // Moving services response
         else if (
           lowerInput.includes("moving services") ||
-          lowerInput.includes("moving help")
+          lowerInput.includes("moving help") ||
+          lowerInput.includes("moving options") ||
+          lowerInput.includes("relocation services")
         ) {
           return "We offer a range of moving services, including local and long-distance moves, packing, and unpacking. How can I assist you with your move?";
         }
