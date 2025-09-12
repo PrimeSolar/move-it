@@ -24,6 +24,12 @@
   }
 }
 
+@media (max-width: 1450px) {
+  .plan-features > li {
+    font-size: 3vh; /* Set the size for the font of the text */
+  }
+}
+
 @media (max-width: 1250px) {
   #carouselContainer {
     margin: 0 auto;
@@ -76,15 +82,6 @@
 
   .card-title {
     padding: 1vh 0;
-    width: 100%;
-  }
-
-  .card-content ul {
-    max-width: 100vw;
-  }
-
-  .card-content li {
-    min-width: 75vw;
   }
 }
 
@@ -120,10 +117,21 @@
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1200px) {
   #testimonials {
     width: 100%;
     left: 0;
+  }
+
+  .plan-features > li,
+  .plan-features-contact {
+    font-size: 3.5vh; /* Set the font size for the text */
+  }
+}
+
+@media (max-width: 950px) {
+  div:has(.pricing-title) {
+    margin-bottom: 0 !important;
   }
 }
 
@@ -196,6 +204,15 @@
   #referralLink {
     min-width: 100%;
   }
+
+  div:has(.pricing-title) {
+    margin-bottom: 0 !important;
+  }
+
+  .plan-features > li,
+  .plan-features-contact {
+    font-size: 3vh; /* Set the font size for the text */
+  }
 }
 
 @media screen and (max-width: 404px) {
@@ -240,7 +257,8 @@
     -webkit-text-fill-color: #1177ff;
   }
 
-  p {
+  p,
+  .card {
     page-break-inside: avoid;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
@@ -368,12 +386,17 @@
     print-color-adjust: exact;
   }
 
+  #cards a {
+    color: #1177ff !important;
+  }
+
   .dark-mode #footerContainer *:not(button, #bmc-button, #bmclink) {
     background-color: #ffffff !important;
     color: #000000 !important;
   }
-  
-  .dark-mode #footerContainer #copyright a, .dark-mode #footerContainer #bmc-link {
+
+  .dark-mode #footerContainer #copyright a,
+  .dark-mode #footerContainer #bmc-link {
     background-color: #ffffff !important;
     color: #0088ff !important;
   }
