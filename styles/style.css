@@ -534,7 +534,6 @@ to-top.active {
   background: #ffffffe6;
   border-radius: 8px;
   padding: 15px;
-  margin: 5px;
   box-shadow: 0 2px 10px #0000001a;
   transition: transform 0.3s ease;
 }
@@ -664,10 +663,15 @@ td p {
 }
 
 .row > .aos-item {
-  padding-left: 0; /* Set the size for the left padding of the element */
-  padding-right: 0; /* Set the size of the right padding */
   margin-left: 0; /* Set the size of the left margin */
   margin-right: 0; /* Set the size of the right margin */
+  padding-left: 0; /* Set the size for the left padding of the element */
+  padding-right: 0; /* Set the size of the right padding */
+}
+
+.aos-item,
+.aos-item__inner {
+  border-radius: 8px; /* Set the radius for the border of the element */
 }
 
 #copyright {
