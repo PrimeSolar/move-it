@@ -74,7 +74,7 @@ class ToTop extends HTMLElement {
     this.innerHTML += `
     <a href="#" aria-label="Scroll to top" title="Scroll to top">
       <svg width="45px" height="45px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M6 15L12 9L18 15" stroke="#fff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6 15L12 9L18 15" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     </a>
     `;
