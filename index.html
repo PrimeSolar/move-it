@@ -146,6 +146,25 @@
         </div>
       </section>
 
+      <section id="bookingWidget" class="my-5 text-center">
+        <h2>Book Your Move</h2>
+        <div id="bookedMoves" class="my-3"></div>
+        <div id="availabilityNotice" class="alert alert-warning"></div>
+      </section>
+
+      <section id="discountSection" class="my-5 text-center">
+        <h2>Limited Time Discount!</h2>
+        <div id="discountMessage" class="my-3"></div>
+        <div id="countdown" class="fs-3"></div>
+      </section>
+      <div class="pb-5 d-grid gap-2 d-sm-flex justify-content-center">
+        <a href="contact.html"
+          ><button type="button" class="btn btn-primary btn-lg px-4">
+            Contact Us
+          </button></a
+        >
+      </div>
+
       <section id="testimonials" class="my-5">
         <h2 class="text-center">What Our Clients Say</h2>
         <div
@@ -264,14 +283,14 @@
             ></button>
           </div>
           <div class="carousel-inner rounded-5">
-            <div class="carousel-item active">
+            <div class="carousel-item active rounded-5">
               <img
                 alt="Moving"
                 title="Moving"
                 id="carousel-1"
                 name="carousel-1"
                 src="assets/carousel-1.jpg"
-                class="d-block w-100"
+                class="d-block w-100 rounded-5"
               />
             </div>
             <div class="carousel-item">
@@ -344,7 +363,7 @@
         <p>
           Subscribe to our newsletter for the latest moving tips, exclusive
           offers, and updates on our services. Join our community of satisfied
-          customers and be the first to know about our exciting promotions and
+          clients and be the first to know about our exciting promotions and
           helpful resources!
         </p>
         <form id="subscribeForm" class="form-inline justify-content-center">
@@ -368,7 +387,7 @@
 
       <section
         id="referralProgram"
-        class="form-inline d-flex flex-column justify-content-center my-5 py5-5 text-center"
+        class="form-inline d-flex flex-column justify-content-center my-5 py-5 text-center"
       >
         <h2>Join Our Referral Program</h2>
         <p>
@@ -391,18 +410,17 @@
           </button>
         </form>
       </section>
+
+      <section id="print"></section>
     </main>
 
     <footer id="footerContainer"></footer>
-
-    <script src="scripts/elements-min.js"></script>
+    <script src="scripts/components-min.js"></script>
     <script src="scripts/theme-min.js"></script>
     <script src="scripts/slide-animation-min.js"></script>
     <script src="scripts/chat-min.js"></script>
-    <script
-      type="text/javascript"
-      src="scripts/p-1-line-indent-min.js"
-    ></script>
+    <script src="scripts/p-1-line-indent-min.js"></script>
+    <script src="scripts/booking-min.js"></script>
     <script src="scripts/img-zoom-min.js"></script>
     <script src="scripts/newsletter-min.js"></script>
     <script src="scripts/referral-min.js"></script>
