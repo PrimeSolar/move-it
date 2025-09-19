@@ -1,7 +1,7 @@
 * {
   margin: 0; /* Set the size for the margin of the element */
   border: 0;
-  padding: 0; /* Set the size of the padding */
+  padding: 0; /* Set the size for the padding of the element */
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -13,7 +13,7 @@ html {
 
 body {
   margin: 0; /* Set the size of the margin */
-  padding: 0; /* Set the size of the padding */
+  padding: 0; /* Set the size for the padding of the element */
   transition: background-color 0.37s, color 0.37s;
   overflow-x: hidden;
 }
@@ -111,7 +111,7 @@ h1.center {
 
 main {
   background: linear-gradient(to right, #f1f5ff, #f1f7ff);
-  padding: 20px;
+  padding: 20px; /* Set the size for the padding of the element */
   /* background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite; */
 }
@@ -238,7 +238,7 @@ to-top.active {
 }
 
 .carousel-inner {
-  padding: 20px; /* Set the padding for the element */
+  padding: 20px; /* Set the size for the padding of the element */
 }
 
 #testimonials {
@@ -249,7 +249,7 @@ to-top.active {
 
 .testimonial {
   border: none !important;
-  padding: 0 37px !important;
+  padding: 0 37px !important; /* Set the size for the padding of the element */
   font-size: 1.2rem !important; /* Set the size for the font of the element */
   text-align: center !important; /* Center the text for the element */
   transition: none !important;
@@ -288,7 +288,7 @@ to-top.active {
   width: calc(80vw - 40px);
   left: 10vw;
   border-radius: 10px; /* Set the radius for the border of the element */
-  padding: 50px; /* Set the padding for the element */
+  padding: 50px; /* Set the size for the padding of the element */
   box-shadow: 0 4px 20px #0000001a; /* Set the shadow for the element */
 }
 
@@ -327,7 +327,7 @@ to-top.active {
 #cards {
   width: 100%; /* Set the width of the element */
   height: 70vh; /* Set the height of the element */
-  padding: 0; /* Set the size of the padding */
+  padding: 0; /* Set the size for the padding of the element */
   margin: 0; /* Set the size of the margin */
   font-size: 1.7vh; /* Set the font size for the text */
   text-align: center; /* Align the text of the element */
@@ -420,8 +420,16 @@ to-top.active {
   align-self: center;
 }
 
-.card-custom ul {
-  text-align: center; /* Align the text of the element */
+.card-custom .card-content {
+  display: block;
+}
+
+.card-content-not-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 84%;
+  font-size: 3vh;
 }
 
 .card-dark-theme::before {
@@ -486,7 +494,7 @@ to-top.active {
   height: 5vh; /* Set the height of the element */
   position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
   top: -20px; /* Position the card label 20 pixels above */
-  padding: 0; /* Set the padding of the element */
+  padding: 0; /* Set the size for the padding of the element */
   background-color: #fff; /* Set the color of the background */
   color: #008cff; /* Set the color of the text */
   font-family: "Sono", sans-serif; /* Set the font family to "Sono" and sans-serif */
@@ -501,11 +509,12 @@ to-top.active {
 }
 
 .card-title {
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-  padding: 1vh 0; /* Set the size of the padding */
+  width: 100%;
+  padding: 1vh 0; /* Set the size for the padding of the element */
   font-weight: bold;
   font-size: 2.5vh; /* Set the font size for the text */
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
   color: #ffffff; /* Set the color of the text */
   background: -moz-linear-gradient(
     #007fff 25%,
@@ -533,7 +542,7 @@ to-top.active {
 .feature {
   background: #ffffffe6;
   border-radius: 8px;
-  padding: 15px;
+  padding: 15px; /* Set the size for the padding of the element */
   box-shadow: 0 2px 10px #0000001a;
   transition: transform 0.3s ease;
 }
@@ -549,7 +558,7 @@ to-top.active {
 .plan-price {
   font-weight: bold;
   font-size: 4.5vh; /* Set the font size for the text */
-  padding: 0; /* Set the size of the padding */
+  padding: 0; /* Set the size for the padding of the element */
 }
 
 .currency {
@@ -563,7 +572,7 @@ to-top.active {
 
 .plan-features {
   text-align: center; /* Align the text of the element */
-  padding: 0; /* Set the size of the padding */
+  padding: 0; /* Set the size for the padding of the element */
   flex-basis: 50%;
 }
 
@@ -578,7 +587,7 @@ to-top.active {
 .plan-button {
   background-color: #fff; /* Set the color of the background */
   color: #007fff; /* Set the color of the text */
-  padding: 0.75vh; /* Set the size of the padding */
+  padding: 0.75vh; /* Set the size for the padding of the element */
   border: solid 1px #007fff;
   font-size: 2.5vh; /* Set the font size for the text */
   font-weight: bold;
