@@ -2,17 +2,17 @@
   margin: 0; /* Set the size for the margin of the element */
   border: 0;
   padding: 0; /* Set the size for the padding of the element */
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; /* For older versions of Firefox */
+  -webkit-box-sizing: border-box; /* For older versions of Chrome and Safari */
   box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth; /* Enable smooth scrolling */
+  scroll-behavior: smooth; /* Set the scroll behavior of the element */
 }
 
 body {
-  margin: 0; /* Set the size of the margin */
+  margin: 0; /* Set the size for the margin of the element */
   padding: 0; /* Set the size for the padding of the element */
   transition: background-color 0.37s, color 0.37s;
   overflow-x: hidden;
@@ -25,7 +25,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,12 +54,12 @@ svg.loader {
 } */
 
 .link-primary {
-  color: #0088ff; /* Set the color of the text */
+  color: #0088ff; /* Set the color for the text of the element */
 }
 
 #logo {
   height: 30px; /* Set the height of the element */
-  margin-right: 5px; /* Set the size of the right margin */
+  margin-right: 5px; /* Set the size for the right margin of the element */
 }
 
 h1 {
@@ -70,16 +70,16 @@ h1 {
 
 @keyframes brighten {
   0% {
-    opacity: 0;
+    opacity: 0; /* Set the opacity of the element */
   }
   100% {
-    opacity: 1;
+    opacity: 1; /* Set the opacity of the element */
   }
 }
 
 h1.center {
   margin-left: auto; /* Set the size of the left margin */
-  margin-right: auto; /* Set the size of the right margin */
+  margin-right: auto; /* Set the size for the right margin of the element */
 }
 
 .typing {
@@ -96,10 +96,10 @@ h1.center {
 
 @keyframes typing {
   from {
-    width: 0;
+    width: 0; /* Set the width of the element */
   }
   to {
-    width: 100%;
+    width: 100%; /* Set the width of the element */
   }
 }
 
@@ -139,14 +139,14 @@ main {
 
 to-top {
   background-color: #0088ff; /* Set the color of the background */
-  position: fixed; /* Position the element fixed to the viewport */
+  position: fixed; /* Specify the positioning method for the element */
   bottom: 56px; /* Position the element 56 pixels from the bottom of the viewport */
   right: 25px; /* Position the element 25 pixels from the right side of the viewport */
   width: 45px; /* Set the width of the element */
   height: 45px; /* Set the height of the element */
-  opacity: 0; /* Set the opacity */
+  opacity: 0; /* Set the opacity of the element */
   z-index: 2; /* Set the stacking order of the element */
-  font-size: 16px; /* Set the font size for the text */
+  font-size: 16px; /* Set the font size for the text of the element */
   text-decoration: none; /* Remove underline from the text */
   pointer-events: none; /* Deactivate pointer events */
   transition: 0.25s; /* Set an effect of a transition */
@@ -171,7 +171,7 @@ to-top {
 to-top.active {
   bottom: 9.6rem;
   pointer-events: auto;
-  opacity: 1;
+  opacity: 1; /* Set the opacity of the element */
 }
 
 .feature-icon {
@@ -190,11 +190,11 @@ to-top.active {
 }
 
 #bookingWidget div {
-  font-size: 21px;
+  font-size: 21px; /* Set the font size for the text of the element */
 }
 
 #carouselContainer {
-  margin: 0 auto; /* Set the size of the margin */
+  margin: 0 auto; /* Set the size for the margin of the element */
   /* Use flexbox to align content inside the element */
   display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
   display: -webkit-box; /* For older versions of Chrome and Safari (pre-flexbox) */
@@ -242,8 +242,8 @@ to-top.active {
 }
 
 #testimonials {
-  position: relative;
-  width: calc(80vw - 40px);
+  position: relative; /* Specify the positioning method for the element */
+  width: calc(80vw - 40px); /* Set the width of the element */
   left: 10vw;
 }
 
@@ -267,7 +267,7 @@ to-top.active {
 
 #testimonialCarousel .carousel-control-prev,
 #testimonialCarousel .carousel-control-next {
-  width: 5%; /* Set the width for the element */
+  width: 5%; /* Set the width of the element */
 }
 
 #testimonialCarousel .carousel-control-prev:hover,
@@ -276,16 +276,16 @@ to-top.active {
 }
 
 .carousel-item {
-  transition: transform 0.5s ease; /* Set the transition for the element */
+  transition: transform 0.5s ease; /* Set the transition of the element */
 }
 
 .carousel-item.active {
-  opacity: 1; /* Set the opacity for the element */
+  opacity: 1; /* Set the opacity of the element */
 }
 
 #newsletter {
-  position: relative;
-  width: calc(80vw - 40px);
+  position: relative; /* Specify the positioning method for the element */
+  width: calc(80vw - 40px); /* Set the width of the element */
   left: 10vw;
   border-radius: 10px; /* Set the radius for the border of the element */
   padding: 50px; /* Set the size for the padding of the element */
@@ -303,33 +303,33 @@ to-top.active {
 }
 
 #emailInput {
-  min-width: 450px;
+  min-width: 450px; /* Set the minimum width of the element */
 }
 
 #responseMessage {
-  position: relative;
-  top: 15px;
+  position: relative; /* Specify the positioning method for the element */
+  top: 15px; /* Position the element relative to the top edge of its nearest positioned ancestor */
 }
 
 #referralLink {
-  display: inline-block;
-  min-width: 450px;
-  width: auto;
+  display: inline-block; /* Specify the display behavior of the element */
+  min-width: 450px; /* Set the minimum width of the element */
+  width: auto; /* Set the width of the element */
   text-align: center;
 }
 
 #referralProgram button {
-  position: relative;
-  min-width: 100px;
-  top: 1px;
+  position: relative; /* Specify the positioning method for the element */
+  min-width: 100px; /* Set the minimum width of the element */
+  top: 1px; /* Position the element relative to the top edge of its nearest positioned ancestor */
 }
 
 #cards {
   width: 100%; /* Set the width of the element */
   height: 70vh; /* Set the height of the element */
   padding: 0; /* Set the size for the padding of the element */
-  margin: 0; /* Set the size of the margin */
-  font-size: 1.7vh; /* Set the font size for the text */
+  margin: 0; /* Set the size for the margin of the element */
+  font-size: 1.7vh; /* Set the font size for the text of the element */
   text-align: center; /* Align the text of the element */
   font-family: "Sono", sans-serif; /* Set the font family to "Sono" and sans-serif */
   /* Use flexbox to align content inside the element */
@@ -348,11 +348,11 @@ to-top.active {
 }
 
 #cards:hover > .card::after {
-  opacity: 0.01;
+  opacity: 0.01; /* Set the opacity of the element */
 }
 
 .card {
-  position: relative;
+  position: relative; /* Specify the positioning method for the element */
   width: calc(100% - 2px); /* Set the width of the element */
   min-width: 21vw; /* Set the minimum width of the element */
   /* Use flexbox to align content inside the element */
@@ -390,7 +390,7 @@ to-top.active {
 
 .card-content {
   height: 55vh; /* Set the height of the element */
-  margin: 1px; /* Set the size of the margin */
+  margin: 1px; /* Set the size for the margin of the element */
   z-index: 2; /* Set the stacking order of the element */
   background-color: #f2f2f2; /* Set the color of the background */
   /* Use flexbox to align content inside the element */
@@ -421,15 +421,18 @@ to-top.active {
 }
 
 .card-custom .card-content {
-  display: block;
+  display: block; /* Specify the display behavior of the element */
 }
 
 .card-content-not-title {
-  display: flex;
+  height: 84%;
+  font-size: 3vh; /* Set the font size for the text of the element */
+  /* Use flexbox to align content inside the element */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
+  display: flex; /* Standard syntax for modern browsers (widely supported) */
   flex-direction: column;
   justify-content: center;
-  height: 84%;
-  font-size: 3vh;
 }
 
 .card-dark-theme::before {
@@ -473,9 +476,9 @@ to-top.active {
   content: "";
   height: 100%; /* Set the height of the element */
   left: 0;
-  opacity: 0; /* Set the opacity */
-  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
-  top: 0;
+  opacity: 0; /* Set the opacity of the element */
+  position: absolute; /* Specify the positioning method for the element */
+  top: 0; /* Position the element relative to the top edge of its nearest positioned ancestor */
   transition: opacity 500ms; /* Set an effect of a transition */
   width: 100%; /* Set the width of the element */
   /* Apply the border radius to round the corners of the element */
@@ -486,19 +489,19 @@ to-top.active {
 }
 
 .card:hover::before {
-  opacity: 1; /* Set the opacity */
+  opacity: 1; /* Set the opacity of the element */
 }
 
 .card-label {
   width: 100%; /* Set the width of the element */
   height: 5vh; /* Set the height of the element */
-  position: absolute; /* Position the element absolutely within its nearest positioned ancestor */
-  top: -20px; /* Position the card label 20 pixels above */
+  position: absolute; /* Specify the positioning method for the element */
+  top: -20px; /* Position the element relative to the top edge of its nearest positioned ancestor */
   padding: 0; /* Set the size for the padding of the element */
-  background-color: #fff; /* Set the color of the background */
-  color: #008cff; /* Set the color of the text */
+  background-color: #ffffff; /* Set the color of the background */
+  color: #008cff; /* Set the color for the text of the element */
   font-family: "Sono", sans-serif; /* Set the font family to "Sono" and sans-serif */
-  font-size: 14px; /* Set the font size for the text */
+  font-size: 14px; /* Set the font size for the text of the element */
   text-align: center; /* Align the text of the element */
   z-index: -1; /* Set the stacking order of the element */
   /* Apply the border radius to round the corners of the element */
@@ -509,13 +512,13 @@ to-top.active {
 }
 
 .card-title {
-  width: 100%;
+  width: 100%; /* Set the width of the element */
   padding: 1vh 0; /* Set the size for the padding of the element */
   font-weight: bold;
-  font-size: 2.5vh; /* Set the font size for the text */
+  font-size: 2.5vh; /* Set the font size for the text of the element */
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
-  color: #ffffff; /* Set the color of the text */
+  color: #ffffff; /* Set the color for the text of the element */
   background: -moz-linear-gradient(
     #007fff 25%,
     #318ce7 100%
@@ -557,16 +560,16 @@ to-top.active {
 
 .plan-price {
   font-weight: bold;
-  font-size: 4.5vh; /* Set the font size for the text */
+  font-size: 4.5vh; /* Set the font size for the text of the element */
   padding: 0; /* Set the size for the padding of the element */
 }
 
 .currency {
-  font-size: 2vh; /* Set the font size for the text */
+  font-size: 2vh; /* Set the font size for the text of the element */
 }
 
 .plan-conditions {
-  font-size: 2vh; /* Set the font size for the text */
+  font-size: 2vh; /* Set the font size for the text of the element */
   margin-bottom: 1vh; /* Set the size of the bottom mnargin */
 }
 
@@ -577,7 +580,7 @@ to-top.active {
 }
 
 .plan-features > li {
-  font-size: 3vh; /* Set the font size for the text */
+  font-size: 3vh; /* Set the font size for the text of the element */
 }
 
 .check-circle {
@@ -585,11 +588,11 @@ to-top.active {
 }
 
 .plan-button {
-  background-color: #fff; /* Set the color of the background */
-  color: #007fff; /* Set the color of the text */
+  background-color: #ffffff; /* Set the color of the background */
+  color: #007fff; /* Set the color for the text of the element */
   padding: 0.75vh; /* Set the size for the padding of the element */
   border: solid 1px #007fff;
-  font-size: 2.5vh; /* Set the font size for the text */
+  font-size: 2.5vh; /* Set the font size for the text of the element */
   font-weight: bold;
   display: none; /* Specify the display behavior of the element */
   /* Apply the border radius to round the corners of the element */
@@ -612,8 +615,8 @@ table {
 }
 
 thead {
-  position: sticky;
-  top: 0;
+  position: sticky; /* Specify the positioning method for the element */
+  top: 0; /* Position the element relative to the top edge of its nearest positioned ancestor */
   z-index: 2; /* Set the stacking order of the element */
   /* Set the color of the background */
   background: -moz-linear-gradient(
@@ -644,8 +647,8 @@ tbody tr:nth-child(even) {
 
 th {
   border-bottom: 1px solid #ddd;
-  border-left: 1px solid #fff;
-  color: #f2f2f2; /* Set the color of the text */
+  border-left: 1px solid #ffffff;
+  color: #f2f2f2; /* Set the color for the text of the element */
 }
 
 th,
@@ -661,19 +664,19 @@ td:nth-of-type(1) {
 }
 
 td p {
-  margin: 0; /* Set the size of the margin */
+  margin: 0; /* Set the size for the margin of the element */
 }
 
 .row {
   padding-left: 0; /* Set the size for the left padding of the element */
   padding-right: 0; /* Set the size of the right padding */
   margin-left: 0; /* Set the size of the left margin */
-  margin-right: 0; /* Set the size of the right margin */
+  margin-right: 0; /* Set the size for the right margin of the element */
 }
 
 .row > .aos-item {
   margin-left: 0; /* Set the size of the left margin */
-  margin-right: 0; /* Set the size of the right margin */
+  margin-right: 0; /* Set the size for the right margin of the element */
   padding-left: 0; /* Set the size for the left padding of the element */
   padding-right: 0; /* Set the size of the right padding */
 }
@@ -720,7 +723,7 @@ td p {
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 12px; /* Set the width of the element */
 }
 
 ::-webkit-scrollbar-track {
