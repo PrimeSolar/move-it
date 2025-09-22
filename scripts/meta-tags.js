@@ -13,8 +13,11 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("head").appendChild(metaViewport);
 
   // Set `title` for the <html> element based on a webpage's content
+  const noTypingTitle = document.querySelector(".no-typing");
   const title = document.querySelector("h1");
-  if (title) {
+  if (noTypingTitle) {
+    document.title = noTypingTitle.textContent + " | Move It";
+  } else if (title) {
     document.title = title.textContent + " | Move It";
   } else {
     document.title = "Move It";
