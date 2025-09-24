@@ -2,141 +2,104 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="Explore our comprehensive moving glossary to understand common terms and phrases used in the moving industry. This resource will help you navigate your relocation with clarity and confidence."
-    />
+    <meta name="description" content="The Real&Mate Glossary of terms." />
     <meta
       name="keywords"
-      description="move, it, web, application, professional, relocation, service, customer"
+      content="real&mate, web application, documentation, glossary, document, real estate, business, management, estate"
     />
   </head>
 
   <body style="display: none">
-    <header id="navigationBarContainer"></header>
+    <header id="container">
+      <nav>
+        <nav-links-doc-main-page></nav-links-doc-main-page>
+      </nav>
+      <div id="header">
+        <h1>
+          <span class="title">Major Glossary</span><br />
+          <span id="subtitle"></span>
+        </h1>
+        <logo-img></logo-img>
+      </div>
+    </header>
 
     <main>
-      <div class="px-4 py-5 text-center align-items-center">
-        <!--prettier-ignore-->
-        <h1 class="display-4 fw-bold text-body-emphasis align-items-center center typing">Glossary</h1>
+      <!-- prettier-ignore -->
+      <p class="text-center speak">
+        This document serves as a glossary for terms and abbreviations commonly used within the Real&Mate web application and in its documentation. The glossary utilizes reusable content through JavaScript, allowing for dynamic updates and consistent terminology across the documentation.
+      </p>
+
+      <div class="container speak">
+        <table class="glossary">
+          <thead class="text-center">
+            <tr>
+              <th>Term/Abbreviation</th>
+              <th>Definition</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="gActiveSolarSystem"></tr>
+            <tr id="gAPI"></tr>
+            <tr id="gAuthorization"></tr>
+            <tr id="gAuthentication"></tr>
+            <tr id="gBuyersAgencyFee"></tr>
+            <tr id="gCMA"></tr>
+            <tr id="gDataSynchronization"></tr>
+            <tr id="gDeed"></tr>
+            <tr id="gEarnestMoney"></tr>
+            <tr id="gEnvironmentallyFriendlyHomeConstruction"></tr>
+            <tr id="gEndpoint"></tr>
+            <tr id="gHTTP"></tr>
+            <tr id="gInfrastructure"></tr>
+            <tr id="gInstallmentContract"></tr>
+            <tr id="gJSON"></tr>
+            <tr id="gListingPrice"></tr>
+            <tr id="gMetadata"></tr>
+            <tr id="gMortgageBanker"></tr>
+            <tr id="gOAuth" class="no-user"></tr>
+            <tr id="gOData" class="no-user"></tr>
+            <tr id="gPayload"></tr>
+            <tr id="gProtocol"></tr>
+            <tr id="gQuery"></tr>
+            <tr id="gRealEstate"></tr>
+            <tr id="gREST"></tr>
+          </tbody>
+        </table>
       </div>
 
-      <div class="container pb-5">
-        <section id="annotation" class="pb-5">
-          <p>
-            Moving to a new home can be an exciting time, and it also comes with
-            a lot of new information to learn. Industry professionals like
-            transport company employees and real estate agents often use
-            specialized terms and phrases that could be unfamiliar to you.
-          </p>
-          <p>
-            To help make the moving process smoother, we've created a
-            comprehensive moving glossary. Keep this handy as a quick reference
-            guide to understand the common words and phrases used in the moving
-            industry. Having these definitions at your fingertips can provide
-            clarity as you navigate your relocation.
-          </p>
-          <p>
-            Our moving glossary is here to be a helpful resource every step of
-            the way.
-          </p>
-        </section>
-        <section id="table">
-          <table id="glossary-table" class="no-sticky">
-            <thead class="text-center">
-              <tr>
-                <th>Term / Abbreviation</th>
-                <th>Definition</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr id="gAccess"></tr>
-              <tr id="gActualCharges"></tr>
-              <tr id="gAdditionalCharges"></tr>
-              <tr id="gAgent"></tr>
-              <tr id="gAgreedDeliveryDate"></tr>
-              <tr id="gApplianceService"></tr>
-              <tr id="gApplianceDolly"></tr>
-              <tr id="gAssessedValue"></tr>
-              <tr id="gBillOfLading"></tr>
-              <tr id="gBinding"></tr>
-              <tr id="gBulkyArticleCharge"></tr>
-              <tr id="gCargo"></tr>
-              <tr id="gCarrier"></tr>
-              <tr id="gCartage"></tr>
-              <tr id="gCarton"></tr>
-              <tr id="gCashonDeliveryCOD"></tr>
-              <tr id="gChangeOrder"></tr>
-              <tr id="gCrating"></tr>
-              <tr id="gCrossRegionalMove"></tr>
-              <tr id="gCube"></tr>
-              <tr id="gCubeSheet"></tr>
-              <tr id="gDeliveryReport"></tr>
-              <tr id="gDeliveryWindow"></tr>
-              <tr id="gDestinationAgent"></tr>
-              <tr id="gDiversion"></tr>
-              <tr id="gDivider"></tr>
-              <tr id="gDispatcher"></tr>
-              <tr id="gDoorToDoorService"></tr>
-              <tr id="gElevatorCharge"></tr>
-              <tr id="gEnRoute"></tr>
-              <tr id="gEssentialsBox"></tr>
-              <tr id="gExtendedLiability"></tr>
-              <tr id="gFlightCharge"></tr>
-              <tr id="gFullServiceMove"></tr>
-              <tr id="gFurnitureBlankets"></tr>
-              <tr id="gFurniturePads"></tr>
-              <tr id="gGrossWeight"></tr>
-              <tr id="gHighValueArticle"></tr>
-              <tr id="gInTransit"></tr>
-              <tr id="gInventory"></tr>
-              <tr id="gInvoice"></tr>
-              <tr id="gJointRate"></tr>
-              <tr id="gLineHaul"></tr>
-              <tr id="gLineHaulCharges"></tr>
-              <tr id="gLoadDate"></tr>
-              <tr id="gLocalMove"></tr>
-              <tr id="gLongCarryFee"></tr>
-              <tr id="gLongTermStorage"></tr>
-              <tr id="gMovingCompany"></tr>
-              <tr id="gMovingCost"></tr>
-              <tr id="gNetWeight"></tr>
-              <tr id="gNonBindingEstimate"></tr>
-              <tr id="gOriginAgent"></tr>
-              <tr id="gPallet"></tr>
-              <tr id="gPeakSeasonPeakSeasonRate"></tr>
-              <tr id="gPermanentStorage"></tr>
-              <tr id="gPreferredArrivalDatePAD"></tr>
-              <tr id="gQuote"></tr>
-              <tr id="gRelocationAssistance"></tr>
-              <tr id="gRouting"></tr>
-              <tr id="gShortHaul"></tr>
-              <tr id="gShuttleService"></tr>
-              <tr id="gStorageInTransitSIT"></tr>
-              <tr id="gStretchWrap"></tr>
-              <tr id="gSurvey"></tr>
-              <tr id="gTag"></tr>
-              <tr id="gTareWeight"></tr>
-              <tr id="gUnpacking"></tr>
-              <tr id="gVanForeman"></tr>
-              <tr id="gVanLine"></tr>
-            </tbody>
-          </table>
-        </section>
+      <div id="w3c">
+        <a
+          href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fprimesolar.github.io%2Fdocs%2Fglossary.html&profile=css3svg&usermedium=all&warning=no&vextwarning=&lang=en"
+          target="_blank"
+          rel="noopener noreferrer"
+          id="w3c-text"
+        >
+          Verified by World Wide Web Consortium:&nbsp;
+        </a>
+        <a
+          href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fprimesolar.github.io%2Fdocs%2Fglossary.html&profile=css3svg&usermedium=all&warning=no&vextwarning=&lang=en"
+          target="_blank"
+          rel="noopener noreferrer"
+          id="w3c-img"
+        >
+          <img id="w3c-img" />
+        </a>
       </div>
-
-      <section id="print"></section>
     </main>
 
-    <footer id="footerContainer"></footer>
+    <div id="footerContainer"></div>
 
-    <script src="scripts/components-min.js"></script>
-    <script src="scripts/theme-min.js"></script>
-    <script src="scripts/typing-min.js"></script>
-    <script src="scripts/slide-animation-min.js"></script>
-    <script src="scripts/chat-min.js"></script>
+    <script src="scripts/meta-tags-min.js"></script>
+    <script src="scripts/components-title-min.js"></script>
+    <script src="scripts/dark-theme-min.js"></script>
     <script src="scripts/glossary-min.js"></script>
     <script src="scripts/p-1-line-indent-min.js"></script>
-    <script src="scripts/meta-tags-min.js"></script>
+    <script src="scripts/menu-min.js"></script>
+    <script src="scripts/editor-mode-min.js"></script>
+    <script src="scripts/speak-min.js"></script>
+    <script src="scripts/screenshot-min.js"></script>
+    <script src="scripts/download-page-as-html-min.js"></script>
+    <script src="scripts/ripples-min.js"></script>
+    <script src="scripts/components-min.js"></script>
   </body>
 </html>
