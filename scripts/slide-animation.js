@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.head.appendChild(style);
 
   const animatedElements = document.querySelectorAll(
-    "img:not(.d-block.w-100.rounded-5), p"
+    "img:not(.d-block.w-100.rounded-5), h2, p"
   );
   // Add initial animation class to each element
   for (let x of animatedElements) {
