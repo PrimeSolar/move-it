@@ -102,6 +102,7 @@ body.dark-mode  {
     .card-label,
     .card-content,
     .card-content *,
+    #blog-post *,
     #movingChecklist,
     #movingChecklist *
   ) {
