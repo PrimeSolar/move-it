@@ -77,9 +77,19 @@ h1 {
   }
 }
 
-h1.center {
+h1.center,
+h2.center,
+h3.center,
+h4.center,
+h5.center,
+h6.center {
   margin-left: auto; /* Set the size of the left margin */
   margin-right: auto; /* Set the size for the right margin of the element */
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 1rem;
 }
 
 .typing {
@@ -289,6 +299,7 @@ to-top.active {
   left: 10vw;
   border-radius: 10px; /* Set the radius for the border of the element */
   padding: 50px; /* Set the size for the padding of the element */
+  background-color: #f8f9fa;
   box-shadow: 0 4px 20px #0000001a; /* Set the shadow for the element */
 }
 
@@ -668,10 +679,11 @@ td p {
 }
 
 .row {
-  padding-left: 0; /* Set the size for the left padding of the element */
-  padding-right: 0; /* Set the size of the right padding */
   margin-left: 0; /* Set the size of the left margin */
   margin-right: 0; /* Set the size for the right margin of the element */
+  padding-left: 0; /* Set the size for the left padding of the element */
+  padding-right: 0; /* Set the size of the right padding */
+  justify-content: space-between;
 }
 
 .row > .aos-item {
