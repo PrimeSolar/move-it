@@ -43,6 +43,9 @@ function createNavigationBar(navigationBarContainer) {
                 <a class="nav-link" href="faqs.html">FAQs</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="checklist.html">Checklist</a>
               </li>
               <li class="nav-item">
@@ -157,6 +160,7 @@ function createFooter(footer) {
           <li class="nav-item"><a class="nav-link px-2 text-body-secondary" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link px-2 text-body-secondary" href="pricing.html">Pricing</a></li>
           <li class="nav-item"><a class="nav-link px-2 text-body-secondary" href="faqs.html">FAQs</a></li>
+          <li class="nav-item"><a class="nav-link px-2 text-body-secondary" href="blog.html">Blog</a></li>
           <li class="nav-item"><a class="nav-link px-2 text-body-secondary" href="checklist.html">Checklist</a></li>
           <li class="nav-item"><a class="nav-link px-2 text-body-secondary" href="glossary.html">Glossary</a></li>
           <li class="nav-item"><a class="nav-link px-2 link-primary" href="contact.html">Contact</a></li>
