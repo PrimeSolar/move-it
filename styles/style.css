@@ -240,7 +240,7 @@ to-top.active {
 }
 
 #testimonialCarousel {
-  margin: 4vh 0;
+  margin: 4vh 0; /* Set the size for the margin of the element */
   border-radius: 10px; /* Set the radius for the border of the element */
   box-shadow: 0 4px 20px #0000001a; /* Set the shadow for the element */
   overflow: hidden; /* Set the overflow for the element */
@@ -436,14 +436,14 @@ to-top.active {
 }
 
 .card-content-not-title {
-  height: 84%;
+  height: 84%; /* Set the height of the element */
   font-size: 3vh; /* Set the font size for the text of the element */
   /* Use flexbox to align content inside the element */
   display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
   display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
   display: flex; /* Standard syntax for modern browsers (widely supported) */
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; /* Align flex items horizontally */
 }
 
 .card-dark-theme::before {
@@ -566,7 +566,7 @@ to-top.active {
 }
 
 .height-fit-content {
-  height: fit-content;
+  height: fit-content; /* Set the height of the element */
 }
 
 .plan-price {
@@ -683,7 +683,7 @@ td p {
   margin-right: 0; /* Set the size for the right margin of the element */
   padding-left: 0; /* Set the size for the left padding of the element */
   padding-right: 0; /* Set the size of the right padding */
-  justify-content: space-between;
+  justify-content: space-between; /* Align flex items horizontally */
 }
 
 .row > .aos-item {
@@ -699,7 +699,7 @@ td p {
 }
 
 #copyright {
-  margin: 0;
+  margin: 0; /* Set the size for the margin of the element */
 }
 
 #bmc-button {
