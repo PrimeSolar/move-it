@@ -1,3 +1,34 @@
+/*
+ * Chat Script
+ *
+ * This script initializes a chat for Move It, leveraging Dexie.js for
+ * local database storage. The chat interface allows users to interact with a virtual
+ * assistant, Zane, for inquiries related to moving services.
+ *
+ * Key Features:
+ * - Dynamically loads the Dexie library from the CDN if not already loaded.
+ * - Creates and manages a local database with tables for chat messages and
+ *   user interface state.
+ * - Implements a responsive chat interface with a header, scrollable message body,
+ *   and input field for user interactions.
+ * - Saves and retrieves chat messages and window states to maintain continuity across
+ *   sessions.
+ * - Includes a visual typing indicator to simulate operator responses.
+ * - Provides predefined responses based on user input, including greetings,
+ *   thanks, inquiries, and specific about moving services.
+ *
+ * Copyright © Vladislav Kazantsev
+ * All rights reserved.
+ * This code is the intellectual property of Vladislav Kazantsev.
+ * You are welcome to clone the related repository and use the code for exploratory purposes.
+ * However, unauthorized reproduction, modification, or redistribution of this code (including cloning of related repository or altering it for activities beyond exploratory use) is strictly prohibited.
+ * Code snippets may be shared only when the original author is explicitly credited and a direct link to the original source of the code is provided alongside the code snippet.
+ * Sharing the link to the file is permitted, except when directed toward retrieval purposes.
+ * Any form of interaction with this file is strictly prohibited when facilitated by the code, except when such interaction is for discussion or exchange purposes with others.
+ * This copyright notice applies globally.
+ * For inquiries about collaboration, usage outside exploratory purposes, or permissions, please contact: hypervisor7@pm.me
+ */
+
 (function () {
   // Load Dexie from the CDN if not already loaded
   let loadDexie = false;
@@ -126,8 +157,14 @@
 .move-it-operator-message-text {
   padding: 5px;
   background-color: #1177ff;
-  color: #ffffff;
   border-radius: 5px;
+  color: #ffffff;
+  overflow-wrap: break-word;
+  max-width: 90%;
+}
+
+.move-it-operator-message-text * {
+  color: #ffffff !important;
 }
 
 .user-message {
@@ -417,6 +454,52 @@
           return "I'm glad I could help! If you have any more questions, just let me know.";
         }
 
+        // Response to a compliment
+        if (
+          lowerInput.includes("that's really nice") ||
+          lowerInput.includes("that's beautiful")
+        ) {
+          return "Thank you! We're glad you like it! If you have any more questions or need help, feel free to reach out.";
+        }
+
+        // Response to a compliment about kindness
+        if (
+          lowerInput.includes("you are kind") ||
+          lowerInput.includes("you're kind") ||
+          lowerInput.includes("you are very kind") ||
+          lowerInput.includes("you're very kind") ||
+          lowerInput.includes("you are really kind") ||
+          lowerInput.includes("you're really kind") ||
+          lowerInput.includes("you are really nice") ||
+          lowerInput.includes("you're really nice") ||
+          lowerInput.includes("you are so kind") ||
+          lowerInput.includes("you're so kind") ||
+          lowerInput.includes("you are quite kind") ||
+          lowerInput.includes("you're quite kind") ||
+          lowerInput.includes("you are truly kind") ||
+          lowerInput.includes("you're truly kind") ||
+          lowerInput.includes("you are really sweet") ||
+          lowerInput.includes("you're really sweet") ||
+          lowerInput.includes("you are kind person") ||
+          lowerInput.includes("you're kind person") ||
+          lowerInput.includes("you are such a nice person") ||
+          lowerInput.includes("you're such a nice person") ||
+          lowerInput.includes("you are kind-hearted") ||
+          lowerInput.includes("you're kind-hearted") ||
+          lowerInput.includes("you are really thoughtful") ||
+          lowerInput.includes("you're really thoughtful") ||
+          lowerInput.includes("you are exceptionally kind") ||
+          lowerInput.includes("you're exceptionally kind") ||
+          lowerInput.includes("you are the kindest") ||
+          lowerInput.includes("you're the kindest") ||
+          lowerInput.includes("that is very kind of you") ||
+          lowerInput.includes("that's very kind of you") ||
+          lowerInput.includes("that is kind of you") ||
+          lowerInput.includes("that's kind of you")
+        ) {
+          return "Thank you! I'm always happy to help! If you have more questions, feel free to ask.";
+        }
+
         // Farewell responses
         else if (
           lowerInput.includes("bye") ||
@@ -585,6 +668,42 @@
           lowerInput.includes("relocation services")
         ) {
           return "We offer a range of moving services, including local and long-distance moves, packing, and unpacking. How can I assist you with your move?";
+        }
+
+        // Moving options response
+        else if (
+          lowerInput.includes("options for moving") ||
+          lowerInput.includes("moving options") ||
+          lowerInput.includes("what can i choose") ||
+          lowerInput.includes("what are my choices") ||
+          lowerInput.includes("what services do you offer")
+        ) {
+          return "We offer a full range of moving solutions, including <a href='https://primesolar.github.io/move-it/local-moving.html' rel='noopener noreferrer'><strong>local moves</strong></a>, <a href='https://primesolar.github.io/move-it/long-distance-moving.html' rel='noopener noreferrer'><strong>long‑distance relocations</strong></a>, <a href='https://primesolar.github.io/move-it/professional-packing.html' rel='noopener noreferrer'><strong>packing</strong></a>, <a href='https://primesolar.github.io/move-it/faqs.html' rel='noopener noreferrer'><strong>storage</strong></a>, <a href='https://primesolar.github.io/move-it/faqs.html' rel='noopener noreferrer'><strong>furniture disassembly/re‑assembly</strong></a>, and <a href='https://primesolar.github.io/move-it/commercial-moving.html' rel='noopener noreferrer'><strong>commercial/office moves</strong></a>.";
+        }
+
+        // Local moving response
+        if (
+          lowerInput.includes(
+            "what can you tell me about the moving within a city"
+          ) ||
+          lowerInput.includes("can you tell me about moving in the city") ||
+          lowerInput.includes("tell me about local moving") ||
+          lowerInput.includes("what services do you offer for city moves") ||
+          lowerInput.includes("what can you tell me about urban moving") ||
+          lowerInput.includes("info about moving within a city") ||
+          lowerInput.includes("moving services in the city") ||
+          lowerInput.includes("details about local moving") ||
+          lowerInput.includes("what do you provide for city relocations") ||
+          lowerInput.includes("about moving in my city") ||
+          lowerInput.includes("how do you handle local moves") ||
+          lowerInput.includes("what's included in local moving services") ||
+          lowerInput.includes("explain moving within a city") ||
+          lowerInput.includes("what are your local moving options") ||
+          lowerInput.includes("how does local moving work") ||
+          lowerInput.includes("can you provide details on city moves") ||
+          lowerInput.includes("describe your services for local moves")
+        ) {
+          return "We provide various local moving services tailored to your needs. This includes <a href='https://primesolar.github.io/move-it/professional-packing.html' rel='noopener noreferrer'><strong>professional packing</strong></a>, <a href='https://primesolar.github.io/move-it/faqs.html' rel='noopener noreferrer'><strong>furniture disassembly/re-assembly</strong></a>, and <a href='https://primesolar.github.io/move-it/contact.html' rel='noopener noreferrer'><strong>flexible scheduling options</strong></a> to make your move as smooth as possible. If you have specific questions or need more information, feel free to ask!";
         }
 
         // Storage options response
@@ -1040,6 +1159,27 @@
           return "Je suis heureux d'avoir pu vous aider ! Si vous avez d'autres questions, faites-le moi savoir.";
         }
 
+        // Réponse à un compliment
+        if (
+          lowerInput.includes("c'est vraiment beau") ||
+          lowerInput.includes("c'est vraiment joli")
+        ) {
+          return "Merci! Nous sommes ravis que cela vous plaise! Si vous avez d'autres questions ou besoin d'aide, n'hésitez pas à nous contacter.";
+        }
+
+        // Réponse à un compliment sur la gentillesse
+        if (
+          lowerInput.includes("vous êtes gentils") ||
+          lowerInput.includes("vous êtes très gentils") ||
+          lowerInput.includes("vous êtes vraiment gentils") ||
+          lowerInput.includes("vous êtes adorables") ||
+          lowerInput.includes("tu es gentil") ||
+          lowerInput.includes("tu es vraiment gentil") ||
+          lowerInput.includes("tu es très gentil")
+        ) {
+          return "Merci beaucoup! Je suis toujours content d'aider! Si vous avez d'autres questions, n'hésitez pas à demander.";
+        }
+
         // Réponses d'adieu
         else if (
           lowerInput.includes("au revoir") ||
@@ -1299,6 +1439,47 @@
           return "Nous pouvons vous fournir de l'aide pour l'emballage afin de garantir que vos articles sont sécurisés et organisés. Souhaitez-vous en savoir plus sur ce service ?";
         }
 
+        // Réponse sur le déménagement local
+        if (
+          lowerInput.includes(
+            "que pouvez-vous me dire sur le déménagement en ville"
+          ) ||
+          lowerInput.includes(
+            "pouvez-vous me parler des déménagements en ville"
+          ) ||
+          lowerInput.includes("parlez-moi du déménagement local") ||
+          lowerInput.includes(
+            "quels services offrez-vous pour les déménagements en ville"
+          ) ||
+          lowerInput.includes(
+            "que pouvez-vous me dire sur le déménagement urbain"
+          ) ||
+          lowerInput.includes("info sur le déménagement en ville") ||
+          lowerInput.includes("services de déménagement en ville") ||
+          lowerInput.includes("détails sur le déménagement local") ||
+          lowerInput.includes(
+            "que fournissez-vous pour les déménagements en ville"
+          ) ||
+          lowerInput.includes("concernant le déménagement dans ma ville") ||
+          lowerInput.includes("comment gérez-vous les déménagements locaux") ||
+          lowerInput.includes(
+            "qu'est-ce qui est inclus dans les services de déménagement local"
+          ) ||
+          lowerInput.includes("expliquez le déménagement en ville") ||
+          lowerInput.includes(
+            "quelles sont vos options de déménagement local"
+          ) ||
+          lowerInput.includes("comment fonctionne le déménagement local") ||
+          lowerInput.includes(
+            "pouvez-vous fournir des détails sur les déménagements en ville"
+          ) ||
+          lowerInput.includes(
+            "décrivez vos services pour les déménagements locaux"
+          )
+        ) {
+          return "Nous proposons divers services de déménagement locaux adaptés à vos besoins. Cela inclut <a href='https://primesolar.github.io/move-it/professional-packing.html' rel='noopener noreferrer'><strong>l'emballage professionnel</strong></a>, <a href='https://primesolar.github.io/move-it/faqs.html' rel='noopener noreferrer'><strong>le démontage/remontage de meubles</strong></a>, et <a href='https://primesolar.github.io/move-it/contact.html' rel='noopener noreferrer'><strong>des options de planification flexibles</strong></a> pour rendre votre déménagement aussi fluide que possible. Si vous avez des questions spécifiques ou besoin de plus d'informations, n'hésitez pas à demander!";
+        }
+
         // Réponse sur le déménagement commercial
         else if (
           lowerInput.includes("déménagement commercial") ||
@@ -1477,6 +1658,17 @@
           lowerInput.includes("conseils de demenagement")
         ) {
           return "Voici quelques conseils rapides pour déménager : commencez à emballer tôt, étiquetez vos boîtes et gardez les documents importants séparés. Souhaitez-vous des conseils plus détaillés ?";
+        }
+
+        // Options de déménagement
+        else if (
+          lowerInput.includes("options pour déménager") ||
+          lowerInput.includes("options de déménagement") ||
+          lowerInput.includes("qu'est-ce que je peux choisir") ||
+          lowerInput.includes("quelles sont mes options") ||
+          lowerInput.includes("quels services offrez-vous")
+        ) {
+          return "Nous offrons une gamme complète de solutions de déménagement, y compris <a href='https://primesolar.github.io/move-it/local-moving.html' rel='noopener noreferrer'><strong>déménagements locaux</strong></a>, <a href='https://primesolar.github.io/move-it/long-distance-moving.html' rel='noopener noreferrer'><strong>déménagements longue distance</strong></a>, <a href='https://primesolar.github.io/move-it/professional-packing.html' rel='noopener noreferrer'><strong>emballage</strong></a>, <a href='https://primesolar.github.io/move-it/faqs.html' rel='noopener noreferrer'><strong>stockage</strong></a>, <a href='https://primesolar.github.io/move-it/faqs.html' rel='noopener noreferrer'><strong>démontage/remontage de meubles</strong></a>, et <a href='https://primesolar.github.io/move-it/commercial-moving.html' rel='noopener noreferrer'><strong>déménagements commerciaux/bureaux</strong></a>.";
         }
 
         // Réponse sur les zones de service
@@ -1760,6 +1952,26 @@
           return "¡Me alegra haber podido ayudarte! Si tienes más preguntas, házmelo saber.";
         }
 
+        // Respuesta a un cumplido
+        if (
+          lowerInput.includes("eso es muy bonito") ||
+          lowerInput.includes("eso es realmente lindo")
+        ) {
+          return "¡Gracias! Nos alegra que te guste. Si tienes más preguntas o necesitas ayuda, no dudes en contactarnos.";
+        }
+
+        // Respuesta a un cumplido sobre la amabilidad
+        if (
+          lowerInput.includes("ustedes son amables") ||
+          lowerInput.includes("son muy amables") ||
+          lowerInput.includes("ustedes son realmente amables") ||
+          lowerInput.includes("tú eres amable") ||
+          lowerInput.includes("eres muy amable") ||
+          lowerInput.includes("tú eres realmente amable")
+        ) {
+          return "¡Muchas gracias! ¡Siempre estoy feliz de ayudar! Si tienes más preguntas, no dudes en preguntar.";
+        }
+
         // Respuestas de despedida
         else if (
           lowerInput.includes("adiós") ||
@@ -1966,6 +2178,17 @@
           return "Ofrecemos una gama de servicios de mudanza, incluyendo mudanzas locales y de larga distancia, embalaje y desembalaje. ¿Cómo puedo ayudarte con tu mudanza?";
         }
 
+        // Opciones de mudanza
+        else if (
+          lowerInput.includes("opciones para mudanza") ||
+          lowerInput.includes("opciones de mudanza") ||
+          lowerInput.includes("¿qué puedo elegir?") ||
+          lowerInput.includes("¿cuáles son mis opciones?") ||
+          lowerInput.includes("¿qué servicios ofrecen?")
+        ) {
+          return "Ofrecemos una gama completa de soluciones de mudanza, incluyendo <a href='https://primesolar.github.io/move-it/local-moving.html' rel='noopener noreferrer'><strong>mudanzas locales</strong></a>, <a href='https://primesolar.github.io/move-it/long-distance-moving.html' rel='noopener noreferrer'><strong>mudanzas de larga distancia</strong></a>, <a href='https://primesolar.github.io/move-it/professional-packing.html' rel='noopener noreferrer'><strong>empaquetado</strong></a>, <a href='https://primesolar.github.io/move-it/faqs.html' rel='noopener noreferrer'><strong>almacenamiento</strong></a>, <a href='https://primesolar.github.io/move-it/faqs.html' rel='noopener noreferrer'><strong>desmontaje/remontaje de muebles</strong></a>, y <a href='https://primesolar.github.io/move-it/commercial-moving.html' rel='noopener noreferrer'><strong>mudanzas comerciales/oficina</strong></a>.";
+        }
+
         // Respuesta sobre opciones de almacenamiento
         else if (lowerInput.includes("opciones de almacenamiento")) {
           return "Ofrecemos soluciones de almacenamiento seguras para los artículos que podrías no necesitar de inmediato en tu nueva dirección. ¿Te gustaría saber más?";
@@ -2030,6 +2253,39 @@
           lowerInput.includes("ayuda a el embalaje")
         ) {
           return "Podemos proporcionarle ayuda para el embalaje para garantizar que sus artículos estén seguros y organizados. ¿Le gustaría saber más sobre este servicio?";
+        }
+
+        // Respuesta sobre mudanza local
+        if (
+          lowerInput.includes(
+            "¿qué me puedes contar sobre la mudanza dentro de una ciudad?"
+          ) ||
+          lowerInput.includes("¿puedes hablarme de mudanzas en la ciudad?") ||
+          lowerInput.includes("cuéntame sobre la mudanza local") ||
+          lowerInput.includes(
+            "¿qué servicios ofreces para mudanzas en la ciudad?"
+          ) ||
+          lowerInput.includes("¿qué puedes decirme sobre mudanzas urbanas?") ||
+          lowerInput.includes("info sobre mudanza dentro de una ciudad") ||
+          lowerInput.includes("servicios de mudanza en la ciudad") ||
+          lowerInput.includes("detalles sobre mudanza local") ||
+          lowerInput.includes(
+            "¿qué proporcionas para reubicaciones en la ciudad?"
+          ) ||
+          lowerInput.includes("acerca de la mudanza en mi ciudad") ||
+          lowerInput.includes("¿cómo manejas las mudanzas locales?") ||
+          lowerInput.includes("¿qué incluye el servicio de mudanza local?") ||
+          lowerInput.includes(
+            "explica cómo funciona la mudanza dentro de una ciudad"
+          ) ||
+          lowerInput.includes("¿cuáles son tus opciones de mudanza local?") ||
+          lowerInput.includes("¿cómo funciona la mudanza local?") ||
+          lowerInput.includes(
+            "¿puedes proporcionar detalles sobre mudanzas en la ciudad?"
+          ) ||
+          lowerInput.includes("describe tus servicios para mudanzas locales")
+        ) {
+          return "Ofrecemos varios servicios de mudanza local adaptados a tus necesidades. Esto incluye <a href='https://primesolar.github.io/move-it/professional-packing.html' rel='noopener noreferrer'><strong>empaquetado profesional</strong></a>, <a href='https://primesolar.github.io/move-it/faqs.html' rel='noopener noreferrer'><strong>desmontaje/montaje de muebles</strong></a>, y <a href='https://primesolar.github.io/move-it/contact.html' rel='noopener noreferrer'><strong>opciones de programación flexibles</strong></a> para que tu mudanza sea lo más fluida posible. Si tienes preguntas específicas o necesitas más información, no dudes en preguntar!";
         }
 
         // Respuesta sobre el mudanza comercial
@@ -2521,6 +2777,26 @@
           return "¡Fico feliz em poder ajudar! Se você tiver mais perguntas, me avise.";
         }
 
+        // Resposta a um elogio
+        if (
+          lowerInput.includes("isso é realmente bonito") ||
+          lowerInput.includes("isso é bem legal")
+        ) {
+          return "Obrigado! Estamos felizes que você gostou! Se você tiver mais perguntas ou precisar de ajuda, fique à vontade para nos contatar.";
+        }
+
+        // Resposta a um elogio sobre a bondade
+        if (
+          lowerInput.includes("vocês são gentis") ||
+          lowerInput.includes("são muito gentis") ||
+          lowerInput.includes("vocês são realmente gentis") ||
+          lowerInput.includes("você é gentil") ||
+          lowerInput.includes("você é muito gentil") ||
+          lowerInput.includes("você é realmente gentil")
+        ) {
+          return "Muito obrigado! Estou sempre feliz em ajudar! Se você tiver mais perguntas, fique à vontade para perguntar.";
+        }
+
         // Respostas de despedida
         else if (
           lowerInput.includes("adeus") ||
@@ -2729,6 +3005,17 @@
           return "Oferecemos uma gama de serviços de mudança, incluindo mudanças locais e de longa distância, embalagem e desembalagem. Como posso ajudá-lo com sua mudança?";
         }
 
+        // Opções de mudança
+        else if (
+          lowerInput.includes("opções para mudança") ||
+          lowerInput.includes("opções de mudança") ||
+          lowerInput.includes("o que posso escolher") ||
+          lowerInput.includes("quais são as minhas opções") ||
+          lowerInput.includes("quais serviços você oferece")
+        ) {
+          return "Oferecemos uma gama completa de soluções para mudança, incluindo <a href='https://primesolar.github.io/move-it/local-moving.html' rel='noopener noreferrer'><strong>mudanças locais</strong></a>, <a href='https://primesolar.github.io/move-it/long-distance-moving.html' rel='noopener noreferrer'><strong>mudanças de longa distância</strong></a>, <a href='https://primesolar.github.io/move-it/professional-packing.html' rel='noopener noreferrer'><strong>embalagem</strong></a>, <a href='https://primesolar.github.io/move-it/faqs.html' rel='noopener noreferrer'><strong>armazenamento</strong></a>, <a href='https://primesolar.github.io/move-it/faqs.html' rel='noopener noreferrer'><strong>desmontagem/montagem de móveis</strong></a>, e <a href='https://primesolar.github.io/move-it/commercial-moving.html' rel='noopener noreferrer'><strong>mudanças comerciais/escritórios</strong></a>.";
+        }
+
         // Resposta sobre opções de armazenamento
         else if (
           lowerInput.includes("opções de armazenamento") ||
@@ -2802,6 +3089,41 @@
           lowerInput.includes("ajuda ao embalamento")
         ) {
           return "Podemos fornecer ajuda para o embalamento para garantir que seus itens estejam seguros e organizados. Você gostaria de saber mais sobre este serviço?";
+        }
+
+        // Resposta sobre mudança local
+        if (
+          lowerInput.includes(
+            "o que você pode me dizer sobre mudanças na cidade"
+          ) ||
+          lowerInput.includes("pode me falar sobre mudanças na cidade") ||
+          lowerInput.includes("fale-me sobre mudança local") ||
+          lowerInput.includes(
+            "quais serviços você oferece para mudanças na cidade"
+          ) ||
+          lowerInput.includes(
+            "o que você pode me dizer sobre mudanças urbanas"
+          ) ||
+          lowerInput.includes("info sobre mudanças na cidade") ||
+          lowerInput.includes("serviços de mudança na cidade") ||
+          lowerInput.includes("detalhes sobre mudança local") ||
+          lowerInput.includes(
+            "o que você fornece para realocações na cidade"
+          ) ||
+          lowerInput.includes("sobre mudanças na minha cidade") ||
+          lowerInput.includes("como você lida com mudanças locais") ||
+          lowerInput.includes(
+            "o que está incluído nos serviços de mudança local"
+          ) ||
+          lowerInput.includes("explique mudanças na cidade") ||
+          lowerInput.includes("quais são suas opções de mudança local") ||
+          lowerInput.includes("como funcionam as mudanças locais") ||
+          lowerInput.includes(
+            "você pode fornecer detalhes sobre mudanças na cidade"
+          ) ||
+          lowerInput.includes("descreva seus serviços para mudanças locais")
+        ) {
+          return "Oferecemos vários serviços de mudança local adaptados às suas necessidades. Isso inclui <a href='https://primesolar.github.io/move-it/professional-packing.html' rel='noopener noreferrer'><strong>embalagem profissional</strong></a>, <a href='https://primesolar.github.io/move-it/faqs.html' rel='noopener noreferrer'><strong>desmontagem/montagem de móveis</strong></a>, e <a href='https://primesolar.github.io/move-it/contact.html' rel='noopener noreferrer'><strong>opções de agendamento flexíveis</strong></a> para tornar sua mudança o mais tranquila possível. Se você tiver perguntas específicas ou precisar de mais informações, sinta-se à vontade para perguntar!";
         }
 
         // Resposta sobre a mudança comercial
@@ -3360,6 +3682,26 @@
           return "بالطبع! ماذا تحتاج من مساعدة بخصوص انتقالك؟ نحن نقدم مجموعة متنوعة من الخدمات لجعل انتقالك خاليًا من المتاعب.";
         }
 
+        // رد على مجاملة
+        if (
+          lowerInput.includes("هذا جميل جداً") ||
+          lowerInput.includes("هذا بالفعل لطيف")
+        ) {
+          return "شكراً! نحن سعداء لأنه أعجبك! إذا كان لديك المزيد من الأسئلة أو تحتاج إلى مساعدة، فلا تتردد في التواصل معنا.";
+        }
+
+        // رد على مجاملة حول اللطف
+        if (
+          lowerInput.includes("أنتم لطفاء") ||
+          lowerInput.includes("أنتم لطيفون جداً") ||
+          lowerInput.includes("أنتم حقًا لطفاء") ||
+          lowerInput.includes("أنت لطيف") ||
+          lowerInput.includes("أنت لطيف جدًا") ||
+          lowerInput.includes("أنت حقًا لطيف")
+        ) {
+          return "شكراً جزيلاً! أنا دائماً سعيد بمساعدتك! إذا كان لديك المزيد من الأسئلة، فلا تتردد في السؤال.";
+        }
+
         // رد شكر
         else if (
           lowerInput.includes("شكرًا") ||
@@ -3896,6 +4238,17 @@
           return "يمكننا أيضًا مساعدتك في الانتقالات الدولية! يتمتع فريقنا بخبرة في إدارة الجمارك واللوجستيات لإعادة التوطين في الخارج. هل ترغب في مزيد من المعلومات؟";
         }
 
+        // خيارات النقل
+        else if (
+          lowerInput.includes("خيارات النقل") ||
+          lowerInput.includes("خيارات الانتقال") ||
+          lowerInput.includes("ماذا يمكنني أن أختار") ||
+          lowerInput.includes("ما هي خياراتي") ||
+          lowerInput.includes("ما الخدمات التي تقدمونها؟")
+        ) {
+          return "نحن نقدم مجموعة كاملة من حلول النقل، بما في ذلك <a href='https://primesolar.github.io/move-it/local-moving.html' rel='noopener noreferrer'><strong>النقل المحلي</strong></a>، <a href='https://primesolar.github.io/move-it/long-distance-moving.html' rel='noopener noreferrer'><strong>النقل لمسافات طويلة</strong></a>، <a href='https://primesolar.github.io/move-it/professional-packing.html' rel='noopener noreferrer'><strong>التعبئة</strong></a>، <a href='https://primesolar.github.io/move-it/faqs.html' rel='noopener noreferrer'><strong>التخزين</strong></a>، <a href='https://primesolar.github.io/move-it/faqs.html' rel='noopener noreferrer'><strong>تفكيك وتجميع الأثاث</strong></a>، و <a href='https://primesolar.github.io/move-it/commercial-moving.html' rel='noopener noreferrer'><strong>النقل التجاري/المكاتب</strong></a>.";
+        }
+
         // رد إضافي حول الانتقالات الدولية
         else if (
           lowerInput.includes("الانتقال إلى الخارج") ||
@@ -4033,6 +4386,31 @@
           lowerInput.includes("التكيف الثقافي")
         ) {
           return "يمكننا تقديم نصائح وموارد لمساعدتك على الاستقرار بسلاسة. هل ترغب في مزيد من المعلومات؟";
+        }
+
+        // رد على الاستفسار حول النقل المحلي
+        if (
+          lowerInput.includes("ماذا يمكنك أن تخبرني عن النقل في المدينة") ||
+          lowerInput.includes("هل يمكنك أن تخبرني عن النقل في المدينة؟") ||
+          lowerInput.includes("أخبرني عن النقل المحلي") ||
+          lowerInput.includes(
+            "ما هي الخدمات التي تقدمونها للنقل داخل المدينة؟"
+          ) ||
+          lowerInput.includes("ماذا يمكنك أن تخبرني عن النقل الحضري") ||
+          lowerInput.includes("معلومات عن النقل داخل المدينة") ||
+          lowerInput.includes("خدمات النقل في المدينة") ||
+          lowerInput.includes("تفاصيل حول النقل المحلي") ||
+          lowerInput.includes("ماذا تقدمون للنقل في المدينة؟") ||
+          lowerInput.includes("حول النقل في مدينتي") ||
+          lowerInput.includes("كيف تتعاملون مع النقل المحلي؟") ||
+          lowerInput.includes("ما الذي يتضمنه خدمات النقل المحلي؟") ||
+          lowerInput.includes("اشرح لي عن النقل في المدينة") ||
+          lowerInput.includes("ما هي خيارات النقل المحلي لديك؟") ||
+          lowerInput.includes("كيف يعمل النقل المحلي؟") ||
+          lowerInput.includes("هل يمكنك تقديم تفاصيل حول النقل في المدينة؟") ||
+          lowerInput.includes("صف خدماتك للنقل المحلي")
+        ) {
+          return "نحن نقدم مجموعة متنوعة من خدمات النقل المحلي المصممة وفقاً لاحتياجاتك. وهذا يشمل <a href='https://primesolar.github.io/move-it/professional-packing.html' rel='noopener noreferrer'><strong>التعبئة الاحترافية</strong></a>، <a href='https://primesolar.github.io/move-it/faqs.html' rel='noopener noreferrer'><strong>تفكيك/تجميع الأثاث</strong></a>، و <a href='https://primesolar.github.io/move-it/contact.html' rel='noopener noreferrer'><strong>خيارات مرنة للجدولة</strong></a> لجعل انتقالك سلساً قدر الإمكان. إذا كان لديك أسئلة محددة أو تحتاج إلى مزيد من المعلومات، فلا تتردد في السؤال!";
         }
 
         // رد حول التأمين الدولي
@@ -4217,6 +4595,36 @@
           return "Drago mi je da sam mogao da pomognem! Ako imate još pitanja, samo mi javite.";
         }
 
+        // Odgovor na kompliment
+        if (
+          lowerInput.includes("to je baš lepo") ||
+          lowerInput.includes("to je bas lepo")
+        ) {
+          return "Hvala! Drago nam je da vam se sviđa! Ako imate još pitanja ili vam treba pomoć, slobodno se javite.";
+        }
+
+        // Odgovor na kompliment o ljubaznosti
+        if (
+          lowerInput.includes("vi ste ljubazni") ||
+          lowerInput.includes("ljubazni ste") ||
+          lowerInput.includes("vi ste veoma ljubazni") ||
+          lowerInput.includes("veoma ste ljubazni") ||
+          lowerInput.includes("vi ste baš ljubazni") ||
+          lowerInput.includes("vi ste bas ljubazni") ||
+          lowerInput.includes("baš ste ljubazni") ||
+          lowerInput.includes("bas ste ljubazni") ||
+          lowerInput.includes("ti si ljubazan") ||
+          lowerInput.includes("ljubazan si") ||
+          lowerInput.includes("ti si veoma ljubazan") ||
+          lowerInput.includes("veoma si ljubazan") ||
+          lowerInput.includes("ti si baš ljubazan") ||
+          lowerInput.includes("ti si bas ljubazan") ||
+          lowerInput.includes("baš si ljubazan") ||
+          lowerInput.includes("bas si ljubazan")
+        ) {
+          return "Hvala vam! Uvek mi je drago da pomognem! Ako imate još pitanja, slobodno pitajte.";
+        }
+
         // Odgovori na pozdrav
         else if (
           lowerInput.includes("prijatno") ||
@@ -4397,6 +4805,19 @@
           return "Mogu da vam pomognem sa raznim pitanjima o selidbi, od lokalnih do dugih selidbi, pakovanja i još mnogo toga. Samo pitajte!";
         }
 
+        // Opcije za selidbu
+        else if (
+          lowerInput.includes("opcije za selidbu") ||
+          lowerInput.includes("mogućnosti selidbe") ||
+          lowerInput.includes("mogucnosti selidbe") ||
+          lowerInput.includes("šta mogu da izaberem") ||
+          lowerInput.includes("sta mogu da izaberem") ||
+          lowerInput.includes("koje su moje opcije") ||
+          lowerInput.includes("koje usluge nudite")
+        ) {
+          return "Nudimo kompletnu paletu rešenja za selidbu, uključujući <a href='https://primesolar.github.io/move-it/local-moving.html' rel='noopener noreferrer'><strong>lokalne selidbe</strong></a>, <a href='https://primesolar.github.io/move-it/long-distance-moving.html' rel='noopener noreferrer'><strong>selidbe na velike udaljenosti</strong></a>, <a href='https://primesolar.github.io/move-it/professional-packing.html' rel='noopener noreferrer'><strong>pakovanje</strong></a>, <a href='https://primesolar.github.io/move-it/faqs.html' rel='noopener noreferrer'><strong>skladištenje</strong></a>, <a href='https://primesolar.github.io/move-it/faqs.html' rel='noopener noreferrer'><strong>rastavljanje/montaža nameštaja</strong></a>, i <a href='https://primesolar.github.io/move-it/commercial-moving.html' rel='noopener noreferrer'><strong>komercijalne/uredske selidbe</strong></a>.";
+        }
+
         // Dodatni odgovor o sposobnostima
         else if (
           lowerInput.includes("koje usluge možeš da pružiš") ||
@@ -4530,6 +4951,43 @@
           lowerInput.includes("pomoc pri pakovanju")
         ) {
           return "Možemo pružiti pomoć pri pakovanju kako bismo osigurali da su vaši predmeti sigurni i organizovani. Da li želite da saznate više o ovoj usluzi?";
+        }
+
+        // Odgovor na upit o lokalnoj selidbi
+        if (
+          lowerInput.includes("šta možete reći o selidbi unutar grada") ||
+          lowerInput.includes("sta mozete reci o selidbi unutar grada") ||
+          lowerInput.includes("možete li mi reći nešto o selidbi u gradu") ||
+          lowerInput.includes("mozete li mi reci nesto o selidbi u gradu") ||
+          lowerInput.includes("pričajte mi o lokalnoj selidbi") ||
+          lowerInput.includes("pricajte mi o lokalnoj selidbi") ||
+          lowerInput.includes("koje usluge nudite za selidbe u gradu") ||
+          lowerInput.includes("šta možete reći o gradskim selidbama") ||
+          lowerInput.includes("sta mozete reci o gradskim selidbama") ||
+          lowerInput.includes("informacije o selidbi unutar grada") ||
+          lowerInput.includes("usluge selidbe u gradu") ||
+          lowerInput.includes("detalji o lokalnim selidbama") ||
+          lowerInput.includes("šta pružate za selidbe u gradu") ||
+          lowerInput.includes("sta pruzate za selidbe u gradu") ||
+          lowerInput.includes("o selidbi u mom gradu") ||
+          lowerInput.includes("kako se nosite sa lokalnim selidbama") ||
+          lowerInput.includes("šta je uključeno u usluge lokalne selidbe") ||
+          lowerInput.includes("sta je ukljuceno u usluge lokalne selidbe") ||
+          lowerInput.includes("objasnite mi selidbu unutar grada") ||
+          lowerInput.includes("koje su vaše opcije za lokalne selidbe") ||
+          lowerInput.includes("koje su vase opcije za lokalne selidbe") ||
+          lowerInput.includes("kako funkcionišu lokalne selidbe") ||
+          lowerInput.includes("kako funkcionisu lokalne selidbe") ||
+          lowerInput.includes(
+            "možete li pružiti detalje o selidbama u gradu"
+          ) ||
+          lowerInput.includes(
+            "mozete li pruziti detalje o selidbama u gradu"
+          ) ||
+          lowerInput.includes("opišite svoje usluge za lokalne selidbe") ||
+          lowerInput.includes("opisite svoje usluge za lokalne selidbe")
+        ) {
+          return "Nudimo razne usluge lokalne selidbe prilagođene vašim potrebama. To uključuje <a href='https://primesolar.github.io/move-it/professional-packing.html' rel='noopener noreferrer'><strong>profesionalno pakovanje</strong></a>, <a href='https://primesolar.github.io/move-it/faqs.html' rel='noopener noreferrer'><strong>rastavljanje/montažu nameštaja</strong></a>, i <a href='https://primesolar.github.io/move-it/contact.html' rel='noopener noreferrer'><strong>fleksibilne opcije zakazivanja</strong></a> kako bi vaša selidba bila što lakša. Ako imate konkretna pitanja ili vam treba više informacija, slobodno pitajte!";
         }
 
         // Odgovor na komercijalne selidbe
