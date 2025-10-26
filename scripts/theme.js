@@ -1,3 +1,43 @@
+/*
+ * Theme Management Script
+ *
+ * This script handles the theme management of the Move It web application by utilizing Dexie.js
+ * for storing theme preferences in IndexedDB. It allows to toggle between
+ * themes and applies the selected mode to a webpage, improving user experience and
+ * ensuring the interface is visually appealing.
+ *
+ * 1. **Loading Dexie.js**: a <script> element is created dynamically to load the Dexie.js library.
+ * Once the library is loaded, it initializes a new Dexie database named "Move It" with a
+ * table called "themeTable", where the current theme preference will be stored.
+ *
+ * 2. **Setting the Theme**: the "setTheme" function retrieves the saved theme from the "themeTable".
+ * If a theme is found, it applies that theme to the <body> by adding the corresponding class.
+ *
+ * 3. **Styling for Themes**: a <style> element is created and appended to the document head,
+ * that includes various rules.
+ * Specific styles are applied to different elements,
+ * ensuring a consistent look and feel throughout the web application.
+ *
+ * 4. **Toggling Themes**: the "toggleTheme" function allows users to switch between modes.
+ * It checks the current theme applied to the <body>, removes the current theme, and adds the new one.
+ * The function handles overflow styles to prevent layout shifts during the transition.
+ * It also saves the currently applied theme in the `themeTable`, clearing previous entries to avoid duplicates.
+ *
+ * 5. **Initialization**: upon loading the script, the saved theme is applied automatically,
+ * ensuring users see their preferences immediately upon visiting the web application.
+ *
+ * Copyright © Vladislav Kazantsev
+ * All rights reserved.
+ * This code is the intellectual property of Vladislav Kazantsev.
+ * You are welcome to clone the related repository and use the code for exploratory purposes.
+ * However, unauthorized reproduction, modification, or redistribution of this code (including cloning of related repository or altering it for activities beyond exploratory use) is strictly prohibited.
+ * Code snippets may be shared only when the original author is explicitly credited and a direct link to the original source of the code is provided alongside the code snippet.
+ * Sharing the link to the file is permitted, except when directed toward retrieval purposes.
+ * Any form of interaction with this file is strictly prohibited when facilitated by the code, except when such interaction is for discussion or exchange purposes with others.
+ * This copyright notice applies globally.
+ * For inquiries about collaboration, usage outside exploratory purposes, or permissions, please contact: hypervisor7@pm.me
+ */
+
 let db;
 
 const dexieScript = document.createElement("script");
@@ -38,7 +78,7 @@ style.textContent = `
   background-color: #7a7a7a !important;
 }
 
-body.dark-mode  {
+body.dark-mode {
   background-color: #1f1f1f !important;
   color: #e0e0e0 !important;
 }
