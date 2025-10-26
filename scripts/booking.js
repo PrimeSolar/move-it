@@ -1,3 +1,18 @@
+/*
+ * Booking System Functionality Script
+ *
+ * Copyright © Vladislav Kazantsev
+ * All rights reserved.
+ * This code is the intellectual property of Vladislav Kazantsev.
+ * You are welcome to clone the related repository and use the code for exploratory purposes.
+ * However, unauthorized reproduction, modification, or redistribution of this code (including cloning of related repository or altering it for activities beyond exploratory use) is strictly prohibited.
+ * Code snippets may be shared only when the original author is explicitly credited and a direct link to the original source of the code is provided alongside the code snippet.
+ * Sharing the link to the file is permitted, except when directed toward retrieval purposes.
+ * Any form of interaction with this file is strictly prohibited when facilitated by the code, except when such interaction is for discussion or exchange purposes with others.
+ * This copyright notice applies globally.
+ * For inquiries about collaboration, usage outside exploratory purposes, or permissions, please contact: hypervisor7@pm.me
+ */
+
 // Function to update booked moves display
 function updateBookedMoves() {
   const currentHour = new Date().getHours();
@@ -50,8 +65,8 @@ function updateDiscountCountdown() {
   const countdownElement = document.getElementById("countdown");
 
   if (timeLeft > 0) {
-    const seconds = Math.floor((timeLeft / 1000) % 60);
     const minutes = Math.floor((timeLeft / 1000 / 60) % 60);
+    const seconds = Math.floor((timeLeft / 1000) % 60);
     countdownElement.innerText = `Hurry! ${minutes}m ${seconds}s left for 15% off!`;
     setTimeout(updateDiscountCountdown, 1000);
   } else {
@@ -61,4 +76,5 @@ function updateDiscountCountdown() {
   }
 }
 
-startDiscountCountdown();
+// Call the function when the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", startDiscountCountdown);
