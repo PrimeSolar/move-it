@@ -20,26 +20,26 @@
  */
 
  * {
-  margin: 0; /* Set the size for the margin of the element */
+  margin: 0; /* Set the size for the margin of the element. */
   border: 0;
-  padding: 0; /* Set the size for the padding of the element */
-  -moz-box-sizing: border-box; /* For older versions of Firefox */
-  -webkit-box-sizing: border-box; /* For older versions of Chrome and Safari */
+  padding: 0; /* Set the size for the padding of the element. */
+  -moz-box-sizing: border-box; /* For older versions of Firefox. */
+  -webkit-box-sizing: border-box; /* For older versions of Chrome and Safari. */
   box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth; /* Set the scroll behavior of the element */
+  scroll-behavior: smooth; /* Set the scroll behavior of the element. */
 }
 
 body {
-  margin: 0; /* Set the size for the margin of the element */
-  padding: 0; /* Set the size for the padding of the element */
+  margin: 0; /* Set the size for the margin of the element. */
+  padding: 0; /* Set the size for the padding of the element. */
   transition: background-color 0.37s, color 0.37s;
   overflow-x: hidden;
 }
 
-/* Loader Overlay Style Rules */
+/* Loader Overlay Style Rules. */
 /* #loaderOverlay {
   position: fixed;
   top: 0;
@@ -72,29 +72,29 @@ svg.loader {
   width: 80px;
   height: 80px;
   animation: rotate 1.5s linear infinite;
-} */
+}. */
 
 .link-primary {
-  color: #0088ff; /* Set the color for the text of the element */
+  color: #0088ff; /* Set the color for the text of the element. */
 }
 
 #logo {
-  height: 30px; /* Set the height of the element */
-  margin-right: 5px; /* Set the size for the right margin of the element */
+  height: 30px; /* Set the height of the element. */
+  margin-right: 5px; /* Set the size for the right margin of the element. */
 }
 
 h1 {
-  width: fit-content; /* Set the width of the element */
+  width: fit-content; /* Set the width of the element. */
   line-height: 1.5 !important;
   animation: brighten 1s;
 }
 
 @keyframes brighten {
   0% {
-    opacity: 0; /* Set the opacity of the element */
+    opacity: 0; /* Set the opacity of the element. */
   }
   100% {
-    opacity: 1; /* Set the opacity of the element */
+    opacity: 1; /* Set the opacity of the element. */
   }
 }
 
@@ -104,8 +104,8 @@ h3.center,
 h4.center,
 h5.center,
 h6.center {
-  margin-left: auto; /* Set the size of the left margin */
-  margin-right: auto; /* Set the size for the right margin of the element */
+  margin-left: auto; /* Set the size of the left margin. */
+  margin-right: auto; /* Set the size for the right margin of the element. */
   text-align: center;
 }
 
@@ -127,10 +127,10 @@ h3 {
 
 @keyframes typing {
   from {
-    width: 0; /* Set the width of the element */
+    width: 0; /* Set the width of the element. */
   }
   to {
-    width: 100%; /* Set the width of the element */
+    width: 100%; /* Set the width of the element. */
   }
 }
 
@@ -142,7 +142,7 @@ h3 {
 
 main {
   background: linear-gradient(to right, #f1f5ff, #f1f7ff);
-  padding: 20px; /* Set the size for the padding of the element */
+  padding: 20px; /* Set the size for the padding of the element. */
   /* background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite; */
 }
@@ -151,7 +151,7 @@ main {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
-} */
+}. */
 
 @font-face {
   font-family: "Thirsty Script";
@@ -165,54 +165,54 @@ main {
 }
 
 #index-first-img {
-  max-height: 30vh; /* Set the maximum height of the element */
+  max-height: 30vh; /* Set the maximum height of the element. */
 }
 
 to-top {
-  background-color: #0088ff; /* Set the color of the background */
-  position: fixed; /* Specify the positioning method for the element */
-  bottom: 56px; /* Position the element 56 pixels from the bottom of the viewport */
-  right: 25px; /* Position the element 25 pixels from the right side of the viewport */
-  width: 45px; /* Set the width of the element */
-  height: 45px; /* Set the height of the element */
-  opacity: 0; /* Set the opacity of the element */
-  z-index: 2; /* Set the stacking order of the element */
-  font-size: 16px; /* Set the font size for the text of the element */
-  text-decoration: none; /* Remove underline from the text */
-  pointer-events: none; /* Deactivate pointer events */
-  transition: 0.25s; /* Set an effect of a transition */
-  /* Use flexbox to align content inside the element */
-  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model */
-  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
-  display: flex; /* Standard syntax for modern browsers (widely supported) */
+  background-color: #0088ff; /* Set the color of the background. */
+  position: fixed; /* Specify the positioning method for the element. */
+  bottom: 56px; /* Position the element 56 pixels from the bottom of the viewport. */
+  right: 25px; /* Position the element 25 pixels from the right side of the viewport. */
+  width: 45px; /* Set the width of the element. */
+  height: 45px; /* Set the height of the element. */
+  opacity: 0; /* Set the opacity of the element. */
+  z-index: 2; /* Set the stacking order of the element. */
+  font-size: 16px; /* Set the font size for the text of the element. */
+  text-decoration: none; /* Remove underline from the text. */
+  pointer-events: none; /* Deactivate pointer events. */
+  transition: 0.25s; /* Set an effect of a transition. */
+  /* Use flexbox to align content inside the element. */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model. */
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox). */
+  display: flex; /* Standard syntax for modern browsers (widely supported). */
 
-  justify-content: center; /* Align flex items horizontally */
+  justify-content: center; /* Align flex items horizontally. */
 
-  /* Align vertically */
-  -ms-flex-align: center; /* For Internet Explorer 10 */
-  -webkit-box-align: center; /* For older versions of Chrome and Safari */
-  align-items: center; /* Standard syntax for modern browsers (widely supported) */
-  /* Apply the border radius to round the corners of the element */
-  -moz-border-radius: 50%; /* For older versions of Firefox */
-  -o-border-radius: 50%; /* For older versions of Opera */
-  -webkit-border-radius: 50%; /* For older versions of Chrome and Safari */
-  border-radius: 50%; /* Standard syntax for modern browsers (widely supported) */
+  /* Align vertically. */
+  -ms-flex-align: center; /* For Internet Explorer 10. */
+  -webkit-box-align: center; /* For older versions of Chrome and Safari. */
+  align-items: center; /* Standard syntax for modern browsers (widely supported). */
+  /* Apply the border radius to round the corners of the element. */
+  -moz-border-radius: 50%; /* For older versions of Firefox. */
+  -o-border-radius: 50%; /* For older versions of Opera. */
+  -webkit-border-radius: 50%; /* For older versions of Chrome and Safari. */
+  border-radius: 50%; /* Standard syntax for modern browsers (widely supported). */
 }
 
 to-top.active {
   bottom: 9.6rem;
   pointer-events: auto;
-  opacity: 1; /* Set the opacity of the element */
+  opacity: 1; /* Set the opacity of the element. */
 }
 
 .feature-icon {
-  width: 4rem; /* Set the width of the element */
-  height: 4rem; /* Set the height of the element */
-  /* Apply the border radius to round the corners of the element */
-  -moz-border-radius: 0.75rem; /* For older versions of Firefox */
-  -o-border-radius: 0.75rem; /* For older versions of Opera */
-  -webkit-border-radius: 0.75rem; /* For older versions of Chrome and Safari */
-  border-radius: 0.75rem; /* Standard syntax for modern browsers (widely supported) */
+  width: 4rem; /* Set the width of the element. */
+  height: 4rem; /* Set the height of the element. */
+  /* Apply the border radius to round the corners of the element. */
+  -moz-border-radius: 0.75rem; /* For older versions of Firefox. */
+  -o-border-radius: 0.75rem; /* For older versions of Opera. */
+  -webkit-border-radius: 0.75rem; /* For older versions of Chrome and Safari. */
+  border-radius: 0.75rem; /* Standard syntax for modern browsers (widely supported). */
 }
 
 .feature-icon-small {
@@ -221,22 +221,22 @@ to-top.active {
 }
 
 #bookingWidget div {
-  font-size: 21px; /* Set the font size for the text of the element */
+  font-size: 21px; /* Set the font size for the text of the element. */
 }
 
 #carouselContainer {
-  margin: 0 auto; /* Set the size for the margin of the element */
-  /* Use flexbox to align content inside the element */
-  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
-  display: -webkit-box; /* For older versions of Chrome and Safari (pre-flexbox) */
-  display: flex; /* Standard syntax for modern browsers (widely supported) */
+  margin: 0 auto; /* Set the size for the margin of the element. */
+  /* Use flexbox to align content inside the element. */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model). */
+  display: -webkit-box; /* For older versions of Chrome and Safari (pre-flexbox). */
+  display: flex; /* Standard syntax for modern browsers (widely supported). */
 
-  justify-content: center; /* Align flex items horizontally */
+  justify-content: center; /* Align flex items horizontally. */
 
-  /* Align vertically */
-  -ms-flex-align: center; /* For Internet Explorer 10 */
-  -webkit-box-align: center; /* For older versions of Chrome and Safari */
-  align-items: center; /* Standard syntax for modern browsers (widely supported) */
+  /* Align vertically. */
+  -ms-flex-align: center; /* For Internet Explorer 10. */
+  -webkit-box-align: center; /* For older versions of Chrome and Safari. */
+  align-items: center; /* Standard syntax for modern browsers (widely supported). */
 }
 
 .carousel-indicators {
@@ -244,227 +244,227 @@ to-top.active {
 }
 
 #carouselIndicators {
-  height: 85vh; /* Set the height of the element */
-  width: 50vw; /* Set the width of the element */
+  height: 85vh; /* Set the height of the element. */
+  width: 50vw; /* Set the width of the element. */
 }
 
 .carousel-inner {
-  /* Use flexbox to align content inside the element */
-  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
-  display: -webkit-box; /* For older versions of Chrome and Safari (pre-flexbox) */
-  display: flex; /* Standard syntax for modern browsers (widely supported) */
+  /* Use flexbox to align content inside the element. */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model). */
+  display: -webkit-box; /* For older versions of Chrome and Safari (pre-flexbox). */
+  display: flex; /* Standard syntax for modern browsers (widely supported). */
 
-  /* Align vertically */
-  -ms-flex-items: center; /* For Internet Explorer 10 */
-  -webkit-box-items: center; /* For older versions of Chrome and Safari */
-  align-items: center; /* Standard syntax for modern browsers (widely supported) */
+  /* Align vertically. */
+  -ms-flex-items: center; /* For Internet Explorer 10. */
+  -webkit-box-items: center; /* For older versions of Chrome and Safari. */
+  align-items: center; /* Standard syntax for modern browsers (widely supported). */
 }
 
 #testimonialCarousel {
-  margin: 4vh 0; /* Set the size for the margin of the element */
-  border-radius: 10px; /* Set the radius for the border of the element */
-  box-shadow: 0 4px 20px #0000001a; /* Set the shadow for the element */
-  overflow: hidden; /* Set the overflow for the element */
-  background-color: #f8f9fa; /* Set the background color for the element */
+  margin: 4vh 0; /* Set the size for the margin of the element. */
+  border-radius: 10px; /* Set the radius for the border of the element. */
+  box-shadow: 0 4px 20px #0000001a; /* Set the shadow for the element. */
+  overflow: hidden; /* Set the overflow for the element. */
+  background-color: #f8f9fa; /* Set the background color for the element. */
 }
 
 .carousel-inner {
-  padding: 20px; /* Set the size for the padding of the element */
+  padding: 20px; /* Set the size for the padding of the element. */
 }
 
 #testimonials {
-  position: relative; /* Specify the positioning method for the element */
-  width: calc(80vw - 40px); /* Set the width of the element */
+  position: relative; /* Specify the positioning method for the element. */
+  width: calc(80vw - 40px); /* Set the width of the element. */
   left: 10vw;
 }
 
 .testimonial {
   border: none !important;
-  padding: 0 37px !important; /* Set the size for the padding of the element */
-  font-size: 1.2rem !important; /* Set the size for the font of the element */
-  text-align: center !important; /* Center the text for the element */
+  padding: 0 37px !important; /* Set the size for the padding of the element. */
+  font-size: 1.2rem !important; /* Set the size for the font of the element. */
+  text-align: center !important; /* Center the text for the element. */
   transition: none !important;
 }
 
 .testimonial:hover {
-  background-color: #f8f9fa !important; /* Set the color for the background of the element */
+  background-color: #f8f9fa !important; /* Set the color for the background of the element. */
 }
 
 #testimonialCarousel .carousel-control-prev-icon,
 #testimonialCarousel .carousel-control-next-icon {
-  background-color: #007bff; /* Set the color for the background of the element */
-  border-radius: 50%; /* Set the radius for the border of the element */
+  background-color: #007bff; /* Set the color for the background of the element. */
+  border-radius: 50%; /* Set the radius for the border of the element. */
 }
 
 #testimonialCarousel .carousel-control-prev,
 #testimonialCarousel .carousel-control-next {
-  width: 5%; /* Set the width of the element */
+  width: 5%; /* Set the width of the element. */
 }
 
 #testimonialCarousel .carousel-control-prev:hover,
 #testimonialCarousel .carousel-control-next:hover {
-  background-color: #007bff1a !important; /* Set the color for the background of the element */
+  background-color: #007bff1a !important; /* Set the color for the background of the element. */
 }
 
 .carousel-item {
-  transition: transform 0.5s ease; /* Set the transition of the element */
+  transition: transform 0.5s ease; /* Set the transition of the element. */
 }
 
 .carousel-item.active {
-  opacity: 1; /* Set the opacity of the element */
+  opacity: 1; /* Set the opacity of the element. */
 }
 
 #newsletter {
-  position: relative; /* Specify the positioning method for the element */
-  width: calc(80vw - 40px); /* Set the width of the element */
+  position: relative; /* Specify the positioning method for the element. */
+  width: calc(80vw - 40px); /* Set the width of the element. */
   left: 10vw;
-  border-radius: 10px; /* Set the radius for the border of the element */
-  padding: 50px; /* Set the size for the padding of the element */
+  border-radius: 10px; /* Set the radius for the border of the element. */
+  padding: 50px; /* Set the size for the padding of the element. */
   background-color: #f8f9fa;
-  box-shadow: 0 4px 20px #0000001a; /* Set the shadow for the element */
+  box-shadow: 0 4px 20px #0000001a; /* Set the shadow for the element. */
 }
 
 #newsletter h2 {
-  font-size: 2rem; /* Set the size for the font of the element */
-  color: #007bff; /* Set the color for the text of the element */
+  font-size: 2rem; /* Set the size for the font of the element. */
+  color: #007bff; /* Set the color for the text of the element. */
 }
 
 #newsletter p {
-  font-size: 1.1rem; /* Set the size for the font of the element */
-  margin-bottom: 20px; /* Set the size for the bottom margin of the element */
+  font-size: 1.1rem; /* Set the size for the font of the element. */
+  margin-bottom: 20px; /* Set the size for the bottom margin of the element. */
 }
 
 #emailInput {
-  min-width: 450px; /* Set the minimum width of the element */
+  min-width: 450px; /* Set the minimum width of the element. */
 }
 
 #responseMessage {
-  position: relative; /* Specify the positioning method for the element */
-  top: 15px; /* Position the element relative to the top edge of its nearest positioned ancestor */
+  position: relative; /* Specify the positioning method for the element. */
+  top: 15px; /* Position the element relative to the top edge of its nearest positioned ancestor. */
 }
 
 #referralLink {
-  display: inline-block; /* Specify the display behavior of the element */
-  min-width: 450px; /* Set the minimum width of the element */
-  width: auto; /* Set the width of the element */
+  display: inline-block; /* Specify the display behavior of the element. */
+  min-width: 450px; /* Set the minimum width of the element. */
+  width: auto; /* Set the width of the element. */
   text-align: center;
 }
 
 #referralProgram button {
-  position: relative; /* Specify the positioning method for the element */
-  min-width: 100px; /* Set the minimum width of the element */
-  top: 1px; /* Position the element relative to the top edge of its nearest positioned ancestor */
+  position: relative; /* Specify the positioning method for the element. */
+  min-width: 100px; /* Set the minimum width of the element. */
+  top: 1px; /* Position the element relative to the top edge of its nearest positioned ancestor. */
 }
 
 #cards {
-  width: 100%; /* Set the width of the element */
-  height: 70vh; /* Set the height of the element */
-  padding: 0; /* Set the size for the padding of the element */
-  margin: 0; /* Set the size for the margin of the element */
-  font-size: 1.7vh; /* Set the font size for the text of the element */
-  text-align: center; /* Align the text of the element */
-  font-family: "Sono", sans-serif; /* Set the font family to "Sono" and sans-serif */
-  /* Use flexbox to align content inside the element */
-  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
-  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
-  display: flex; /* Standard syntax for modern browsers (widely supported) */
+  width: 100%; /* Set the width of the element. */
+  height: 70vh; /* Set the height of the element. */
+  padding: 0; /* Set the size for the padding of the element. */
+  margin: 0; /* Set the size for the margin of the element. */
+  font-size: 1.7vh; /* Set the font size for the text of the element. */
+  text-align: center; /* Align the text of the element. */
+  font-family: "Sono", sans-serif; /* Set the font family to "Sono" and sans-serif. */
+  /* Use flexbox to align content inside the element. */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model). */
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox). */
+  display: flex; /* Standard syntax for modern browsers (widely supported). */
 
-  gap: 2.5vw; /* Set the space between flex items */
+  gap: 2.5vw; /* Set the space between flex items. */
 
-  justify-content: center; /* Align flex items horizontally */
+  justify-content: center; /* Align flex items horizontally. */
 
-  /* Align vertically */
-  -ms-flex-items: center; /* For Internet Explorer 10 */
-  -webkit-box-items: center; /* For older versions of Chrome and Safari */
-  align-items: center; /* Standard syntax for modern browsers (widely supported) */
+  /* Align vertically. */
+  -ms-flex-items: center; /* For Internet Explorer 10. */
+  -webkit-box-items: center; /* For older versions of Chrome and Safari. */
+  align-items: center; /* Standard syntax for modern browsers (widely supported). */
 }
 
 #cards:hover > .card::after {
-  opacity: 0.01; /* Set the opacity of the element */
+  opacity: 0.01; /* Set the opacity of the element. */
 }
 
 .card {
-  position: relative; /* Specify the positioning method for the element */
-  width: calc(100% - 2px); /* Set the width of the element */
-  min-width: 21vw; /* Set the minimum width of the element */
-  /* Use flexbox to align content inside the element */
-  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
-  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
-  display: flex; /* Standard syntax for modern browsers (widely supported) */
-  /* Apply the border radius to round the corners of the element */
-  -moz-border-radius: 10px; /* For older versions of Firefox */
-  -o-border-radius: 10px; /* For older versions of Opera */
-  -webkit-border-radius: 10px; /* For older versions of Chrome and Safari */
-  border-radius: 10px; /* Standard syntax for modern browsers (widely supported) */
+  position: relative; /* Specify the positioning method for the element. */
+  width: calc(100% - 2px); /* Set the width of the element. */
+  min-width: 21vw; /* Set the minimum width of the element. */
+  /* Use flexbox to align content inside the element. */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model). */
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox). */
+  display: flex; /* Standard syntax for modern browsers (widely supported). */
+  /* Apply the border radius to round the corners of the element. */
+  -moz-border-radius: 10px; /* For older versions of Firefox. */
+  -o-border-radius: 10px; /* For older versions of Opera. */
+  -webkit-border-radius: 10px; /* For older versions of Chrome and Safari. */
+  border-radius: 10px; /* Standard syntax for modern browsers (widely supported). */
   box-shadow: 0 2px 10px #0000001a;
   background: -moz-linear-gradient(
     #007fff 25%,
     #318ce7 100%
-  ); /* For older versions of Firefox */
+  ); /* For older versions of Firefox. */
   background: -ms-linear-gradient(
     #007fff 25%,
     #318ce7 100%
-  ); /* For Internet Explorer 10 */
+  ); /* For Internet Explorer 10. */
   background: -o-linear-gradient(
     #007fff 25%,
     #318ce7 100%
-  ); /* For older versions of Opera */
+  ); /* For older versions of Opera. */
   background: -webkit-linear-gradient(
     #007fff 25%,
     #318ce7 100%
-  ); /* For older versions of Chrome and Safari */
+  ); /* For older versions of Chrome and Safari. */
   background: linear-gradient(
     #007fff 25%,
     #318ce7 100%
-  ); /* Standard syntax for modern browsers (widely supported) */
+  ); /* Standard syntax for modern browsers (widely supported). */
   /* background: linear-gradient(90deg, #fff 5%, #007fff 30%, #007fff 70%, #fff 95%); */
 }
 
 .card-content {
-  height: 55vh; /* Set the height of the element */
-  margin: 1px; /* Set the size for the margin of the element */
-  z-index: 2; /* Set the stacking order of the element */
-  background-color: #f2f2f2; /* Set the color of the background */
-  /* Use flexbox to align content inside the element */
-  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
-  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
-  display: flex; /* Standard syntax for modern browsers (widely supported) */
+  height: 55vh; /* Set the height of the element. */
+  margin: 1px; /* Set the size for the margin of the element. */
+  z-index: 2; /* Set the stacking order of the element. */
+  background-color: #f2f2f2; /* Set the color of the background. */
+  /* Use flexbox to align content inside the element. */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model). */
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox). */
+  display: flex; /* Standard syntax for modern browsers (widely supported). */
 
-  /* Arrange flex items */
-  -ms-flex-direction: column; /* For Internet Explorer 10 */
-  -webkit-box-orient: vertical; /* For older versions of Chrome and Safari */
-  -webkit-box-direction: normal; /* For older versions of Chrome and Safari */
-  flex-direction: column; /* Standard syntax for modern browsers (widely supported) */
+  /* Arrange flex items. */
+  -ms-flex-direction: column; /* For Internet Explorer 10. */
+  -webkit-box-orient: vertical; /* For older versions of Chrome and Safari. */
+  -webkit-box-direction: normal; /* For older versions of Chrome and Safari. */
+  flex-direction: column; /* Standard syntax for modern browsers (widely supported). */
 
-  justify-content: space-between; /* Align flex items horizontally */
+  justify-content: space-between; /* Align flex items horizontally. */
 
   flex-grow: 1;
   flex-shrink: 0;
-  /* Apply the border radius to round the corners of the element */
-  -moz-border-radius: inherit; /* For older versions of Firefox */
-  -o-border-radius: inherit; /* For older versions of Opera */
-  -webkit-border-radius: inherit; /* For older versions of Chrome and Safari */
-  border-radius: inherit; /* Standard syntax for modern browsers (widely supported) */
+  /* Apply the border radius to round the corners of the element. */
+  -moz-border-radius: inherit; /* For older versions of Firefox. */
+  -o-border-radius: inherit; /* For older versions of Opera. */
+  -webkit-border-radius: inherit; /* For older versions of Chrome and Safari. */
+  border-radius: inherit; /* Standard syntax for modern browsers (widely supported). */
 }
 
 .card-content ul {
-  list-style-type: none; /* Set the style of the list */
+  list-style-type: none; /* Set the style of the list. */
   align-self: center;
 }
 
 .card-custom .card-content {
-  display: block; /* Specify the display behavior of the element */
+  display: block; /* Specify the display behavior of the element. */
 }
 
 .card-content-not-title {
-  height: 84%; /* Set the height of the element */
-  font-size: 3vh; /* Set the font size for the text of the element */
-  /* Use flexbox to align content inside the element */
-  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model) */
-  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
-  display: flex; /* Standard syntax for modern browsers (widely supported) */
+  height: 84%; /* Set the height of the element. */
+  font-size: 3vh; /* Set the font size for the text of the element. */
+  /* Use flexbox to align content inside the element. */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model). */
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox). */
+  display: flex; /* Standard syntax for modern browsers (widely supported). */
   flex-direction: column;
-  justify-content: center; /* Align flex items horizontally */
+  justify-content: center; /* Align flex items horizontally. */
 }
 
 .card-dark-theme::before {
@@ -473,7 +473,7 @@ to-top.active {
     #ffffff1a,
     transparent 90%
   );
-  z-index: 3; /* Set the stacking order of the element */
+  z-index: 3; /* Set the stacking order of the element. */
 }
 
 .card-dark-theme::after {
@@ -482,7 +482,7 @@ to-top.active {
     #ffffff55,
     transparent 50%
   );
-  z-index: 1; /* Set the stacking order of the element */
+  z-index: 1; /* Set the stacking order of the element. */
 }
 
 .card-light-theme::before {
@@ -491,7 +491,7 @@ to-top.active {
     #ffffff1a,
     transparent 90%
   );
-  z-index: 3; /* Set the stacking order of the element */
+  z-index: 3; /* Set the stacking order of the element. */
 }
 
 .card-light-theme::after {
@@ -500,84 +500,84 @@ to-top.active {
     #ffffff55,
     transparent 50%
   );
-  z-index: 1; /* Set the stacking order of the element */
+  z-index: 1; /* Set the stacking order of the element. */
 }
 
 .card::before,
 .card::after {
   content: "";
-  height: 100%; /* Set the height of the element */
+  height: 100%; /* Set the height of the element. */
   left: 0;
-  opacity: 0; /* Set the opacity of the element */
-  position: absolute; /* Specify the positioning method for the element */
-  top: 0; /* Position the element relative to the top edge of its nearest positioned ancestor */
-  transition: opacity 500ms; /* Set an effect of a transition */
-  width: 100%; /* Set the width of the element */
-  /* Apply the border radius to round the corners of the element */
-  -moz-border-radius: inherit; /* For older versions of Firefox */
-  -o-border-radius: inherit; /* For older versions of Opera */
-  -webkit-border-radius: inherit; /* For older versions of Chrome and Safari */
-  border-radius: inherit; /* Standard syntax for modern browsers (widely supported) */
+  opacity: 0; /* Set the opacity of the element. */
+  position: absolute; /* Specify the positioning method for the element. */
+  top: 0; /* Position the element relative to the top edge of its nearest positioned ancestor. */
+  transition: opacity 500ms; /* Set an effect of a transition. */
+  width: 100%; /* Set the width of the element. */
+  /* Apply the border radius to round the corners of the element. */
+  -moz-border-radius: inherit; /* For older versions of Firefox. */
+  -o-border-radius: inherit; /* For older versions of Opera. */
+  -webkit-border-radius: inherit; /* For older versions of Chrome and Safari. */
+  border-radius: inherit; /* Standard syntax for modern browsers (widely supported). */
 }
 
 .card:hover::before {
-  opacity: 1; /* Set the opacity of the element */
+  opacity: 1; /* Set the opacity of the element. */
 }
 
 .card-label {
-  width: 100%; /* Set the width of the element */
-  height: 5vh; /* Set the height of the element */
-  position: absolute; /* Specify the positioning method for the element */
-  top: -20px; /* Position the element relative to the top edge of its nearest positioned ancestor */
-  padding: 0; /* Set the size for the padding of the element */
-  background-color: #ffffff; /* Set the color of the background */
-  color: #008cff; /* Set the color for the text of the element */
-  font-family: "Sono", sans-serif; /* Set the font family to "Sono" and sans-serif */
-  font-size: 14px; /* Set the font size for the text of the element */
-  text-align: center; /* Align the text of the element */
-  z-index: -1; /* Set the stacking order of the element */
-  /* Apply the border radius to round the corners of the element */
-  -moz-border-radius: 10px; /* For older versions of Firefox */
-  -o-border-radius: 10px; /* For older versions of Opera */
-  -webkit-border-radius: 10px; /* For older versions of Chrome and Safari */
-  border-radius: 10px; /* Standard syntax for modern browsers (widely supported) */
+  width: 100%; /* Set the width of the element. */
+  height: 5vh; /* Set the height of the element. */
+  position: absolute; /* Specify the positioning method for the element. */
+  top: -20px; /* Position the element relative to the top edge of its nearest positioned ancestor. */
+  padding: 0; /* Set the size for the padding of the element. */
+  background-color: #ffffff; /* Set the color of the background. */
+  color: #008cff; /* Set the color for the text of the element. */
+  font-family: "Sono", sans-serif; /* Set the font family to "Sono" and sans-serif. */
+  font-size: 14px; /* Set the font size for the text of the element. */
+  text-align: center; /* Align the text of the element. */
+  z-index: -1; /* Set the stacking order of the element. */
+  /* Apply the border radius to round the corners of the element. */
+  -moz-border-radius: 10px; /* For older versions of Firefox. */
+  -o-border-radius: 10px; /* For older versions of Opera. */
+  -webkit-border-radius: 10px; /* For older versions of Chrome and Safari. */
+  border-radius: 10px; /* Standard syntax for modern browsers (widely supported). */
 }
 
 .card-title {
-  width: 100%; /* Set the width of the element */
-  padding: 1vh 0; /* Set the size for the padding of the element */
+  width: 100%; /* Set the width of the element. */
+  padding: 1vh 0; /* Set the size for the padding of the element. */
   font-weight: bold;
-  font-size: 2.5vh; /* Set the font size for the text of the element */
+  font-size: 2.5vh; /* Set the font size for the text of the element. */
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
-  color: #ffffff; /* Set the color for the text of the element */
+  color: #ffffff; /* Set the color for the text of the element. */
   background: -moz-linear-gradient(
     #007fff 25%,
     #318ce7 100%
-  ); /* For older versions of Firefox */
+  ); /* For older versions of Firefox. */
   background: -ms-linear-gradient(
     #007fff 25%,
     #318ce7 100%
-  ); /* For Internet Explorer 10 */
+  ); /* For Internet Explorer 10. */
   background: -o-linear-gradient(
     #007fff 25%,
     #318ce7 100%
-  ); /* For older versions of Opera */
+  ); /* For older versions of Opera. */
   background: -webkit-linear-gradient(
     #007fff 25%,
     #318ce7 100%
-  ); /* For older versions of Chrome and Safari */
+  ); /* For older versions of Chrome and Safari. */
   background: linear-gradient(
     #007fff 25%,
     #318ce7 100%
-  ); /* Standard syntax for modern browsers (widely supported) */
+  ); /* Standard syntax for modern browsers (widely supported). */
   /* background: linear-gradient(90deg, #fff 5%, #007fff 30%, #007fff 70%, #fff 95%); */
 }
 
 .feature {
   background: #ffffffe6;
   border-radius: 8px;
-  padding: 15px; /* Set the size for the padding of the element */
+  padding: 15px; /* Set the size for the padding of the element. */
   box-shadow: 0 2px 10px #0000001a;
   transition: transform 0.3s ease;
 }
@@ -587,51 +587,51 @@ to-top.active {
 }
 
 .height-fit-content {
-  height: fit-content; /* Set the height of the element */
+  height: fit-content; /* Set the height of the element. */
 }
 
 .plan-price {
   font-weight: bold;
-  font-size: 4.5vh; /* Set the font size for the text of the element */
-  padding: 0; /* Set the size for the padding of the element */
+  font-size: 4.5vh; /* Set the font size for the text of the element. */
+  padding: 0; /* Set the size for the padding of the element. */
 }
 
 .currency {
-  font-size: 2vh; /* Set the font size for the text of the element */
+  font-size: 2vh; /* Set the font size for the text of the element. */
 }
 
 .plan-conditions {
-  font-size: 2vh; /* Set the font size for the text of the element */
-  margin-bottom: 1vh; /* Set the size of the bottom mnargin */
+  font-size: 2vh; /* Set the font size for the text of the element. */
+  margin-bottom: 1vh; /* Set the size of the bottom mnargin. */
 }
 
 .plan-features {
-  text-align: center; /* Align the text of the element */
-  padding: 0; /* Set the size for the padding of the element */
+  text-align: center; /* Align the text of the element. */
+  padding: 0; /* Set the size for the padding of the element. */
   flex-basis: 50%;
 }
 
 .plan-features > li {
-  font-size: 3vh; /* Set the font size for the text of the element */
+  font-size: 3vh; /* Set the font size for the text of the element. */
 }
 
 .check-circle {
-  height: 20px; /* Set the height of the element */
+  height: 20px; /* Set the height of the element. */
 }
 
 .plan-button {
-  background-color: #ffffff; /* Set the color of the background */
-  color: #007fff; /* Set the color for the text of the element */
-  padding: 0.75vh; /* Set the size for the padding of the element */
+  background-color: #ffffff; /* Set the color of the background. */
+  color: #007fff; /* Set the color for the text of the element. */
+  padding: 0.75vh; /* Set the size for the padding of the element. */
   border: solid 1px #007fff;
-  font-size: 2.5vh; /* Set the font size for the text of the element */
+  font-size: 2.5vh; /* Set the font size for the text of the element. */
   font-weight: bold;
-  display: none; /* Specify the display behavior of the element */
-  /* Apply the border radius to round the corners of the element */
-  -moz-border-radius: 5px; /* For older versions of Firefox */
-  -o-border-radius: 5px; /* For older versions of Opera */
-  -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
-  border-radius: 5px; /* Standard syntax for modern browsers (widely supported) */
+  display: none; /* Specify the display behavior of the element. */
+  /* Apply the border radius to round the corners of the element. */
+  -moz-border-radius: 5px; /* For older versions of Firefox. */
+  -o-border-radius: 5px; /* For older versions of Opera. */
+  -webkit-border-radius: 5px; /* For older versions of Chrome and Safari. */
+  border-radius: 5px; /* Standard syntax for modern browsers (widely supported). */
 }
 
 .plan-button:hover {
@@ -639,115 +639,115 @@ to-top.active {
 }
 
 tab0d5 {
-  padding-left: 22px; /* Set the size for the left padding of the element */
+  padding-left: 22px; /* Set the size for the left padding of the element. */
 }
 
 table {
-  word-wrap: break-word; /* Allow words to wrap onto multiple lines */
+  word-wrap: break-word; /* Allow words to wrap onto multiple lines. */
 }
 
 thead {
-  position: sticky; /* Specify the positioning method for the element */
-  top: 0; /* Position the element relative to the top edge of its nearest positioned ancestor */
-  z-index: 2; /* Set the stacking order of the element */
-  /* Set the color of the background */
+  position: sticky; /* Specify the positioning method for the element. */
+  top: 0; /* Position the element relative to the top edge of its nearest positioned ancestor. */
+  z-index: 2; /* Set the stacking order of the element. */
+  /* Set the color of the background. */
   background: -moz-linear-gradient(
     #007fff 25%,
     #318ce7 100%
-  ); /* For older versions of Firefox */
+  ); /* For older versions of Firefox. */
   background: -ms-linear-gradient(
     #007fff 25%,
     #318ce7 100%
-  ); /* For Internet Explorer 10 */
+  ); /* For Internet Explorer 10. */
   background: -o-linear-gradient(
     #007fff 25%,
     #318ce7 100%
-  ); /* For older versions of Opera */
+  ); /* For older versions of Opera. */
   background: -webkit-linear-gradient(
     #007fff 25%,
     #318ce7 100%
-  ); /* For older versions of Chrome and Safari */
+  ); /* For older versions of Chrome and Safari. */
   background: linear-gradient(
     #007fff 25%,
     #318ce7 100%
-  ); /* Standard syntax for modern browsers (widely supported) */
+  ); /* Standard syntax for modern browsers (widely supported). */
 }
 
 tbody tr:nth-child(even) {
-  background-color: #f8f8f8; /* Set the color of the background */
+  background-color: #f8f8f8; /* Set the color of the background. */
 }
 
 th {
   border-bottom: 1px solid #ddd;
   border-left: 1px solid #ffffff;
-  color: #f2f2f2; /* Set the color for the text of the element */
+  color: #f2f2f2; /* Set the color for the text of the element. */
 }
 
 th,
 td {
-  min-width: -webkit-fill-available; /* Set the minimum width of the element */
-  padding: 8px; /* Set the size of the padding */
+  min-width: -webkit-fill-available; /* Set the minimum width of the element. */
+  padding: 8px; /* Set the size of the padding. */
   border-bottom: 2px solid #ddd;
 }
 
 th:nth-of-type(1),
 td:nth-of-type(1) {
-  width: 15vw; /* Set the width of the element */
+  width: 15vw; /* Set the width of the element. */
 }
 
 td p {
-  margin: 0; /* Set the size for the margin of the element */
+  margin: 0; /* Set the size for the margin of the element. */
 }
 
 .row {
-  margin-left: 0; /* Set the size of the left margin */
-  margin-right: 0; /* Set the size for the right margin of the element */
-  padding-left: 0; /* Set the size for the left padding of the element */
-  padding-right: 0; /* Set the size of the right padding */
-  justify-content: space-between; /* Align flex items horizontally */
+  margin-left: 0; /* Set the size of the left margin. */
+  margin-right: 0; /* Set the size for the right margin of the element. */
+  padding-left: 0; /* Set the size for the left padding of the element. */
+  padding-right: 0; /* Set the size of the right padding. */
+  justify-content: space-between; /* Align flex items horizontally. */
 }
 
 .row > .aos-item {
-  margin-left: 0; /* Set the size of the left margin */
-  margin-right: 0; /* Set the size for the right margin of the element */
-  padding-left: 0; /* Set the size for the left padding of the element */
-  padding-right: 0; /* Set the size of the right padding */
+  margin-left: 0; /* Set the size of the left margin. */
+  margin-right: 0; /* Set the size for the right margin of the element. */
+  padding-left: 0; /* Set the size for the left padding of the element. */
+  padding-right: 0; /* Set the size of the right padding. */
 }
 
 .aos-item,
 .aos-item__inner {
-  border-radius: 8px; /* Set the radius for the border of the element */
+  border-radius: 8px; /* Set the radius for the border of the element. */
 }
 
 #copyright {
-  margin: 0; /* Set the size for the margin of the element */
+  margin: 0; /* Set the size for the margin of the element. */
 }
 
 #bmc-button {
-  display: block; /* Specify the display behavior of the element */
-  width: fit-content; /* Set the width of the element */
-  height: 3rem; /* Set the height of the element */
-  margin: 0.75rem auto 0; /* Set the size for the margin of the element */
-  background-color: #ff843f !important; /* Set the color for the background of the element */
-  color: #ffffff; /* Set the color for the text of the element */
-  font-family: "Cookie", cursive; /* Set the font family for the text of the element */
-  font-weight: bold; /* Set the font weight for the text of the element */
-  text-decoration: none; /* Set the decoration for the text of the element */
-  text-shadow: 1px 1px 2px #00000080; /* Set the shadow for the text of the element */
+  display: block; /* Specify the display behavior of the element. */
+  width: fit-content; /* Set the width of the element. */
+  height: 3rem; /* Set the height of the element. */
+  margin: 0.75rem auto 0; /* Set the size for the margin of the element. */
+  background-color: #ff843f !important; /* Set the color for the background of the element. */
+  color: #ffffff; /* Set the color for the text of the element. */
+  font-family: "Cookie", cursive; /* Set the font family for the text of the element. */
+  font-weight: bold; /* Set the font weight for the text of the element. */
+  text-decoration: none; /* Set the decoration for the text of the element. */
+  text-shadow: 1px 1px 2px #00000080; /* Set the shadow for the text of the element. */
   border: none;
-  padding: 10px 20px; /* Set the padding of the element */
-  cursor: pointer; /* Specify the type of cursor to be displayed when hovering over the element */
+  padding: 10px 20px; /* Set the padding of the element. */
+  cursor: pointer; /* Specify the type of cursor to be displayed when hovering over the element. */
   outline: none;
-  box-shadow: 0 4px 8px #00000037; /* Set the shadow of the element */
-  /* Set the border radius for the corners of the element */
-  -webkit-border-radius: 5px; /* For older versions of Chrome and Safari */
-  -moz-border-radius: 5px; /* For older versions of Firefox */
-  -o-border-radius: 5px; /* For older versions of Opera */
-  border-radius: 5px; /* Standard property for border radius */
-  /* Add a transition effect for changes in properties */
-  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari */
-  -o-transition: 0.5s; /* For older versions of Opera */
-  transition: 0.5s; /* Standard syntax for modern browsers (widely supported) */
+  box-shadow: 0 4px 8px #00000037; /* Set the shadow of the element. */
+  /* Set the border radius for the corners of the element. */
+  -webkit-border-radius: 5px; /* For older versions of Chrome and Safari. */
+  -moz-border-radius: 5px; /* For older versions of Firefox. */
+  -o-border-radius: 5px; /* For older versions of Opera. */
+  border-radius: 5px; /* Standard property for border radius. */
+  /* Add a transition effect for changes in properties. */
+  -webkit-transition: 0.5s; /* For older versions of Chrome and Safari. */
+  -o-transition: 0.5s; /* For older versions of Opera. */
+  transition: 0.5s; /* Standard syntax for modern browsers (widely supported). */
 }
 
 #bmc-button:active {
@@ -756,7 +756,7 @@ td p {
 }
 
 ::-webkit-scrollbar {
-  width: 12px; /* Set the width of the element */
+  width: 12px; /* Set the width of the element. */
 }
 
 ::-webkit-scrollbar-track {
@@ -773,45 +773,45 @@ td p {
 }
 
 .hide {
-  display: none !important; /* Specify the display behavior of the element */
+  display: none !important; /* Specify the display behavior of the element. */
 }
 
 /*noscript*/
 #enable-javascript {
-  width: 100vw; /* Set the width of the element */
-  height: 100%; /* Set the height of the element */
-  padding: 0 25vw; /* Set the size of the padding */
-  /* Use flexbox to align content inside the element */
-  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flebox model) */
-  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox) */
-  display: flex; /* Standard syntax for modern browsers (widely supported) */
+  width: 100vw; /* Set the width of the element. */
+  height: 100%; /* Set the height of the element. */
+  padding: 0 25vw; /* Set the size of the padding. */
+  /* Use flexbox to align content inside the element. */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flebox model). */
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox). */
+  display: flex; /* Standard syntax for modern browsers (widely supported). */
 
-  /* Arrange flex items */
-  -ms-flex-direction: column; /* For Internet Explorer 10 */
-  -webkit-box-orient: vertical; /* For older versions of Chrome and Safari */
-  -webkit-box-direction: normal; /* For older versions of Chrome and Safari */
-  flex-direction: column; /* Standard syntax for modern browsers (widely supported) */
+  /* Arrange flex items. */
+  -ms-flex-direction: column; /* For Internet Explorer 10. */
+  -webkit-box-orient: vertical; /* For older versions of Chrome and Safari. */
+  -webkit-box-direction: normal; /* For older versions of Chrome and Safari. */
+  flex-direction: column; /* Standard syntax for modern browsers (widely supported). */
 
-  justify-content: center; /* Align flex items horizontally */
+  justify-content: center; /* Align flex items horizontally. */
 
-  /* Alig vertically */
-  -ms-flex-align: center; /* For Internet Explorer 10 */
-  -webkit-box-align: center; /* For older versions of Chrome and Safari */
-  align-items: center; /* Standard syntax for modern browsers (widely supported) */
+  /* Alig vertically. */
+  -ms-flex-align: center; /* For Internet Explorer 10. */
+  -webkit-box-align: center; /* For older versions of Chrome and Safari. */
+  align-items: center; /* Standard syntax for modern browsers (widely supported). */
 }
 
 #enable-javascript > details {
-  margin-top: 1.7vh; /* Set the size for the top margin of the element */
+  margin-top: 1.7vh; /* Set the size for the top margin of the element. */
 }
 
 noscript h2 {
-  padding: 5vh 0; /* Set the size for the left padding of the element */
+  padding: 5vh 0; /* Set the size for the left padding of the element. */
 }
 
 noscript p {
-  min-width: 50vw; /* Set the minimum width of the element */
+  min-width: 50vw; /* Set the minimum width of the element. */
 }
 
 noscript details {
-  min-width: 50vw; /* Set the minimum width of the element */
+  min-width: 50vw; /* Set the minimum width of the element. */
 }
