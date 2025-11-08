@@ -19,8 +19,8 @@
 @media screen {
   h1 {
     background: linear-gradient(to right, #1177ff, #1ab1ff);
-    -webkit-background-clip: text; /* For earlier versions of Chrome and Safari */
-    background-clip: text; /* Standard syntax for modern browsers (widely supported) */
+    -webkit-background-clip: text; /* For earlier versions of Chrome and Safari. */
+    background-clip: text; /* Standard syntax for modern browsers (widely supported). */
     -webkit-text-fill-color: transparent;
     /* background-size: 200% 100%;
     animation: gradientAnimation 5s ease infinite; */
@@ -44,7 +44,7 @@
 
 @media (max-width: 1450px) {
   .plan-features > li {
-    font-size: 3vh; /* Set the size for the font of the text */
+    font-size: 3vh; /* Set the size for the font of the text. */
   }
 }
 
@@ -56,22 +56,22 @@
   }
 
   .carousel-indicators {
-    bottom: 0; /* Position the element relative to the bottom edge of its nearest positioned ancestor */
+    bottom: 0; /* Position the element relative to the bottom edge of its nearest positioned ancestor. */
   }
 
   #carouselIndicators {
-    height: fit-content; /* Set the height of the element */
-    width: 90vw; /* Set the width of the element */
+    height: fit-content; /* Set the height of the element. */
+    width: 90vw; /* Set the width of the element. */
   }
 
   .carousel-inner {
-    height: fit-content; /* Set the height of the element */
-    width: 90vw; /* Set the width of the element */
+    height: fit-content; /* Set the height of the element. */
+    width: 90vw; /* Set the width of the element. */
   }
 
   #cards {
-    height: 100%; /* Set the height of the elemenet */
-    margin: 50px 0; /* Set the size of the margin */
+    height: 100%; /* Set the height of the elemenet. */
+    margin: 50px 0; /* Set the size of the margin. */
     display: flex;
     gap: 6vh;
     flex-direction: column;
@@ -79,17 +79,17 @@
   }
 
   .card {
-    max-width: 500px; /* Set the maximum width of the element */
+    max-width: 500px; /* Set the maximum width of the element. */
     margin-top: 0;
     padding-top: 0;
   }
 
   .card-label {
-    padding: 0; /* Set the size of the padding */
+    padding: 0; /* Set the size of the padding. */
   }
 
   .card-content {
-    width: calc(100% - 2px); /* Set the width of the element */
+    width: calc(100% - 2px); /* Set the width of the element. */
     margin-top: 0;
     padding-top: 0;
     display: flex;
@@ -143,7 +143,7 @@
 
   .plan-features > li,
   .plan-features-contact {
-    font-size: 3.5vh; /* Set the font size for the text */
+    font-size: 3.5vh; /* Set the font size for the text. */
   }
 }
 
@@ -166,7 +166,7 @@
   }
 
   to-top.active {
-    bottom: 10.75rem; /* Position the element relative to the bottom edge of its nearest positioned ancestor */
+    bottom: 10.75rem; /* Position the element relative to the bottom edge of its nearest positioned ancestor. */
   }
 }
 
@@ -204,23 +204,23 @@
   }
 
   #carouselIndicators {
-    height: auto; /* Set the height of the element */
-    width: 90vw; /* Set the width of the element */
+    height: auto; /* Set the height of the element. */
+    width: 90vw; /* Set the width of the element. */
   }
 
   #testimonialCarousel .carousel-control-prev,
   #testimonialCarousel .carousel-control-next {
-    width: 10%; /* Set the width of the element */
+    width: 10%; /* Set the width of the element. */
   }
 
   #testimonialCarousel .carousel-control-prev-icon,
   #testimonialCarousel .carousel-control-next-icon {
-    width: 30px; /* Set the width of the element */
-    height: 30px; /* Set the height of the element */
+    width: 30px; /* Set the width of the element. */
+    height: 30px; /* Set the height of the element. */
   }
 
   .carousel-indicators {
-    bottom: 10px; /* Position the element relative to the bottom edge of its nearest positioned ancestor */
+    bottom: 10px; /* Position the element relative to the bottom edge of its nearest positioned ancestor. */
   }
 
   #newsletter {
@@ -239,13 +239,13 @@
 
   .plan-features > li,
   .plan-features-contact {
-    font-size: 3vh; /* Set the font size for the text */
+    font-size: 3vh; /* Set the font size for the text. */
   }
 }
 
 @media screen and (max-width: 404px) {
   to-top.active {
-    bottom: 14rem; /* Position the element relative to the bottom edge of its nearest positioned ancestor */
+    bottom: 14rem; /* Position the element relative to the bottom edge of its nearest positioned ancestor. */
   }
 }
 
