@@ -1,4 +1,4 @@
-/*
+/**
  * Booking System Functionality Script
  *
  * Copyright © Vladislav Kazantsev
@@ -13,7 +13,7 @@
  * For inquiries about collaboration, usage outside exploratory purposes, or permissions, please contact: hypervisor7@pm.me
  */
 
-// Function to update booked moves display
+/** Function to update booked moves display. */
 function updateBookedMoves() {
   const currentHour = new Date().getHours();
   const totalBookedMoves = 50 + currentHour;
@@ -28,10 +28,10 @@ function updateBookedMoves() {
   availabilityNotice.style.display = "block";
 }
 
-// Call the function when the DOM is fully loaded
+/** Call the function when the DOM is fully loaded. */
 document.addEventListener("DOMContentLoaded", updateBookedMoves);
 
-// Function to start the discount countdown
+/** Function to start the discount countdown. */
 let discountEndTime = null;
 function startDiscountCountdown() {
   const now = new Date();
@@ -57,7 +57,7 @@ function startDiscountCountdown() {
   updateDiscountCountdown();
 }
 
-// Function to update the countdown display
+/** Function to update the countdown display. */
 function updateDiscountCountdown() {
   const now = Date.now();
   const timeLeft = discountEndTime - now;
@@ -76,5 +76,5 @@ function updateDiscountCountdown() {
   }
 }
 
-// Call the function when the DOM is fully loaded
+/** Call the function when the DOM is fully loaded. */
 document.addEventListener("DOMContentLoaded", startDiscountCountdown);
