@@ -3,7 +3,7 @@
  * This file is the library containing my collection of custom, reusable web components
  * that can be used across different parts of the project. These components go beyond what browsers provide,
  * allowing for expanded capabilities and functionality in the project.
- * 
+ *
  * Copyright © Vladislav Kazantsev
  * All rights reserved.
  * This code is the intellectual property of Vladislav Kazantsev.
@@ -16,12 +16,12 @@
  * For inquiries about collaboration, usage outside exploratory purposes, or permissions, please contact: hypervisor7@pm.me
  */
 
-// The Navigation Bar
+/** The navigation bar. */
 navigationBarContainer = document.querySelector("#navigationBarContainer");
 
 function createNavigationBar(navigationBarContainer) {
   if (navigationBarContainer) {
-    // Define the navigation bar content:
+    /** Define the navigation bar content. */
     navigationBarContainer.innerHTML += `
       <nav class="navbar navbar-expand-lg bg-body-tertiary" role="navigation" aria-label="Main Navigation">
         <div class="container-fluid">
@@ -84,7 +84,7 @@ function createNavigationBar(navigationBarContainer) {
 }
 createNavigationBar(navigationBarContainer);
 
-// The Scroll to Top Button
+/** The "Scroll to Top" button. */
 class ToTop extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
@@ -109,7 +109,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// The Print Button
+/** The print button. */
 const printButton = document.querySelector("#print");
 if (printButton) {
   printButton.classList.add("my-5");
@@ -147,7 +147,7 @@ function printPage() {
   }
 }
 
-// Check Circle
+/** Check circle. */
 class CheckCircle extends HTMLElement {
   connectedCallback() {
     this.innerHTML += `
@@ -157,14 +157,14 @@ class CheckCircle extends HTMLElement {
 }
 customElements.define("check-circle", CheckCircle);
 
-// The Footer
+/** The footer. */
 footer = document.querySelector("footer");
 footer.style.display = "flex";
 footer.style.flexDirection = "column";
 const year = new Date().getFullYear();
 function createFooter(footer) {
   if (footer) {
-    // Define the footer content:
+    /** Define the footer content. */
     footerContainer.innerHTML += `
     <div class="container py-1 text-center">
       <div class="pt-1 pb-1 mt-1 mb-1">
@@ -198,7 +198,7 @@ function createFooter(footer) {
 }
 createFooter(footer);
 
-// The Contact Us Link Titles
+/** The "Contact Us" link titles. */
 const contactUsLinks = document.querySelectorAll("a");
 for (let x of contactUsLinks) {
   if (x.getAttribute("href") === "contact.html") {
