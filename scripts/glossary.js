@@ -16,7 +16,7 @@
  * For inquiries about collaboration, usage outside exploratory purposes, or permissions, please contact: hypervisor7@pm.me
  */
 
-// Access
+/** Access. */
 gAccess = document.querySelector("#gAccess");
 
 function gAccessF(gAccess) {
@@ -33,7 +33,7 @@ The level of accessibility a moving company will have when entering your home. T
 }
 gAccessF(gAccess);
 
-// Actual Charges
+/** Actual Charges. */
 gActualCharges = document.querySelector("#gActualCharges");
 
 function gActualChargesF(gActualCharges) {
@@ -50,7 +50,7 @@ The complete amount charged for all services related to transporting your belong
 }
 gActualChargesF(gActualCharges);
 
-// Additional Charges
+/** Additional Charges. */
 gAdditionalCharges = document.querySelector("#gAdditionalCharges");
 
 function gAdditionalChargesF(gAdditionalCharges) {
@@ -67,7 +67,7 @@ The expenses charged by a moving company for the various services they provide d
 }
 gAdditionalChargesF(gAdditionalCharges);
 
-// Agent
+/** Agent. */
 gAgent = document.querySelector("#gAgent");
 
 function gAgentF(gAgent) {
@@ -84,7 +84,7 @@ A skilled professional employed by a company to provide specialized services.
 }
 gAgentF(gAgent);
 
-// Agreed Delivery Date
+/** Agreed Delivery Date. */
 gAgreedDeliveryDate = document.querySelector("#gAgreedDeliveryDate");
 
 function gAgreedDeliveryDateF(gAgreedDeliveryDate) {
@@ -101,7 +101,7 @@ The date agreed upon by a vendor and client for the delivery of a purchase or sh
 }
 gAgreedDeliveryDateF(gAgreedDeliveryDate);
 
-// Appliance Service
+/** Appliance Service. */
 gApplianceService = document.querySelector("#gApplianceService");
 
 function gApplianceServiceF(gApplianceService) {
@@ -118,7 +118,7 @@ The process of preparing an appliance, such as a refrigerator, washer, or dryer,
 }
 gApplianceServiceF(gApplianceService);
 
-// Appliance Dolly
+/** Appliance Dolly. */
 gApplianceDolly = document.querySelector("#gApplianceDolly");
 
 function gApplianceDollyF(gApplianceDolly) {
@@ -135,7 +135,7 @@ The wheeled platform used to move appliances or heavy household items.
 }
 gApplianceDollyF(gApplianceDolly);
 
-// Assessed Value
+/** Assessed Value. */
 gAssessedValue = document.querySelector("#gAssessedValue");
 
 function gAssessedValueF(gAssessedValue) {
@@ -152,7 +152,7 @@ Assessed Value
 }
 gAssessedValueF(gAssessedValue);
 
-// Bill of Lading
+/** Bill of Lading. */
 gBillOfLading = document.querySelector("#gBillOfLading");
 
 function gBillOfLadingF(gBillOfLading) {
@@ -169,7 +169,7 @@ A legal document that serves as a contract between the moving company and the cl
 }
 gBillOfLadingF(gBillOfLading);
 
-// Binding
+/** Binding. */
 gBinding = document.querySelector("#gBinding");
 
 function gBindingF(gBinding) {
@@ -186,7 +186,7 @@ A flat price given by a moving company regardless of the time that is taken.
 }
 gBindingF(gBinding);
 
-// Bulky Article Charge
+/** Bulky Article Charge. */
 gBulkyArticleCharge = document.querySelector("#gBulkyArticleCharge");
 
 function gBulkyArticleChargeF(gBulkyArticleCharge) {
@@ -203,7 +203,7 @@ Especially large or cumbersome items belonging to the client can be subject to s
 }
 gBulkyArticleChargeF(gBulkyArticleCharge);
 
-// Cargo
+/** Cargo. */
 gCargo = document.querySelector("#gCargo");
 
 function gCargoF(gCargo) {
@@ -220,7 +220,7 @@ A shipment being transported by air, boat of vehicle.
 }
 gCargoF(gCargo);
 
-// Carrier
+/** Carrier. */
 gCarrier = document.querySelector("#gCarrier");
 
 function gCarrierF(gCarrier) {
@@ -237,7 +237,7 @@ The moving company that a client has contracted with to facilitate their relocat
 }
 gCarrierF(gCarrier);
 
-// Cartage
+/** Cartage. */
 gCartage = document.querySelector("#gCartage");
 
 function gCartageF(gCartage) {
@@ -254,7 +254,7 @@ The process of relocating a client's belongings from a storage facility to their
 }
 gCartageF(gCartage);
 
-// Carton
+/** Carton. */
 gCarton = document.querySelector("#gCarton");
 
 function gCartonF(gCarton) {
@@ -271,7 +271,7 @@ Another term used for a moving box.
 }
 gCartonF(gCarton);
 
-// Cash on Delivery (C.O.D)
+/** Cash on Delivery (C.O.D). */
 gCashonDeliveryCOD = document.querySelector("#gCashonDeliveryCOD");
 
 function gCashonDeliveryCODF(gCashonDeliveryCOD) {
@@ -288,7 +288,7 @@ A payment arrangement where the client agrees to pay the moving company for the 
 }
 gCashonDeliveryCODF(gCashonDeliveryCOD);
 
-// Change Order
+/** Change Order. */
 gChangeOrder = document.querySelector("#gChangeOrder");
 
 function gChangeOrderF(gChangeOrder) {
@@ -305,7 +305,7 @@ A document or form used to change the original estimate on your statement due to
 }
 gChangeOrderF(gChangeOrder);
 
-// Crating
+/** Crating. */
 gCrating = document.querySelector("#gCrating");
 
 function gCratingF(gCrating) {
@@ -322,7 +322,7 @@ The process of packing delicate, fragile, or valuable items in a sturdy wooden c
 }
 gCratingF(gCrating);
 
-// Cross-Regional Move
+/** Cross-Regional Move. */
 gCrossRegionalMove = document.querySelector("#gCrossRegionalMove");
 
 function gCrossRegionalMoveF(gCrossRegionalMove) {
@@ -339,7 +339,7 @@ A shipment moving between two or more regions.
 }
 gCrossRegionalMoveF(gCrossRegionalMove);
 
-// Cube
+/** Cube. */
 gCube = document.querySelector("#gCube");
 
 function gCubeF(gCube) {
@@ -356,7 +356,7 @@ A measurement of volume used to quantify the space available in a moving truck, 
 }
 gCubeF(gCube);
 
-// Cube Sheet
+/** Cube Sheet. */
 gCubeSheet = document.querySelector("#gCubeSheet");
 
 function gCubeSheetF(gCubeSheet) {
@@ -373,7 +373,7 @@ A sheet containing measurements of household items to move.
 }
 gCubeSheetF(gCubeSheet);
 
-// Delivery Report
+/** Delivery Report. */
 gDeliveryReport = document.querySelector("#gDeliveryReport");
 
 function gDeliveryReportF(gDeliveryReport) {
@@ -390,7 +390,7 @@ A report the client signs to verify their delivery at their final destination.
 }
 gDeliveryReportF(gDeliveryReport);
 
-// Delivery Window
+/** Delivery Window. */
 gDeliveryWindow = document.querySelector("#gDeliveryWindow");
 
 function gDeliveryWindowF(gDeliveryWindow) {
@@ -407,7 +407,7 @@ The window of time the movers are supposed to deliver a shipment. This can range
 }
 gDeliveryWindowF(gDeliveryWindow);
 
-// Destination Agent
+/** Destination Agent. */
 gDestinationAgent = document.querySelector("#gDestinationAgent");
 
 function gDestinationAgentF(gDestinationAgent) {
@@ -424,7 +424,7 @@ The agent who is designated to assist in any shipment requests or provide inform
 }
 gDestinationAgentF(gDestinationAgent);
 
-// Diversion
+/** Diversion. */
 gDiversion = document.querySelector("#gDiversion");
 
 function gDiversionF(gDiversion) {
@@ -441,7 +441,7 @@ A situation where a client needs to change the destination of their shipment aft
 }
 gDiversionF(gDiversion);
 
-// Divider
+/** Divider. */
 gDivider = document.querySelector("#gDivider");
 
 function gDividerF(gDivider) {
@@ -458,7 +458,7 @@ A specialized equipment installed within the moving truck or van to separate and
 }
 gDividerF(gDivider);
 
-// Dispatcher
+/** Dispatcher. */
 gDispatcher = document.querySelector("#gDispatcher");
 
 function gDispatcherF(gDispatcher) {
@@ -475,7 +475,7 @@ A person who communicates the route of a shipment to operators and agents.
 }
 gDispatcherF(gDispatcher);
 
-// Door to Door Service
+/** Door to Door Service. */
 gDoorToDoorService = document.querySelector("#gDoorToDoorService");
 
 function gDoorToDoorServiceF(gDoorToDoorService) {
@@ -492,7 +492,7 @@ The act of shipping from an original destination to a final destination directly
 }
 gDoorToDoorServiceF(gDoorToDoorService);
 
-// Elevator Charge
+/** Elevator Charge. */
 gElevatorCharge = document.querySelector("#gElevatorCharge");
 
 function gElevatorChargeF(gElevatorCharge) {
@@ -509,7 +509,7 @@ An additional charge during a move if items need to be transported via elevator.
 }
 gElevatorChargeF(gElevatorCharge);
 
-// En Route
+/** En Route. */
 gEnRoute = document.querySelector("#gEnRoute");
 
 function gEnRouteF(gEnRoute) {
@@ -526,7 +526,7 @@ On the way.
 }
 gEnRouteF(gEnRoute);
 
-// Essentials Box
+/** Essentials Box. */
 gEssentialsBox = document.querySelector("#gEssentialsBox");
 
 function gEssentialsBoxF(gEssentialsBox) {
@@ -543,7 +543,7 @@ A box of essential items such as medication that should travel solely with the s
 }
 gEssentialsBoxF(gEssentialsBox);
 
-// Extended Liability
+/** Extended Liability. */
 gExtendedLiability = document.querySelector("#gExtendedLiability");
 
 function gExtendedLiabilityF(gExtendedLiability) {
@@ -560,7 +560,7 @@ An additional monetary amount assigned to cover the declared value of a client's
 }
 gExtendedLiabilityF(gExtendedLiability);
 
-// Flight Charge
+/** Flight Charge. */
 gFlightCharge = document.querySelector("#gFlightCharge");
 
 function gFlightChargeF(gFlightCharge) {
@@ -577,7 +577,7 @@ Also known as a stair fee. This is an additional charge for moving things up and
 }
 gFlightChargeF(gFlightCharge);
 
-// Full Service Move
+/** Full Service Move. */
 gFullServiceMove = document.querySelector("#gFullServiceMove");
 
 function gFullServiceMoveF(gFullServiceMove) {
@@ -594,7 +594,7 @@ The complete process of relocating from one residence or office to another, incl
 }
 gFullServiceMoveF(gFullServiceMove);
 
-// Furniture Blankets
+/** Furniture Blankets. */
 gFurnitureBlankets = document.querySelector("#gFurnitureBlankets");
 
 function gFurnitureBlanketsF(gFurnitureBlankets) {
@@ -611,7 +611,7 @@ Soft covers designed to protect furniture from damage during a move.
 }
 gFurnitureBlanketsF(gFurnitureBlankets);
 
-// Furniture Pads
+/** Furniture Pads. */
 gFurniturePads = document.querySelector("#gFurniturePads");
 
 function gFurniturePadsF(gFurniturePads) {
@@ -628,7 +628,7 @@ Pads used on the bottom of furniture to avoid scratching and scuffing floors.
 }
 gFurniturePadsF(gFurniturePads);
 
-// Gross Weight
+/** Gross Weight. */
 gGrossWeight = document.querySelector("#gGrossWeight");
 
 function gGrossWeightF(gGrossWeight) {
@@ -645,7 +645,7 @@ The total weight of the moving vehicle, including the weight of the shipment bei
 }
 gGrossWeightF(gGrossWeight);
 
-// High Value Article
+/** High Value Article. */
 gHighValueArticle = document.querySelector("#gHighValueArticle");
 
 function gHighValueArticleF(gHighValueArticle) {
@@ -662,7 +662,7 @@ Items of extraordinary value.
 }
 gHighValueArticleF(gHighValueArticle);
 
-// In-Transit
+/** In-Transit. */
 gInTransit = document.querySelector("#gInTransit");
 
 function gInTransitF(gInTransit) {
@@ -679,7 +679,7 @@ The status of a shipment when it is actively being transported between the origi
 }
 gInTransitF(gInTransit);
 
-// Inventory
+/** Inventory. */
 gInventory = document.querySelector("#gInventory");
 
 function gInventoryF(gInventory) {
@@ -696,7 +696,7 @@ A complete list of items in the shipment that will likely include quantity and c
 }
 gInventoryF(gInventory);
 
-// Invoice
+/** Invoice. */
 gInvoice = document.querySelector("#gInvoice");
 
 function gInvoiceF(gInvoice) {
@@ -713,7 +713,7 @@ A bill presented to a client for an act of service.
 }
 gInvoiceF(gInvoice);
 
-// Joint Rate
+/** Joint Rate. */
 gJointRate = document.querySelector("#gJointRate");
 
 function gJointRateF(gJointRate) {
@@ -730,7 +730,7 @@ A single rate calculated by two different carriers.
 }
 gJointRateF(gJointRate);
 
-// Line Haul
+/** Line Haul. */
 gLineHaul = document.querySelector("#gLineHaul");
 
 function gLineHaulF(gLineHaul) {
@@ -747,7 +747,7 @@ The transportation-related revenue received by a moving company for the actual m
 }
 gLineHaulF(gLineHaul);
 
-// Line Haul Charges
+/** Line Haul Charges. */
 gLineHaulCharges = document.querySelector("#gLineHaulCharges");
 
 function gLineHaulChargesF(gLineHaulCharges) {
@@ -764,7 +764,7 @@ Tariffs and fees imposed by a long distance move.
 }
 gLineHaulChargesF(gLineHaulCharges);
 
-// Load Date
+/** Load Date. */
 gLoadDate = document.querySelector("#gLoadDate");
 
 function gLoadDateF(gLoadDate) {
@@ -781,7 +781,7 @@ The specific date on which a moving company representative collects a client's b
 }
 gLoadDateF(gLoadDate);
 
-// Local Move
+/** Local Move. */
 gLocalMove = document.querySelector("#gLocalMove");
 
 function gLocalMoveF(gLocalMove) {
@@ -798,7 +798,7 @@ A move that takes place within a limited geographical area, such as within the s
 }
 gLocalMoveF(gLocalMove);
 
-// Long Carry Fee
+/** Long Carry Fee. */
 gLongCarryFee = document.querySelector("#gLongCarryFee");
 
 function gLongCarryFeeF(gLongCarryFee) {
@@ -815,7 +815,7 @@ An additional charge that occurs when the distance from the end of the moving va
 }
 gLongCarryFeeF(gLongCarryFee);
 
-// Long Term Storage
+/** Long Term Storage. */
 gLongTermStorage = document.querySelector("#gLongTermStorage");
 
 function gLongTermStorageF(gLongTermStorage) {
@@ -832,7 +832,7 @@ The extended storage of a client's belongings by a moving company for a period l
 }
 gLongTermStorageF(gLongTermStorage);
 
-// Moving Company
+/** Moving Company. */
 gMovingCompany = document.querySelector("#gMovingCompany");
 
 function gMovingCompanyF(gMovingCompany) {
@@ -849,7 +849,7 @@ A company that facilitates the transportation of a client's belongings from thei
 }
 gMovingCompanyF(gMovingCompany);
 
-// Moving Cost
+/** Moving Cost. */
 gMovingCost = document.querySelector("#gMovingCost");
 
 function gMovingCostF(gMovingCost) {
@@ -866,7 +866,7 @@ The cost charged by the moving company solely for the transportation of the clie
 }
 gMovingCostF(gMovingCost);
 
-// Net Weight
+/** Net Weight. */
 gNetWeight = document.querySelector("#gNetWeight");
 
 function gNetWeightF(gNetWeight) {
@@ -883,7 +883,7 @@ The actual weight of shipment subtracting the ‘tare weight’ or weight of the
 }
 gNetWeightF(gNetWeight);
 
-// Non-Binding Estimate
+/** Non-Binding Estimate. */
 gNonBindingEstimate = document.querySelector("#gNonBindingEstimate");
 
 function gNonBindingEstimateF(gNonBindingEstimate) {
@@ -900,7 +900,7 @@ The carriers estimated cost based on the estimated weight of a shipment.
 }
 gNonBindingEstimateF(gNonBindingEstimate);
 
-// Origin Agent
+/** Origin Agent. */
 gOriginAgent = document.querySelector("#gOriginAgent");
 
 function gOriginAgentF(gOriginAgent) {
@@ -917,7 +917,7 @@ The agent that is dedicated in our origin area to help with a clients shipment s
 }
 gOriginAgentF(gOriginAgent);
 
-// Pallet
+/** Pallet. */
 gPallet = document.querySelector("#gPallet");
 
 function gPalletF(gPallet) {
@@ -934,7 +934,7 @@ A portable platform used for storage and transportation.
 }
 gPalletF(gPallet);
 
-// Peak Season-Rate
+/** Peak Season-Rate. */
 gPeakSeasonPeakSeasonRate = document.querySelector(
   "#gPeakSeasonPeakSeasonRate"
 );
@@ -956,7 +956,7 @@ A higher rate or fee charged by a moving company during certain times of the yea
 }
 gPeakSeasonPeakSeasonRateF(gPeakSeasonPeakSeasonRate);
 
-// Permanent Storage
+/** Permanent Storage. */
 gPermanentStorage = document.querySelector("#gPermanentStorage");
 
 function gPermanentStorageF(gPermanentStorage) {
@@ -973,7 +973,7 @@ The storage of goods indefinitely in a warehouse.
 }
 gPermanentStorageF(gPermanentStorage);
 
-// Preferred Arrival Date (P.A.D)
+/** Preferred Arrival Date (P.A.D). */
 gPreferredArrivalDatePAD = document.querySelector("#gPreferredArrivalDatePAD");
 
 function gPreferredArrivalDatePADF(gPreferredArrivalDatePAD) {
@@ -993,7 +993,7 @@ The date a client requests to have goods arrive to their final destination by.
 }
 gPreferredArrivalDatePADF(gPreferredArrivalDatePAD);
 
-// Quote
+/** Quote. */
 gQuote = document.querySelector("#gQuote");
 
 function gQuoteF(gQuote) {
@@ -1010,7 +1010,7 @@ An estimate for the cost of a move.
 }
 gQuoteF(gQuote);
 
-// Relocation Assistance
+/** Relocation Assistance. */
 gRelocationAssistance = document.querySelector("#gRelocationAssistance");
 
 function gRelocationAssistanceF(gRelocationAssistance) {
@@ -1027,7 +1027,7 @@ A service provided by an employer for relocating due to a job.
 }
 gRelocationAssistanceF(gRelocationAssistance);
 
-// Routing
+/** Routing. */
 gRouting = document.querySelector("#gRouting");
 
 function gRoutingF(gRouting) {
@@ -1044,7 +1044,7 @@ The specific transportation route or method selected by the client when there ar
 }
 gRoutingF(gRouting);
 
-// Short Haul
+/** Short Haul. */
 gShortHaul = document.querySelector("#gShortHaul");
 
 function gShortHaulF(gShortHaul) {
@@ -1061,7 +1061,7 @@ A shipment that is less than 500 kilometers.
 }
 gShortHaulF(gShortHaul);
 
-// Shuttle Service
+/** Shuttle Service. */
 gShuttleService = document.querySelector("#gShuttleService");
 
 function gShuttleServiceF(gShuttleService) {
@@ -1078,7 +1078,7 @@ The service of a smaller vehicle to access areas that a large truck could not.
 }
 gShuttleServiceF(gShuttleService);
 
-// Storage In Transit (S.I.T)
+/** Storage In Transit (S.I.T). */
 gStorageInTransitSIT = document.querySelector("#gStorageInTransitSIT");
 
 function gStorageInTransitSITF(gStorageInTransitSIT) {
@@ -1095,7 +1095,7 @@ Temporary storage of goods in the warehouse of the carriers agent pending furthe
 }
 gStorageInTransitSITF(gStorageInTransitSIT);
 
-// Stretch Wrap
+/** Stretch Wrap. */
 gStretchWrap = document.querySelector("#gStretchWrap");
 
 function gStretchWrapF(gStretchWrap) {
@@ -1112,7 +1112,7 @@ The protective wrapping or padding materials utilized by the moving company's pe
 }
 gStretchWrapF(gStretchWrap);
 
-// Survey
+/** Survey. */
 gSurvey = document.querySelector("#gSurvey");
 
 function gSurveyF(gSurvey) {
@@ -1129,7 +1129,7 @@ The process undertaken by a moving company representative, or agent, to assess a
 }
 gSurveyF(gSurvey);
 
-// Tag
+/** Tag. */
 gTag = document.querySelector("#gTag");
 
 function gTagF(gTag) {
@@ -1146,7 +1146,7 @@ A unique identification label, typically consisting of a number and/or color cod
 }
 gTagF(gTag);
 
-// Tare Weight
+/** Tare Weight. */
 gTareWeight = document.querySelector("#gTareWeight");
 
 function gTareWeightF(gTareWeight) {
@@ -1163,7 +1163,7 @@ The baseline weight of the moving truck or vehicle before any client belongings 
 }
 gTareWeightF(gTareWeight);
 
-// Unpacking
+/** Unpacking. */
 gUnpacking = document.querySelector("#gUnpacking");
 
 function gUnpackingF(gUnpacking) {
@@ -1180,7 +1180,7 @@ The process of unpacking or removing a client's belongings from their original s
 }
 gUnpackingF(gUnpacking);
 
-// Van Foreman
+/** Van Foreman. */
 gVanForeman = document.querySelector("#gVanForeman");
 
 function gVanForemanF(gVanForeman) {
@@ -1197,7 +1197,7 @@ The moving company employee who is tasked with overseeing the loading, secure tr
 }
 gVanForemanF(gVanForeman);
 
-// Van Line
+/** Van Line. */
 gVanLine = document.querySelector("#gVanLine");
 
 function gVanLineF(gVanLine) {
@@ -1207,7 +1207,7 @@ function gVanLineF(gVanLine) {
 Van Line
 </td>
 <td><p>
-A network of agents employed by a moving company to coordinate and facilitate the logistics of a client's relocation.
+A network of agents employed by a moving company to coordinate and facilitate packing, transport, storage and delivery services for clients' relocations.
 </p></td>
       `;
   }
