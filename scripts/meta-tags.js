@@ -45,11 +45,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const noTypingTitle = document.querySelector(".no-typing");
   const title = document.querySelector("h1");
   if (noTypingTitle) {
-    document.title = noTypingTitle.textContent + " | Move It";
+    document.title =
+      noTypingTitle.textContent +
+      " | Move It | Web Developer Vladislav Kazantsev";
   } else if (title) {
-    document.title = title.textContent + " | Move It";
+    document.title =
+      title.textContent + " | Move It | Web Developer Vladislav Kazantsev";
   } else {
-    document.title = "Move It";
+    document.title = "Move It | Web Developer Vladislav Kazantsev";
   }
 
   // Insert <meta name="author" content="Vladislav Kazantsev">
@@ -124,6 +127,11 @@ document.addEventListener("DOMContentLoaded", () => {
       "<p>Error loading scripts. Please try again later.</p>"
     );
   };
+
+  /** Insert <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>. */
+  const jQuery = document.createElement("script");
+  jQuery.src = "https://code.jquery.com/jquery-4.0.0.min.js";
+  document.querySelector("body").appendChild(jQuery);
 
   // Insert <link rel="icon" href="pics/logos/logo.svg">
   const linkImage = document.createElement("link");
