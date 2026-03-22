@@ -1,8 +1,7 @@
 /*
- * Paragraph Indentation Script
+ * The Paragraph Indentation Script
  *
- * This script adjusts the indentation of paragraph elements on a webpage after
- * the DOM has fully loaded, ensuring consistent formatting for improved readability.
+ * This script runs after the DOM has loaded and inserts an indent at the start of every paragraph that is not inside an ancestor with class "text-center", ensuring consistent formatting for improved readability.
  *
  * Copyright © Vladislav Kazantsev
  * All rights reserved.
@@ -19,7 +18,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const p = document.getElementsByTagName("p");
   for (let x of p) {
-    if (x.closest(".text-center") == null) {
+    if (x.closest(".text-center") === null) {
       x.innerHTML = "&nbsp;&nbsp;" + x.innerHTML;
     }
   }
