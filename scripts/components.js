@@ -178,10 +178,10 @@ function createFooter(footer) {
           <li class="nav-item"><a class="nav-link px-2 text-body-secondary" href="glossary.html">Glossary</a></li>
           <li class="nav-item"><a class="nav-link px-2 link-primary" href="contact.html">Contact</a></li>
         </ul>
-        <p id="copyright">Copyright © <a href="https://primesolar.github.io/web-developer/" class="link-primary" rel="noopener noreferrer">Vladislav Kazantsev</a> ${year}</p>
-        <a type="button" href="https://www.buymeacoffee.com/CocaCola" id="bmc-button" target="_blank" rel="noopener noreferrer" aria-label="Buy me a coffee" role="button">☕ Buy me a coffee</a>
-        <a href="https://www.buymeacoffee.com/CocaCola" id="bmc-arrow" target="_blank" rel="noopener noreferrer" aria-label="Buy me a coffee" role="button">⬇</a>
-        <a href="https://www.buymeacoffee.com/CocaCola" id="bmc-link" target="_blank" rel="noopener noreferrer" aria-label="Buy me a coffee" role="button">coff.ee/CocaCola</a>
+        <p id="copyright">Copyright © <a href="https://primesolar.github.io/web-developer/" class="link-primary" title="Explore my personal website" rel="noopener noreferrer">Vladislav Kazantsev</a> ${year}</p>
+        <a type="button" href="https://www.buymeacoffee.com/CocaCola" id="bmc-button" target="_blank" title="Support my work" rel="noopener noreferrer" aria-label="Buy me a coffee" role="button">☕ Buy me a coffee</a>
+        <a href="https://www.buymeacoffee.com/CocaCola" id="bmc-arrow" target="_blank" title="Support my work" rel="noopener noreferrer" aria-label="Buy me a coffee" role="button">⬇</a>
+        <a href="https://www.buymeacoffee.com/CocaCola" id="bmc-link" target="_blank" title="Support my work" rel="noopener noreferrer" aria-label="Buy me a coffee" role="button">coff.ee/CocaCola</a>
       </div>
     </div>
       `;
