@@ -1,7 +1,7 @@
 /*
  * Responsive and Print Style Sheet for Webpages
  *
- * This stylesheet provides styles for various screen sizes and printing,
+ * This style sheet provides styles for various screen sizes and printing,
  * enhancing the visual presentation and pleasant user experience across different devices.
  *
  * Copyright © Vladislav Kazantsev
@@ -70,7 +70,7 @@
   }
 
   #cards {
-    height: 100%; /* Set the height of the elemenet. */
+    height: 100%; /* Set the height of the element. */
     margin: 50px 0; /* Set the size of the margin. */
     display: flex;
     gap: 6vh;
@@ -313,6 +313,10 @@
     text-decoration: underline !important;
   }
 
+  thead {
+    position: relative;
+  }
+
   .dark-mode nav *:not(.navbar-toggler, .navbar-toggler *),
   .dark-mode
     main
@@ -387,9 +391,9 @@
     display: none;
   }
 
-  /* #copyright a {
+  #copyright a {
     text-decoration: none !important;
-  } */
+  }
 
   #bmc-button {
     color: #ffffff !important;
