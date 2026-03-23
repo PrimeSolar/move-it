@@ -86,7 +86,7 @@ body.dark-mode {
 .dark-mode nav,
 .dark-mode nav *:not(.navbar-toggler, .navbar-toggler *),
 .dark-mode #footerContainer,
-.dark-mode #footerContainer *:not(button, #bmc-button) {
+.dark-mode #footerContainer *:not(#copyright a, button, #bmc-button) {
   background-color: #4f4f4f !important;
   color: #e0e0e0 !important;
 }
@@ -214,6 +214,13 @@ body.dark-mode {
 
 .dark-mode tr:nth-child(even) {
   background-color: #2a2a2a !important;
+}
+
+.dark-mode #copyright a {
+  border-color: #37a7ff;
+  border-image: none;
+  background: #37a7ff;
+  background-clip: text;
 }`;
 document.head.appendChild(style);
 
