@@ -1,7 +1,7 @@
 /*
- * Common Styling for Webpages
+ * Common Style Sheet for Webpages
  * 
- * This stylesheet provides a comprehensive set of common styles
+ * This style sheet provides a comprehensive set of common styles
  * tailored for webpages, covering everything from layout to
  * typography adjustments. Implementation of these styles ensures a
  * functional and visually appealing user experience.
@@ -19,7 +19,7 @@
  * For inquiries about collaboration, usage outside exploratory purposes, or permissions, please contact: hypervisor7@pm.me
  */
 
- * {
+* {
   margin: 0; /* Set the size for the margin of the element. */
   border: 0;
   padding: 0; /* Set the size for the padding of the element. */
@@ -602,7 +602,7 @@ to-top.active {
 
 .plan-conditions {
   font-size: 2vh; /* Set the font size for the text of the element. */
-  margin-bottom: 1vh; /* Set the size of the bottom mnargin. */
+  margin-bottom: 1vh; /* Set the size of the bottom margin. */
 }
 
 .plan-features {
@@ -678,7 +678,7 @@ tbody tr:nth-child(even) {
 }
 
 th {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #dddddd;
   border-left: 1px solid #ffffff;
   color: #f2f2f2; /* Set the color for the text of the element. */
 }
@@ -687,7 +687,7 @@ th,
 td {
   min-width: -webkit-fill-available; /* Set the minimum width of the element. */
   padding: 8px; /* Set the size of the padding. */
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid #dddddd;
 }
 
 th:nth-of-type(1),
@@ -721,6 +721,19 @@ td p {
 
 #copyright {
   margin: 0; /* Set the size for the margin of the element. */
+  font-size: 1.25rem;
+}
+
+#copyright a {
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(to right, #1ab1ff, #1177ff) 1;
+  border-image-slice: 1;
+  padding-bottom: 1px; /* Set the size for the margin of the element. */
+  font-weight: bold;
+  background: linear-gradient(to right, #1ab1ff, #1177ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
 }
 
 #bmc-button {
@@ -776,13 +789,13 @@ td p {
   display: none !important; /* Specify the display behavior of the element. */
 }
 
-/*noscript*/
+/* noscript */
 #enable-javascript {
   width: 100vw; /* Set the width of the element. */
   height: 100%; /* Set the height of the element. */
   padding: 0 25vw; /* Set the size of the padding. */
   /* Use flexbox to align content inside the element. */
-  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flebox model). */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model). */
   display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox). */
   display: flex; /* Standard syntax for modern browsers (widely supported). */
 
@@ -794,7 +807,7 @@ td p {
 
   justify-content: center; /* Align flex items horizontally. */
 
-  /* Alig vertically. */
+  /* Align vertically. */
   -ms-flex-align: center; /* For Internet Explorer 10. */
   -webkit-box-align: center; /* For older versions of Chrome and Safari. */
   align-items: center; /* Standard syntax for modern browsers (widely supported). */
