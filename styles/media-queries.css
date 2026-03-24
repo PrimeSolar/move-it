@@ -196,7 +196,7 @@
 
   th:nth-of-type(1),
   td:nth-of-type(1) {
-    max-width: 27vw;
+    max-width: 29vw;
   }
 
   iframe {
@@ -240,6 +240,15 @@
   .plan-features > li,
   .plan-features-contact {
     font-size: 3vh; /* Set the font size for the text. */
+  }
+
+  table {
+    position: relative;
+    box-sizing: border-box;
+    width: 100vw;
+    margin: 0;
+    right: 32px;
+    padding: 0;
   }
 }
 
