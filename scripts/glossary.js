@@ -470,7 +470,7 @@ initializeGlossaryTerm(
 
 initializeGlossaryTerm(
   "gPeakSeasonRate",
-  "Peak&nbsp;Season-Rate",
+  "Peak Season-Rate",
   "A higher rate or fee charged by a moving company during certain times of the year, such as the summer months, when moving demand and volume is typically higher. These peak season rates account for factors like increased labor costs, equipment usage, and logistical challenges due to the high volume of moves occurring."
 );
 
