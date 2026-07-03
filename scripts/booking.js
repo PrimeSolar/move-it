@@ -15,6 +15,10 @@
 
 /** Function to update booked moves display. */
 function updateBookedMoves() {
+  /**
+   * The script includes detailed comments
+   * to support stakeholders with varying JS knowledge.
+   */
   const currentHour = new Date().getHours();
   const totalBookedMoves = 50 + currentHour;
   const bookedMovesElement = document.getElementById("bookedMoves");
