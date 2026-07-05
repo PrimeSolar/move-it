@@ -22,6 +22,10 @@
 function initializeGlossaryTerm(elementId, term, description, options = {}) {
   const { className = "text-center fw-bold", ariaLabel = term } = options;
 
+  /**
+   * The script includes detailed comments
+   * to support stakeholders with varying JS knowledge.
+   */
   const element = document.querySelector(`#${elementId}`);
 
   element && element.innerHTML.trim() === ""
