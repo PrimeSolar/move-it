@@ -6,8 +6,8 @@
  *
  * Behavior details:
  *
- * document.querySelectorAll("h1, h2, h3, h4, h5, h6") returns a static NodeList of heading elements in document order. Spreading into an array ensures array methods (like forEach) are available.
- * forEach iterates through the headings array with an index. Index is zero-based, so 1 is added to present a human-friendly ordinal in logs.
+ * document.querySelectorAll("h1, h2, h3, h4, h5, h6") returns a static NodeList of heading elements in document order.
+ * forEach iterates through the NodeList. Index is zero-based, so 1 is added to present a human-friendly ordinal in logs.
  * heading.tagName specifies the tag name in uppercase (for example, "H1"), clearly identifying the heading level in output.
  * heading.textContent includes all descendant text; trim() removes accidental leading/trailing whitespace for cleaner output.
  * Console output format: ": - " - concise, line-by-line listing suitable for content auditing.
@@ -25,8 +25,12 @@
  * For inquiries about collaboration, usage outside exploratory purposes, or permissions, please contact: hypervisor7@pm.me
  */
 
-/** Select the headings and log them. */
-const headings = [...document.querySelectorAll("h1, h2, h3, h4, h5, h6")];
+/** Select the headings and log them in reading order to audit page structure. */
+const headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+/**
+ * The script includes detailed comments
+ * to support stakeholders with varying JS knowledge.
+ */
 headings.forEach((heading, index) => {
   console.log(
     `${index + 1}: ${heading.tagName} - ${heading.textContent.trim()}`
