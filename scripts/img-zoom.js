@@ -28,6 +28,10 @@
  */
 
 document.addEventListener("DOMContentLoaded", () => {
+  /**
+   * The script includes detailed comments
+   * to support stakeholders with varying JS knowledge.
+   */
   const img = document.querySelectorAll("img");
   const scaleAmount = 1.07; /** Scale factor. */
   const transitionDuration = "0.27s"; /** Transition duration. */
