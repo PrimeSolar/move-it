@@ -16,6 +16,10 @@
  */
 
 document.addEventListener("DOMContentLoaded", () => {
+  /**
+   * The script includes detailed comments
+   * to support stakeholders with varying JS knowledge.
+   */
   const p = document.getElementsByTagName("p");
   for (let x of p) {
     if (x.closest(".text-center") === null) {
