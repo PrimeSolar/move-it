@@ -17,6 +17,10 @@
  */
 
 document.addEventListener("DOMContentLoaded", () => {
+  /**
+   * The script includes detailed comments
+   * to support stakeholders with varying JS knowledge.
+   */
   const TYPING_VELOCITY = 100; // Velocity of typing in milliseconds per character
   const TYPING_CLASS = "typing";
   const FINISHED_CLASS = "typing-finished";
