@@ -1,7 +1,7 @@
 /*
  * Newsletter Handling Script
- * 
- * This script manages the newsletter subscription process for users, allowing them to enter their email 
+ *
+ * This script manages the newsletter subscription process for users, allowing them to enter their email
  * addresses and receive confirmation of their subscription state.
  *
  * Copyright © Vladislav Kazantsev
@@ -17,6 +17,10 @@
  */
 
 function handleSubscription() {
+  /**
+   * The script includes detailed comments
+   * to support stakeholders with varying JS knowledge.
+   */
   const email = document.getElementById("emailInput").value;
   event.preventDefault();
 
