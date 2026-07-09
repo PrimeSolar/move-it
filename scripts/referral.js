@@ -18,7 +18,7 @@
  * 4. **copyReferralLink Function**: selects the referral link text and copies it to the clipboard
  * using the `execCommand` method,
  * changes the text of the button that was clicked to "Copied!" to provide feedback to a user,
- * and rresets the button text back to "Copy" after a 1-second timeout for clarity.
+ * and resets the button text back to "Copy" after a 1-second timeout for clarity.
  *
  * 5. **Initialization**: automatically updates the referral link when the page loads.
  *
@@ -39,6 +39,10 @@ function generateIdentifier() {
   return Math.random().toString(36).substr(2, 9);
 }
 
+/**
+ * The script includes detailed comments
+ * to support stakeholders with varying JS knowledge.
+ */
 // Function to get or create a unique referral identifier
 function getReferralIdentifier() {
   let identifier = localStorage.getItem("referralId");
@@ -49,7 +53,7 @@ function getReferralIdentifier() {
   return identifier;
 }
 
-// Function to update the referral link with the unique identifier
+/** Function to update the referral link with the unique identifier. */
 const link = document.getElementById("referralLink");
 function updateReferralLink() {
   const referralId = getReferralIdentifier();
@@ -57,20 +61,20 @@ function updateReferralLink() {
   link.value = referralLink;
 }
 
-// Function to copy the referral link to the clipboard
+/** Function to copy the referral link to the clipboard. */
 function copyReferralLink() {
   link.select();
   document.execCommand("copy");
 
-  // Change button text to "Copied!"
-  const button = event.target; // Get the button that was clicked
+  /** Change button text to "Copied!". */
+  const button = event.target; /** Get the button that was clicked. */
   button.textContent = "Copied!";
 
-  //Change button text back to "Copy" after a few seconds
+  /** Change button text back to "Copy" after a few seconds. */
   setTimeout(() => {
     button.textContent = "Copy";
   }, 1000);
 }
 
-// Initialize the referral link on page load
+/** Initialize the referral link on page load. */
 window.onload = updateReferralLink;
