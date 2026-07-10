@@ -33,6 +33,10 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   const style = document.createElement("style");
+  /**
+   * The script includes detailed comments
+   * to support stakeholders with varying JS knowledge.
+   */
   style.textContent = `
 /* Slide Animation */
 
@@ -51,12 +55,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const animatedElements = document.querySelectorAll(
     "img:not(.d-block.w-100.rounded-5), h2, p"
   );
-  // Add initial animation class to each element
+  /** Add initial animation class to each element. */
   for (let x of animatedElements) {
     x.classList.add("slide-animation");
   }
 
-  // Create an IntersectionObserver to trigger animation when elements are in view
+  /** Create an IntersectionObserver to trigger animation when elements are in view. */
   const observer = new IntersectionObserver(
     (entries) => {
       for (let x of entries) {
@@ -77,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
    * Custom Logger Module
    ******************************/
   const Logger = (() => {
-    const debugMode = true; // Toggle debug logs
+    const debugMode = true; /** Toggle debug logs. */
 
     const log = (...args) => {
       if (debugMode) console.log("[DEBUG]", ...args);
@@ -100,6 +104,6 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   };
 
-  // Log active animations every 5 seconds
+  /** Log active animations every 5 seconds. */
   setInterval(logActiveAnimations, 5000);
 });
