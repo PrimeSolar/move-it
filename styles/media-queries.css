@@ -26,6 +26,8 @@
     animation: gradientAnimation 5s ease infinite; */
   }
 
+  /* The style sheet includes detailed property comments
+  to support stakeholders with varying CSS knowledge. */
   .no-typing {
     display: none;
   }
