@@ -40,6 +40,10 @@
 
 let db;
 
+/**
+ * The script includes detailed comments
+ * to support stakeholders with varying JS knowledge.
+ */
 const dexieScript = document.createElement("script");
 dexieScript.type = "text/javascript";
 dexieScript.src = "https://npmcdn.com/dexie@4.0.11/dist/dexie.min.js";
@@ -52,7 +56,7 @@ dexieScript.onload = () => {
   setTheme();
 };
 
-// Load saved theme and apply it
+/** Load saved theme and apply it. */
 async function setTheme() {
   try {
     const themeTable = await db.themeTable.toArray();
@@ -246,7 +250,7 @@ function toggleTheme() {
   }
   const currentTheme = htmlElement.classList[0];
   if (currentTheme) {
-    db.themeTable.clear(); // Clear existing themes to avoid duplicates
+    db.themeTable.clear(); /** Clear existing themes to avoid duplicates. */
     db.themeTable.add({ theme: currentTheme });
   } else {
     console.log("Theme is undefined");
