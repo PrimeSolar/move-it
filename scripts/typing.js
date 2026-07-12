@@ -21,13 +21,13 @@ document.addEventListener("DOMContentLoaded", () => {
    * The script includes detailed comments
    * to support stakeholders with varying JS knowledge.
    */
-  const TYPING_VELOCITY = 100; // Velocity of typing in milliseconds per character
+  const TYPING_VELOCITY = 100; /** Velocity of typing in milliseconds per character. */
   const TYPING_CLASS = "typing";
   const FINISHED_CLASS = "typing-finished";
 
   const typingElements = document.querySelectorAll(`.${TYPING_CLASS}`);
 
-  // Function to type out text
+  /** Function to type out text. */
   const typeText = (element, text, velocity, callback) => {
     let index = 0;
 
@@ -45,17 +45,17 @@ document.addEventListener("DOMContentLoaded", () => {
     typeNextCharacter();
   };
 
-  // Check if there are typing elements
+  /** Check if there are typing elements. */
   if (typingElements.length > 0) {
     typingElements.forEach((element) => {
       let clone = element.cloneNode(true);
       clone.classList.remove("typing");
       clone.classList.add("no-typing");
       element.parentElement.insertBefore(clone, element.nextSibling);
-      const text = element.textContent; // Get the text content
-      element.textContent = ""; // Clear the text content for typing effect
+      const text = element.textContent; /** Get the text content. */
+      element.textContent = ""; /** Clear the text content for typing effect. */
 
-      // Start typing effect
+      /** Start typing effect. */
       typeText(element, text, TYPING_VELOCITY, () => {
         console.log(`Finished typing: "${text}"`);
       });
