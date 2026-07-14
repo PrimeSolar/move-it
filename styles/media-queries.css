@@ -26,6 +26,16 @@
     animation: gradientAnimation 5s ease infinite; */
   }
 
+  .btn {
+    background-color: #1177ff;
+    transition: background-color 0.25s;
+  }
+
+  .btn:hover,
+  .btn:active {
+    background-color: #1ab1ff;
+  }
+
   /* The style sheet includes detailed property comments
   to support stakeholders with varying CSS knowledge. */
   .no-typing {
