@@ -28,6 +28,8 @@
   box-sizing: border-box;
 }
 
+/* The style sheet includes detailed property comments
+to support stakeholders with varying CSS knowledge. */
 html {
   scroll-behavior: smooth; /* Set the scroll behavior of the element. */
 }
@@ -169,34 +171,33 @@ main {
 }
 
 to-top {
-  background-color: #0088ff; /* Set the color of the background. */
   position: fixed; /* Specify the positioning method for the element. */
   bottom: 56px; /* Position the element 56 pixels from the bottom of the viewport. */
   right: 25px; /* Position the element 25 pixels from the right side of the viewport. */
   width: 45px; /* Set the width of the element. */
   height: 45px; /* Set the height of the element. */
-  opacity: 0; /* Set the opacity of the element. */
-  z-index: 2; /* Set the stacking order of the element. */
   font-size: 16px; /* Set the font size for the text of the element. */
   text-decoration: none; /* Remove underline from the text. */
-  pointer-events: none; /* Deactivate pointer events. */
+  opacity: 0; /* Set the opacity of the element. */
+  z-index: 2; /* Set the stacking order of the element. */
+  background-color: #0088ff; /* Set the color of the background. */
+  cursor: pointer;
   transition: 0.25s; /* Set an effect of a transition. */
-  /* Use flexbox to align content inside the element. */
-  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model. */
-  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox). */
-  display: flex; /* Standard syntax for modern browsers (widely supported). */
-
-  justify-content: center; /* Align flex items horizontally. */
-
-  /* Align vertically. */
-  -ms-flex-align: center; /* For Internet Explorer 10. */
-  -webkit-box-align: center; /* For older versions of Chrome and Safari. */
-  align-items: center; /* Standard syntax for modern browsers (widely supported). */
   /* Apply the border radius to round the corners of the element. */
   -moz-border-radius: 50%; /* For older versions of Firefox. */
   -o-border-radius: 50%; /* For older versions of Opera. */
   -webkit-border-radius: 50%; /* For older versions of Chrome and Safari. */
   border-radius: 50%; /* Standard syntax for modern browsers (widely supported). */
+
+  /* Use flexbox to align content inside the element. */
+  display: -ms-flexbox; /* For Internet Explorer 10 (supports an earlier flexbox model. */
+  display: -webkit-box; /* For earlier versions of Chrome and Safari (pre-flexbox). */
+  display: flex; /* Standard syntax for modern browsers (widely supported). */
+  justify-content: center; /* Align flex items horizontally. */
+  /* Align vertically. */
+  -ms-flex-align: center; /* For Internet Explorer 10. */
+  -webkit-box-align: center; /* For older versions of Chrome and Safari. */
+  align-items: center; /* Standard syntax for modern browsers (widely supported). */
 }
 
 to-top.active {
@@ -678,15 +679,20 @@ tbody tr:nth-child(even) {
 }
 
 th {
-  border-bottom: 1px solid #dddddd;
-  border-left: 1px solid #ffffff;
   color: #f2f2f2; /* Set the color for the text of the element. */
+}
+
+th:not(:nth-of-type(1)) {
+  border-left: 1px solid #ffffff;
 }
 
 th,
 td {
   min-width: -webkit-fill-available; /* Set the minimum width of the element. */
   padding: 8px; /* Set the size of the padding. */
+}
+
+td {
   border-bottom: 2px solid #dddddd;
 }
 
