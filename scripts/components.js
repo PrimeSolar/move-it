@@ -19,6 +19,10 @@
 /** The navigation bar. */
 navigationBarContainer = document.querySelector("#navigationBarContainer");
 
+/**
+ * The script includes detailed comments
+ * to support stakeholders with varying JS knowledge.
+ */
 function createNavigationBar(navigationBarContainer) {
   if (navigationBarContainer) {
     /** Define the navigation bar content. */
@@ -87,13 +91,18 @@ createNavigationBar(navigationBarContainer);
 /** The "Scroll to Top" button. */
 class ToTop extends HTMLElement {
   connectedCallback() {
-    this.innerHTML += `
-    <a href="#" aria-label="Scroll to top" title="Scroll to top">
+    this.innerHTML = `
+    <a aria-label="Scroll to top" title="Scroll to top">
       <svg width="45px" height="45px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M6 15L12 9L18 15" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
     </a>
     `;
+
+    this.querySelector("a").addEventListener("click", (event) => {
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
   }
 }
 customElements.define("to-top", ToTop);
@@ -165,7 +174,7 @@ const year = new Date().getFullYear();
 function createFooter(footer) {
   if (footer) {
     /** Define the footer content. */
-    footerContainer.innerHTML += `
+    footer.innerHTML += `
     <div class="container py-1 text-center">
       <div class="pt-1 pb-1 mt-1 mb-1">
         <ul class="nav justify-content-center border-bottom pb-3 pt-3 mb-3">
