@@ -727,7 +727,7 @@ td p {
 
 #copyright {
   margin: 0; /* Set the size for the margin of the element. */
-  font-size: 1.25rem;
+  font-size: 1.25rem; /* Set the size for the font of the element. */
 }
 
 #copyright a {
