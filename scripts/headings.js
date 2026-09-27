@@ -27,14 +27,36 @@
 
 /** Select the headings and log them in reading order to audit page structure. */
 const headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+const levels = [];
+let violations = [];
 /**
  * The script includes detailed comments
  * to support stakeholders with varying JS knowledge.
  */
 headings.forEach((heading, index) => {
+  const level = parseInt(heading.tagName[1]);
+  levels.push(level);
   console.log(
     `${index + 1}: ${heading.tagName} - ${heading.textContent.trim()}`
   );
+  /** Check for the main heading. */
+  if (index === 0 && level !== 1) {
+    violations.push(`⚠️ First heading is ${heading.tagName}, expected H1`);
+  }
+  /** Check for level skips. */
+  if (index > 0) {
+    const prevLevel = levels[index - 1];
+    if (level > prevLevel + 1) {
+      violations.push(
+        `⚠️ Jump from H${prevLevel} to H${level} at position ${index + 1}`
+      );
+    }
+  }
 });
+if (violations.length) {
+  console.warn("Hierarchy violations:", violations);
+} else {
+  console.log("✓ Heading hierarchy is valid");
+}
 
 console.log("headings.js is completed");
