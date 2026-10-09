@@ -36,8 +36,9 @@
     background-color: #1ab1ff;
   }
 
-  /* The style sheet includes detailed property comments
-  to support stakeholders with varying CSS knowledge. */
+  /* The style sheet includes detailed property commentaries
+  to support stakeholders with varying CSS knowledge, show intentional design decisions,
+  and improve maintainability. */
   .no-typing {
     display: none;
   }
@@ -148,6 +149,10 @@
 }
 
 @media (max-width: 1200px) {
+  .col {
+    width: 100%;
+  }
+
   #testimonials {
     width: 100%;
     left: 0;
@@ -270,6 +275,19 @@
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  /* Respect users' motion preferences that must always override default component style rules. */
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto !important;
+  }
+}
+
 @media print {
   * {
     opacity: 1 !important;
@@ -350,8 +368,8 @@
       .btn,
       .feature,
       .feature *,
-      .feature-icon,
-      .feature-icon-small,
+      .feature-badge,
+      .feature-badge-small,
       #chat-header,
       .message,
       .message *,
